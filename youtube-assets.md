@@ -42,7 +42,7 @@ By the end you'll have a working AI sales brain, connected to your actual tools,
 **How to Get Started:**
 
 **Step 1:** Join the free Skool community to get the install link
-→ https://kingsleylow.ai
+→ https://www.skool.com/kingsley-low-free-claude-ai-9271
 
 **Step 2:** Install Claude Code on your machine (Mac or Windows)
 ```
@@ -90,7 +90,7 @@ If you're a B2B owner doing over $250K/yr and want us to build this together —
 → https://kingsleylow.ai
 
 Everyone else — join the free Skool community, go through the course at your own pace, and connect with other business owners doing the same thing:
-→ https://kingsleylow.ai
+→ https://www.skool.com/kingsley-low-free-claude-ai-9271
 
 **Referral program:** Refer someone from the community who books a strategy call and converts — you get $200 USD cash. No hoops.
 
@@ -154,7 +154,7 @@ Either way — go build something. I'll see you inside.
 
 Course is free. Here's how to start:
 
-1. Join the Skool community to get the install link: https://kingsleylow.ai
+1. Join the Skool community to get the install link: https://www.skool.com/kingsley-low-free-claude-ai-9271
 2. Run the install command in your terminal
 3. Open Claude Code and type `/kingsleyai:start`
 

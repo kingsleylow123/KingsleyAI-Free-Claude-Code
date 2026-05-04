@@ -148,7 +148,7 @@ Join the free Skool community if you haven't already. Inside you'll find:
 ✅ Community of business owners building with AI  
 🔒 Locked premium content (for paid members)
 
-**Join here:** https://kingsleylow.ai
+**Join here:** https://www.skool.com/kingsley-low-free-claude-ai-9271
 
 ---
 
