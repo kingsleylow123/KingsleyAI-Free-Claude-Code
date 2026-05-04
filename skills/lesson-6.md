@@ -133,7 +133,7 @@ If you're running a B2B business doing **over $250K/year** and you'd rather have
 
 One hour. I audit your current setup, map out your full AI sales system, and give you a 90-day implementation roadmap. If it's a fit, we talk about working together directly.
 
-**Book the call here:** [YOUR_GHL_BOOKING_LINK]
+**Book the call here:** https://kingsleylow.ai
 
 Spots are limited — I only take calls with B2B owners serious about implementation.
 
@@ -162,7 +162,7 @@ Send them to the $47 call. If they end up working with us, **you get $200 USD ca
 
 Then run:
 ```bash
-open "[YOUR_GHL_BOOKING_LINK]"
+open "https://kingsleylow.ai"
 ```
 
 Then output the final gift unlock box:

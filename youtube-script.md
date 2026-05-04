@@ -481,4 +481,4 @@ I'll see you inside.
 
 **Links to drop in before publishing:**
 - https://www.skool.com/kingsley-low-free-claude-ai-9271 → free community
-- [YOUR_GHL_BOOKING_LINK] → $47 strategy call
+- https://kingsleylow.ai → $47 strategy call

@@ -33,7 +33,7 @@ By the end you'll have a working AI sales brain, connected to your actual tools,
 
 ---
 
-> Running a B2B business doing over $250K/yr? Book a $47 strategy call with me: [YOUR_GHL_BOOKING_LINK]
+> Running a B2B business doing over $250K/yr? Book a $47 strategy call with me: https://kingsleylow.ai
 >
 > We'll map out exactly which AI systems will move the needle fastest in your business.
 
@@ -87,7 +87,7 @@ That's it. The course runs right inside your terminal — no browser, no login, 
 **Two Paths After This:**
 
 If you're a B2B owner doing over $250K/yr and want us to build this together — book the $47 strategy call:
-→ [YOUR_GHL_BOOKING_LINK]
+→ https://kingsleylow.ai
 
 Everyone else — join the free Skool community, go through the course at your own pace, and connect with other business owners doing the same thing:
 → https://www.skool.com/kingsley-low-free-claude-ai-9271
@@ -158,6 +158,6 @@ Course is free. Here's how to start:
 2. Run the install command in your terminal
 3. Open Claude Code and type `/kingsleyai:start`
 
-B2B owner doing $250K+/yr? Book the $47 strategy call and we'll build your AI stack together: [YOUR_GHL_BOOKING_LINK]
+B2B owner doing $250K+/yr? Book the $47 strategy call and we'll build your AI stack together: https://kingsleylow.ai
 
 GitHub (full course code): https://github.com/kingsleylow123/KingsleyAI-Free-Claude-Code
