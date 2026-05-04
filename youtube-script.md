@@ -480,5 +480,5 @@ I'll see you inside.
 5. Dashboard opening in browser — genuine reaction, tweak it live
 
 **Links to drop in before publishing:**
-- [YOUR_SKOOL_LINK] → free community
+- https://www.skool.com/kingsley-low-free-claude-ai-9271 → free community
 - [YOUR_GHL_BOOKING_LINK] → $47 strategy call
