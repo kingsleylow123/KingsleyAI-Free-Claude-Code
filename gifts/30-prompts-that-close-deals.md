@@ -142,7 +142,7 @@ Write an SOP for how I want Claude to handle my Monday morning review. Every Mon
 
 **Prompt 24 — Referral Request Message**
 ```
-Draft a referral request message for happy clients. I want to send this to [X] clients who've gotten good results. My offer is [offer]. The message should: acknowledge their result specifically (I'll personalize), explain what kind of person would benefit from what I do, make it easy to refer (give them language), and offer something if they refer (I'll fill in the incentive). Keep it warm and direct — not salesy.
+Draft a referral request message for happy clients. I want to send this to [X] clients who've gotten good results. My offer is [offer]. The message should: acknowledge their result specifically (I'll personalize), explain what kind of person would benefit from what I do, make it easy to refer (give them language), and offer $200 USD cash if they refer someone who converts. Keep it warm and direct — not salesy.
 ```
 
 **Prompt 25 — CRM Re-Activation Campaign**
