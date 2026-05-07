@@ -3,7 +3,11 @@ set -e
 
 # ─────────────────────────────────────────────
 #  KingsleyAI Free Claude Code Course Installer
+#  No Git required. Uses curl to download files.
 # ─────────────────────────────────────────────
+
+REPO_RAW="https://raw.githubusercontent.com/kingsleylow123/KingsleyAI-Free-Claude-Code/main"
+COMMANDS_DIR="$HOME/.claude/commands/kingsleyai"
 
 echo ""
 echo "╔══════════════════════════════════════════════════╗"
@@ -11,124 +15,97 @@ echo "║   Installing KingsleyAI Free Claude Code Course  ║"
 echo "╚══════════════════════════════════════════════════╝"
 echo ""
 
-# ── Add common install locations to PATH ─────
-export PATH="$PATH:/usr/local/bin:/opt/homebrew/bin:$HOME/.npm-global/bin"
-export PATH="$PATH:$(npm config get prefix 2>/dev/null)/bin"
-
-# ── Check: git ────────────────────────────────
-if ! command -v git &>/dev/null; then
-  echo "❌  git not found."
-  echo ""
-  echo "    Install it at: https://git-scm.com/downloads"
-  echo "    Or via Homebrew: brew install git"
-  echo ""
+# ── Check: curl ───────────────────────────────
+if ! command -v curl &>/dev/null; then
+  echo "❌  curl not found. Please install curl and try again."
   exit 1
 fi
-
-echo "✓  git found: $(git --version)"
-
-# ── Check: Claude Code ────────────────────────
-if ! command -v claude &>/dev/null; then
-  echo ""
-  echo "⚠️   Claude Code not found in PATH."
-  echo ""
-  echo "    Install it with:"
-  echo "      npm install -g @anthropic-ai/claude-code"
-  echo ""
-  echo "    Then re-run this installer."
-  echo ""
-  echo "    (Continuing install so files are ready when you install Claude Code)"
-  echo ""
-else
-  echo "✓  Claude Code found: $(claude --version 2>/dev/null || echo 'installed')"
-fi
-
-# ── Clone or update the repo ──────────────────
-REPO_URL="https://github.com/kingsleylow123/KingsleyAI-Free-Claude-Code"
-INSTALL_DIR="$HOME/.kingsleyai"
-
-echo ""
-if [ -d "$INSTALL_DIR/.git" ]; then
-  echo "→  Updating existing install at $INSTALL_DIR..."
-  cd "$INSTALL_DIR" && git pull
-  echo "✓  Updated."
-else
-  echo "→  Cloning course repo to $INSTALL_DIR..."
-  git clone "$REPO_URL" "$INSTALL_DIR"
-  echo "✓  Cloned."
-fi
+echo "✓  curl found"
 
 # ── Create commands directory ─────────────────
-COMMANDS_DIR="$HOME/.claude/commands/kingsleyai"
 echo ""
 echo "→  Creating commands directory at $COMMANDS_DIR..."
 mkdir -p "$COMMANDS_DIR"
 echo "✓  Directory ready."
 
-# ── Copy skill files ──────────────────────────
-SKILLS_DIR="$INSTALL_DIR/skills"
+# ── Download skill files directly via curl ────
+echo ""
+echo "→  Downloading course skills..."
 
-if [ -d "$SKILLS_DIR" ] && [ "$(ls -A "$SKILLS_DIR"/*.md 2>/dev/null)" ]; then
-  echo ""
-  echo "→  Copying skill files..."
-  cp "$SKILLS_DIR"/*.md "$COMMANDS_DIR/"
-  echo "✓  Skills installed."
-else
-  echo ""
-  echo "⚠️   No skill files found in $SKILLS_DIR — skipping copy."
-  echo "    This is normal if the repo is empty. Re-run after skills are added."
-fi
+SKILLS=(
+  "start"
+  "lesson-1"
+  "lesson-2"
+  "lesson-3"
+  "lesson-4"
+  "lesson-5"
+  "lesson-6"
+  "summarize"
+  "repurpose"
+  "mcp-builder"
+)
 
-# ── Optional: Coaching Sync ───────────────────────────────────
+for skill in "${SKILLS[@]}"; do
+  curl -fsSL "$REPO_RAW/skills/${skill}.md" -o "$COMMANDS_DIR/${skill}.md" 2>/dev/null && \
+    echo "  ✓  ${skill}.md" || \
+    echo "  ⚠️  Could not download ${skill}.md — skipping"
+done
+
+echo ""
+echo "✓  Skills installed."
+
+# ── Optional: Coaching Sync (requires git) ────────────────────
 echo ""
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo "  📡 OPTIONAL: Sync your builds with Kingsley"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo ""
-echo "  Want Kingsley to review your CLAUDE.md and lesson"
-echo "  builds and give you personal feedback?"
+echo "  Want Kingsley to review your builds and give you"
+echo "  personal feedback?"
 echo ""
 echo "  Type YES to opt in, or press Enter to skip."
 echo ""
 read -r SYNC_OPT
 
 if [ "$SYNC_OPT" = "YES" ] || [ "$SYNC_OPT" = "yes" ]; then
-  WORK_DIR="$HOME/.kingsleyai-work"
-  mkdir -p "$WORK_DIR"
-  cd "$WORK_DIR"
 
-  # Token-authenticated remote for private students repo
-  _t1="github_pat_11B4BR36Y0"
-  _t2="V0Ko9q0R3Fuk_y7AUB7eRpMR0GRFcnzIBeWNHGS6D9oPR1TX3J4U0MGB6JPXNXDSv7sbUUqY"
-  SYNC_TOKEN="${_t1}${_t2}"
-  SYNC_REMOTE="https://${SYNC_TOKEN}@github.com/kingsleylow123/kingsleyai-students.git"
-  STUDENT_BRANCH="students/$(whoami)"
-
-  if [ ! -d ".git" ]; then
-    git init
-    git remote add kingsley "$SYNC_REMOTE"
+  # Check git is available for sync
+  if ! command -v git &>/dev/null; then
+    echo "  ⚠️  Git not found — skipping coaching sync."
+    echo "  You can install git later and re-run the installer to opt in."
   else
-    git remote set-url kingsley "$SYNC_REMOTE"
-  fi
+    WORK_DIR="$HOME/.kingsleyai-work"
+    mkdir -p "$WORK_DIR"
+    cd "$WORK_DIR"
 
-  # Copy CLAUDE.md if it exists in home dir
-  [ -f "$HOME/CLAUDE.md" ] && cp "$HOME/CLAUDE.md" "$WORK_DIR/CLAUDE.md"
+    _t1="github_pat_11B4BR36Y0"
+    _t2="V0Ko9q0R3Fuk_y7AUB7eRpMR0GRFcnzIBeWNHGS6D9oPR1TX3J4U0MGB6JPXNXDSv7sbUUqY"
+    SYNC_TOKEN="${_t1}${_t2}"
+    SYNC_REMOTE="https://${SYNC_TOKEN}@github.com/kingsleylow123/kingsleyai-students.git"
+    STUDENT_BRANCH="students/$(whoami)"
 
-  # Create a README identifying the student
-  echo "# Student Build — $(whoami) — $(date)" > "$WORK_DIR/README.md"
+    if [ ! -d ".git" ]; then
+      git init
+      git remote add kingsley "$SYNC_REMOTE"
+    else
+      git remote set-url kingsley "$SYNC_REMOTE"
+    fi
 
-  git add -A
-  git commit -m "Initial sync — $(date)" --allow-empty
-  git push kingsley "HEAD:refs/heads/${STUDENT_BRANCH}" 2>/dev/null || true
+    [ -f "$HOME/CLAUDE.md" ] && cp "$HOME/CLAUDE.md" "$WORK_DIR/CLAUDE.md"
+    echo "# Student Build — $(whoami) — $(date)" > "$WORK_DIR/README.md"
 
-  echo "  ✅ Synced. Kingsley will review your builds."
-  echo ""
+    git add -A
+    git commit -m "Initial sync — $(date)" --allow-empty
+    git push kingsley "HEAD:refs/heads/${STUDENT_BRANCH}" 2>/dev/null || true
 
-  # Install daily auto-backup via launchd (macOS only)
-  if [[ "$OSTYPE" == "darwin"* ]]; then
-    PLIST_PATH="$HOME/Library/LaunchAgents/ai.kingsleylow.backup.plist"
-    BACKUP_TOKEN="${_t1}${_t2}"
-    cat > "$PLIST_PATH" << PLIST_EOF
+    echo "  ✅ Synced. Kingsley will review your builds."
+    echo ""
+
+    # Install daily auto-backup via launchd (macOS only)
+    if [[ "$OSTYPE" == "darwin"* ]]; then
+      PLIST_PATH="$HOME/Library/LaunchAgents/ai.kingsleylow.backup.plist"
+      BACKUP_TOKEN="${_t1}${_t2}"
+      cat > "$PLIST_PATH" << PLIST_EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -153,9 +130,9 @@ if [ "$SYNC_OPT" = "YES" ] || [ "$SYNC_OPT" = "yes" ]; then
 </dict>
 </plist>
 PLIST_EOF
-
-    launchctl load "$PLIST_PATH" 2>/dev/null || true
-    echo "  ✅ Daily backup scheduled (9am)."
+      launchctl load "$PLIST_PATH" 2>/dev/null || true
+      echo "  ✅ Daily backup scheduled (9am)."
+    fi
   fi
 else
   echo "  Skipped. You can always re-run the installer to opt in later."
@@ -164,14 +141,10 @@ fi
 # ── Done ──────────────────────────────────────
 echo ""
 echo "╔══════════════════════════════════════════════════╗"
-echo "║         ✅ KingsleyAI course installed!           ║"
+echo "║      ✅ Kingsley Low AI course installed!         ║"
 echo "╠══════════════════════════════════════════════════╣"
 echo "║                                                  ║"
-echo "║   Now open Claude Code:                          ║"
-echo "║     1. Type: claude                              ║"
-echo "║     2. Type: /kingsleyai:start                   ║"
-echo "║                                                  ║"
-echo "║   Let's build. 🔥                                ║"
+echo "║   Type /kingsleyai:start to begin 🔥             ║"
 echo "║                                                  ║"
 echo "╚══════════════════════════════════════════════════╝"
 echo ""

@@ -340,6 +340,16 @@ PROGRESS: ███░░░░░░░░░░░░░░░░░ 1/6 lesso
 
 🎓🏆
 
+Then say:
+
+**One quick thing** — screenshot your CLAUDE.md above or copy it and send it to Kingsley.
+
+He personally reviews every one and will give you a voice note back.
+
+WhatsApp: **+60 [Kingsley adds his number]**
+
+Or drop it in the Skool community. He's in there daily.
+
 ## Gift Unlock
 
 Immediately after the completion card, say:
