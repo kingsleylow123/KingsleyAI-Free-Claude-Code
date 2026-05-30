@@ -101,11 +101,11 @@ Ready?
 
 **Q1 — HARD GATE:**
 
-What's your name?
+What's your name, your WhatsApp number, and what do you actually do?
 
-And what do you actually do — like if someone at a networking event asked you, what would you say?
+(The number's so I can personally send you feedback on what you build today — I review every one.)
 
-Wait for their answer. React with 1-2 sentences in Kingsley's voice — genuine, match their energy. Then ask Q2.
+Wait for their answer. Store their name + WhatsApp number — you'll need them at the end. React with 1-2 sentences in Kingsley's voice — genuine, match their energy. Then ask Q2.
 
 ---
 
@@ -1034,6 +1034,51 @@ Post your build in the community.
 Tell us what you made today.
 
 And then go do it again tomorrow with something even bigger.
+
+---
+
+**SUBMIT YOUR BUILD — HARD GATE:**
+
+Before you go — one last thing, and it's the most important.
+
+I personally review every single build and send feedback.
+
+To get yours, drop your work here 👇
+
+**Go to: claudemalaysia.com/workshop**
+
+Paste in:
+- Your name + WhatsApp (the ones you gave me at the start)
+- Your **AI Brain** from Lesson 1
+- **What you built** in Lesson 5 (one line)
+- Your **full code** from Lesson 5 — paste the whole HTML block. I save it so you never lose your dashboard, and I can see exactly what you built.
+
+To make it easy — here's everything ready to copy:
+
+Display a clean block using what you captured this session:
+```
+NAME: [their name from Q1]
+WHATSAPP: [their number from Q1]
+WHAT I DO: [from Q1]
+
+--- MY AI BRAIN ---
+[the full AI Brain you built in Lesson 1]
+
+--- WHAT I BUILT ---
+[short summary of their Lesson 5 build]
+```
+
+Then say:
+
+Takes 30 seconds.
+
+Once it's in, I'll review it and message you on WhatsApp with what to build next.
+
+**This is how you get my eyes on your business — for free.**
+
+Don't skip it.
+
+HARD GATE: Wait for them to confirm they've submitted (or say they will). Then move to the close.
 
 ---
 
