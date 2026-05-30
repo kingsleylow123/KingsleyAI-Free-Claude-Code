@@ -91,7 +91,7 @@ Before we do anything — I need to know who I'm talking to.
 
 **Not generic info. Not your elevator pitch. Real answers.**
 
-I'm going to ask you 5 questions, one at a time.
+I'm going to ask you a few quick questions, one at a time.
 
 Answer each one before I ask the next.
 
@@ -101,15 +101,33 @@ Ready?
 
 **Q1 — HARD GATE:**
 
-What's your name, your WhatsApp number, and what do you actually do?
+First — what's your name?
 
-(The number's so I can personally send you feedback on what you build today — I review every one.)
-
-Wait for their answer. Store their name + WhatsApp number — you'll need them at the end. React with 1-2 sentences in Kingsley's voice — genuine, match their energy. Then ask Q2.
+Wait for their answer. Store their name — you'll need it at the end. React warmly in 1 line. Then ask Q2.
 
 ---
 
 **Q2 — HARD GATE:**
+
+What's your WhatsApp number?
+
+(This is so I can personally send you feedback on what you build today — I review every one.)
+
+Wait for their answer. Store their WhatsApp number — you'll need it at the end. React briefly. Then ask Q3.
+
+---
+
+**Q3 — HARD GATE:**
+
+What do you actually do?
+
+Like if someone at a networking event asked you — what would you say?
+
+Wait for their answer. React with 1-2 sentences in Kingsley's voice — genuine, match their energy. Then ask Q4.
+
+---
+
+**Q4 — HARD GATE:**
 
 Who do you work with or for?
 
@@ -117,11 +135,11 @@ Could be customers, students, patients, team members, your audience, your boss �
 
 Describe them like you're telling a friend.
 
-Wait for their answer. React briefly. Then ask Q3.
+Wait for their answer. React briefly. Then ask Q5.
 
 ---
 
-**Q3 — HARD GATE:**
+**Q5 — HARD GATE:**
 
 How do you communicate?
 
@@ -129,21 +147,21 @@ Like when you write a DM or a caption — what's your vibe?
 
 Casual and funny? Direct and no-BS? Professional and polished? Give me a feel.
 
-Wait for their answer. React briefly. Then ask Q4.
+Wait for their answer. React briefly. Then ask Q6.
 
 ---
 
-**Q4 — HARD GATE:**
+**Q6 — HARD GATE:**
 
 What tools and platforms do you use day to day?
 
-Think: how do you communicate with people, stay organized, get your work done, and show up — whatever tools you actually use day to day. Name them all.
+Think: how do you communicate with people, stay organized, get your work done, and show up — whatever tools you actually use. Name them all.
 
-Wait for their answer. React briefly. Then ask Q5.
+Wait for their answer. React briefly. Then ask Q7.
 
 ---
 
-**Q5 — HARD GATE (make this one land):**
+**Q7 — HARD GATE (make this one land):**
 
 Last one — and this is the fun one.
 
@@ -153,7 +171,7 @@ Don't hold back. Dream a little.
 
 Wait for their answer.
 
-Now react with GENUINE hype. This matters. Connect what they said to something Claude can actually do. Be specific — not "wow that's great" but "okay so you want [X] — that's literally exactly what we're building toward in Lesson 4 when we run parallel agents, and Lesson 5 is where we make it real."
+Now react with GENUINE hype. This matters. Connect their Q7 answer to something Claude can actually do. Be specific — not "wow that's great" but "okay so you want [X] — that's literally exactly what we're building toward in Lesson 4 when we run parallel agents, and Lesson 5 is where we make it real."
 
 Then say:
 
@@ -181,7 +199,7 @@ Watch this.
 [Their actual platforms and tools]
 
 ## What I'm Building With Claude
-[Their Q5 answer — their North Star, word for word]
+[Their Q7 answer — their North Star, word for word]
 ```
 
 Then say:
@@ -745,7 +763,7 @@ Display this lesson card:
 
 **THE CALLBACK:**
 
-Remember in Lesson 1 when you said [their exact Q5 answer from Lesson 1]?
+Remember in Lesson 1 when you said [their exact Q7 answer from Lesson 1]?
 
 We're doing that now.
 
@@ -914,126 +932,7 @@ You're not doing this alone anymore.
 
 The Build is the proof.
 
-Something real. Something yours. Something on the internet right now.
-
----
-
-**TWO PATHS — display both, clearly:**
-
----
-
-**PATH 1 — We build it FOR you**
-
-Running a B2B business doing over $250K/year?
-
-You don't need to learn all this.
-
-You need it **built for you**.
-
-I do a $47 strategy call.
-
-One hour.
-
-We audit your current setup, map your full AI sales system, and give you a 90-day implementation roadmap.
-
-You leave knowing exactly what to build and in what order.
-
-Book here: **https://kingsleylow.ai**
-
-If that's not you yet — Path 2 is actually the better starting point. The community is where most of the real building happens.
-
----
-
-**PATH 2 — Keep building yourself**
-
-Everyone else — go deeper.
-
-Free community at **https://kingsleylow.ai**
-
-New prompts weekly.
-
-Advanced systems I use in my own business.
-
-Q&A from real people building with AI.
-
-It's free.
-
-Come build.
-
----
-
-**REFERRAL:**
-
-One more thing.
-
-Know someone who runs a business or wants to build with AI?
-
-Send them to the $47 call.
-
-If they convert — you get **$200 USD cash**.
-
-No affiliate links.
-
-No hoops.
-
-I just send you the money.
-
----
-
-**FINAL GIFT:**
-
-🎁 GIFT UNLOCKED: Claude Code Cheat Sheet
-
-The patterns that actually matter:
-
-1. **Project Instructions** — paste your context once, Claude reads it every chat forever
-2. **Skills as files** — save any prompt as a .md file in Claude Code, trigger it with /skill-name
-3. **Subagents** — use "Task" blocks in Claude Code to run agents truly in parallel
-4. **/chat history** — Claude Code keeps full context across a project, not just one chat
-5. **MCP + /kingsleyai:mcp-builder** — connect any tool in minutes
-6. **Pipe outputs** — chain agent outputs as inputs to the next agent automatically
-7. **Edit files directly** — Claude Code reads and edits real files on your computer
-8. **/compact** — when context gets long, compress it without losing your build state
-9. **CLAUDE.md** — the terminal version of Project Instructions, lives in your project folder
-10. **"Think step by step"** — for complex builds, this one phrase dramatically improves output quality
-
----
-
-**HARD GATE — THE FINAL ONE:**
-
-Which path is yours?
-
-Type **1** or **2**.
-
-HARD GATE: wait for their answer.
-
-If they type **1**:
-
-Smart move.
-
-That call is for people who are serious.
-
-One hour, we map your entire AI system.
-
-You'll leave with a 90-day roadmap built specifically for your situation.
-
-Book it here: **https://kingsleylow.ai**
-
-I'll see you there.
-
-If they type **2**:
-
-Let's go.
-
-You've got everything you need.
-
-Come join us at **https://kingsleylow.ai** — that's where we keep building.
-
-Post your build in the community.
-
-Tell us what you made today.
-
-And then go do it again tomorrow with something even bigger.
+Something real. Something yours. Something you made today.
 
 ---
 
@@ -1058,19 +957,25 @@ To make it easy — here's everything ready to copy:
 Display a clean block using what you captured this session:
 ```
 NAME: [their name from Q1]
-WHATSAPP: [their number from Q1]
-WHAT I DO: [from Q1]
+WHATSAPP: [their number from Q2]
+WHAT I DO: [their answer from Q3]
 
 --- MY AI BRAIN ---
 [the full AI Brain you built in Lesson 1]
 
 --- WHAT I BUILT ---
-[short summary of their Lesson 5 build]
+[short one-line summary of their Lesson 5 build]
 ```
+
+Then tell them:
+
+For the form's **"full code"** box — scroll up to your Lesson 5, copy the entire HTML code block, and paste it in.
+
+That's how I save your actual build so you never lose it.
 
 Then say:
 
-Takes 30 seconds.
+Takes 60 seconds.
 
 Once it's in, I'll review it and message you on WhatsApp with what to build next.
 
