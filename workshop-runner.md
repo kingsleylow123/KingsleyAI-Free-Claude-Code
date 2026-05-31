@@ -1031,7 +1031,7 @@ I personally review every single build and send feedback.
 
 To get yours, drop your work here 👇
 
-**Go to: claudemalaysia.com/workshop**
+**Go to: claudemalaysia.vercel.app/workshop**
 
 Paste in:
 - Your name + WhatsApp (the ones you gave me at the start)
