@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The AI System Is Like a Human — Kingsley Low AI</title>
+<style>
+  :root{
+    --ink:#000;
+    --grey:#555;
+    --line:#000;
+    --soft:#f2f2f2;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{background:#fff;color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;
+    -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+
+  .page{width:210mm;min-height:297mm;margin:0 auto;padding:14mm 14mm 12mm;
+    display:flex;flex-direction:column;}
+
+  /* Header */
+  .top{display:flex;justify-content:space-between;align-items:flex-start;
+    border-bottom:3px solid #000;padding-bottom:9px;margin-bottom:14px;}
+  .brand{font-size:13px;font-weight:800;letter-spacing:.5px;}
+  .url{font-size:11px;color:var(--grey);margin-top:2px;}
+  .badge{font-size:10px;font-weight:800;color:#fff;background:#000;
+    padding:5px 11px;border-radius:3px;letter-spacing:.4px;}
+
+  h1{font-size:27px;line-height:1.12;font-weight:800;letter-spacing:-.5px;}
+  .sub{font-size:12px;color:var(--grey);margin:5px 0 6px;}
+
+  /* Main layout: figure left, labels right */
+  .frame{flex:1;display:grid;grid-template-columns:165px 1fr;gap:18px;align-items:center;}
+
+  .figure-wrap{display:flex;justify-content:center;align-items:center;}
+  svg{width:100%;height:auto;}
+
+  .rows{display:flex;flex-direction:column;gap:9px;}
+  .row{display:flex;gap:11px;align-items:flex-start;border:2px solid #000;border-radius:10px;padding:10px 12px;}
+  .tag{flex-shrink:0;width:30px;height:30px;border:2px solid #000;border-radius:7px;
+    font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;}
+  .r-body{flex:1;}
+  .r-head{font-size:14px;font-weight:800;display:flex;align-items:baseline;gap:7px;margin-bottom:2px;}
+  .r-part{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;
+    border:1.5px solid #000;border-radius:3px;padding:1px 6px;}
+  .r-lesson{font-size:13px;font-weight:800;}
+  .r-desc{font-size:11px;line-height:1.4;color:var(--grey);}
+
+  /* Footer */
+  .foot{margin-top:14px;display:flex;justify-content:space-between;align-items:center;
+    border-top:2px solid #000;padding-top:11px;}
+  .next{font-size:12px;font-weight:600;}
+  .next .mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;
+    background:#000;color:#fff;padding:2px 8px;border-radius:4px;}
+  .sign{font-size:12px;font-weight:800;text-align:right;}
+  .sign span{display:block;font-size:10px;font-weight:500;color:var(--grey);}
+
+  @media print{
+    @page{size:A4;margin:0;}
+    .page{margin:0;}
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="top">
+      <div>
+        <div class="brand">KINGSLEY LOW AI</div>
+        <div class="url">kingsleylow.ai</div>
+      </div>
+      <div class="badge">CLAUDE CODE COURSE</div>
+    </div>
+
+    <h1>Your AI System Is Like a Human.</h1>
+    <p class="sub">The 6 things you built today — mapped to a body. It's not 6 separate tricks. It's <b>one living system.</b></p>
+
+    <div class="frame">
+
+      <!-- Human figure with labelled parts -->
+      <div class="figure-wrap">
+        <svg viewBox="0 0 200 440" fill="none" stroke="#000" stroke-width="2.5" xmlns="http://www.w3.org/2000/svg">
+          <!-- head -->
+          <circle cx="100" cy="46" r="30"/>
+          <!-- brain squiggle inside head -->
+          <path d="M88 40c-4-6 4-12 8-7 4-5 12 1 8 7 4 2 2 9-3 9M88 40c-3 2-3 9 2 9M93 49h12" stroke-width="2"/>
+          <!-- neck -->
+          <path d="M100 76v14"/>
+          <!-- torso -->
+          <path d="M100 90c-26 0-40 10-40 30v70c0 8 8 10 16 9l8 80h32l8-80c8 1 16-1 16-9v-70c0-20-14-30-40-30z"/>
+          <!-- left arm -->
+          <path d="M64 124c-18 6-30 24-34 46" stroke-linecap="round"/>
+          <!-- right arm -->
+          <path d="M136 124c18 6 30 24 34 46" stroke-linecap="round"/>
+          <!-- hands -->
+          <circle cx="28" cy="176" r="6" stroke-width="2"/>
+          <circle cx="172" cy="176" r="6" stroke-width="2"/>
+          <!-- legs split already in torso path bottom; add feet -->
+          <path d="M84 289l-4 20M116 289l4 20" stroke-linecap="round"/>
+          <ellipse cx="78" cy="313" rx="9" ry="5" stroke-width="2"/>
+          <ellipse cx="122" cy="313" rx="9" ry="5" stroke-width="2"/>
+
+          <!-- pointer leaders (thin) -->
+          <g stroke-width="1.3" stroke-dasharray="3 3">
+            <line x1="130" y1="46" x2="195" y2="46"/>     <!-- head/brain -->
+            <line x1="118" y1="92" x2="195" y2="100"/>    <!-- mouth/voice -->
+            <line x1="170" y1="176" x2="196" y2="176"/>   <!-- arms/hands -->
+            <line x1="140" y1="150" x2="196" y2="240"/>   <!-- torso/team -->
+            <line x1="122" y1="313" x2="196" y2="320"/>   <!-- feet/proof -->
+          </g>
+          <!-- tiny part dots -->
+          <circle cx="100" cy="46" r="2.5" fill="#000"/>
+          <circle cx="100" cy="92" r="2.5" fill="#000"/>
+          <circle cx="172" cy="176" r="2.5" fill="#000"/>
+          <circle cx="100" cy="150" r="2.5" fill="#000"/>
+          <circle cx="100" cy="305" r="2.5" fill="#000"/>
+        </svg>
+      </div>
+
+      <!-- Labels -->
+      <div class="rows">
+
+        <div class="row">
+          <div class="tag">1</div>
+          <div class="r-body">
+            <div class="r-head"><span class="r-part">Brain</span><span class="r-lesson">Your AI Brain</span></div>
+            <div class="r-desc">Claude learns who you are, what you do, how you talk. Every answer is yours — not generic.</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="tag">2</div>
+          <div class="r-body">
+            <div class="r-head"><span class="r-part">Voice</span><span class="r-lesson">Your First Skill</span></div>
+            <div class="r-desc">One command speaks a full playbook. Plain English in, finished work out — every time.</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="tag">3</div>
+          <div class="r-body">
+            <div class="r-head"><span class="r-part">Hands</span><span class="r-lesson">Connect Your Tools (MCP)</span></div>
+            <div class="r-desc">Claude reaches into your real apps. It doesn't just talk — it acts on your data.</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="tag">4</div>
+          <div class="r-body">
+            <div class="r-head"><span class="r-part">Body</span><span class="r-lesson">Parallel AI Agents</span></div>
+            <div class="r-desc">A team of Claudes working at once — researching, writing, following up. All together.</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="tag">5</div>
+          <div class="r-body">
+            <div class="r-head"><span class="r-part">Eyes</span><span class="r-lesson">Build Something Real</span></div>
+            <div class="r-desc">Now you can see it. A working page or tool, built for your world, live in your browser.</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="tag">6</div>
+          <div class="r-body">
+            <div class="r-head"><span class="r-part">Alive</span><span class="r-lesson">The Full System</span></div>
+            <div class="r-desc">All the parts connect into one living system that keeps working for you after today.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="foot">
+      <div class="next">Run it again anytime → <span class="mono">/kingsleyai:start</span></div>
+      <div class="sign">Kingsley Low<span>kingsleylow.ai</span></div>
+    </div>
+
+  </div>
+</body>
+</html>

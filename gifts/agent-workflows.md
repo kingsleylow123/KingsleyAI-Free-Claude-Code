@@ -1,5 +1,5 @@
 # Agent Workflow Templates
-### 5 pre-built multi-agent workflows for high-ticket sales businesses
+### 5 pre-built multi-agent workflows for anyone who wants to automate repetitive work
 
 ---
 
@@ -9,27 +9,27 @@ These are copy-paste prompts that spin up multiple Claude agents running simulta
 
 ---
 
-## Workflow 1: Lead Qualification Blast
+## Workflow 1: Batch Review & Follow-Up
 
-**What it does:** Scores every lead in your pipeline and writes a personalized follow-up for each one — all at once.
+**What it does:** Scores every contact or item in your list and writes a personalized follow-up for each one — all at once.
 
-**When to use:** After a webinar, event, or ad campaign drops a batch of new leads. Or when your pipeline has gone stale.
+**When to use:** After a webinar, event, or campaign drops a batch of new contacts. Or when your list of records has gone stale.
 
 ```
-I need you to spin up one agent per lead and run them all simultaneously.
+I need you to spin up one agent per contact and run them all simultaneously.
 
-Here are my leads:
-[Paste lead list — name, company, what they said/did, where they came from]
+Here are my contacts:
+[Paste contact list — name, company, what they said/did, where they came from]
 
-My ICP criteria:
-- Avatar: [e.g. "coach or consultant doing $5K–$20K/month"]
-- Buying signals: [e.g. "asked about price, said they're ready to start, booked and showed"]
+My criteria:
+- Ideal profile: [e.g. "coach or consultant doing $5K–$20K/month"]
+- Positive signals: [e.g. "asked about price, said they're ready to start, booked and showed"]
 - Red flags: [e.g. "looking for free advice, no budget, just starting out"]
 
-For each lead, each agent should:
-1. Score them: Hot (book a call ASAP), Warm (nurture), or Cold (archive)
+For each contact, each agent should:
+1. Score them: Hot (follow up ASAP), Warm (nurture), or Cold (archive)
 2. Write a personalized follow-up message that matches their score
-3. Flag any Hot leads with [HOT - CALL TODAY] at the top
+3. Flag any Hot contacts with [HOT - FOLLOW UP TODAY] at the top
 
 Return all results in a clean table: Name | Score | Reasoning | Follow-up Message
 
@@ -130,31 +130,31 @@ Return all 9 pieces clearly labeled. Run all 3 agents simultaneously.
 
 ---
 
-## Workflow 5: Pipeline Health Audit
+## Workflow 5: Work-in-Progress Audit
 
-**What it does:** Scans your entire pipeline for stuck leads and writes personalized follow-ups for each one — two agents running at the same time.
+**What it does:** Scans your entire list of items or contacts for stuck records and writes personalized follow-ups for each one — two agents running at the same time.
 
 **When to use:** Every Monday morning. Takes 5 minutes instead of 45.
 
 ```
-I need a pipeline health audit. Run 2 agents simultaneously:
+I need a work-in-progress audit. Run 2 agents simultaneously:
 
-My pipeline stages and current leads:
-[Paste your pipeline — stage name, lead name, last contact date, last action taken]
+My stages and current items:
+[Paste your records — stage name, item/contact name, last contact date, last action taken]
 
-My offer: [offer]
+My context: [offer, project, or what you're tracking]
 My typical follow-up cadence: [e.g. "follow up every 3 days until they say yes or no"]
 
-Agent 1 — Pipeline audit:
-Review every lead in my pipeline. Flag any lead that:
+Agent 1 — Audit:
+Review every item in my list. Flag any item that:
 - Has been in the same stage for more than 3 days without contact
 - Has a follow-up that's overdue
 - Shows signs of going cold (no engagement in 5+ days)
 
-Return a table: Lead Name | Stage | Days Stuck | Risk Level (High/Medium/Low) | Recommended Next Action
+Return a table: Name | Stage | Days Stuck | Risk Level (High/Medium/Low) | Recommended Next Action
 
 Agent 2 — Follow-up message writer:
-For every lead flagged as High or Medium risk by Agent 1, write a personalized follow-up message. Each message should:
+For every item flagged as High or Medium risk by Agent 1, write a personalized follow-up message. Each message should:
 - Reference something specific about their situation (use what I provided)
 - Not mention that they've gone quiet
 - Move toward a clear next step (call, reply, decision)
@@ -165,4 +165,4 @@ Run both agents simultaneously. Agent 2 should write messages for everything Age
 
 ---
 
-> **Next level:** Save any of these as a CLAUDE.md instruction so Claude runs the workflow automatically every time you start a session. Example: add "Every Monday morning, remind me to run the Pipeline Health Audit workflow" to your CLAUDE.md.
+> **Next level:** Save any of these as a CLAUDE.md instruction so Claude runs the workflow automatically every time you start a session. Example: add "Every Monday morning, remind me to run the Work-in-Progress Audit workflow" to your CLAUDE.md.

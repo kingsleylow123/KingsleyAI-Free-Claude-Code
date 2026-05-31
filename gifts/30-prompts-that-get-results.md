@@ -1,5 +1,5 @@
-# 30 Prompts That Close Deals
-### Copy-paste Claude Code prompts for coaches, consultants, agency owners, and insurance directors
+# 30 Prompts That Get Results
+### Copy-paste Claude Code prompts for anyone who wants to work smarter — business, education, freelancing, or anything else.
 
 ---
 
@@ -7,7 +7,7 @@
 
 ---
 
-## Lead Generation
+## Getting Attention & Outreach
 
 **Prompt 1 — Cold DM**
 ```
@@ -36,7 +36,7 @@ Write a webinar title and 3 bullet points for a webinar about [topic: e.g. "how 
 
 ---
 
-## Sales & Closing
+## Conversations & Converting
 
 **Prompt 6 — No-Show Follow-Up**
 ```
@@ -125,12 +125,12 @@ Write a YouTube title, thumbnail text, and opening hook for a video about [topic
 
 ## Automation & Operations
 
-**Prompt 21 — GHL Workflow Description**
+**Prompt 21 — GHL Workflow Description** *(works with any tool — CRM, spreadsheet, or email list)*
 ```
 Write a GHL workflow description for what should happen when a lead books a call through my funnel. My funnel is [describe: e.g. "Meta ad → landing page → Cal.com booking"]. Include: trigger, immediate confirmation message, reminder sequence (1 day before, 1 hour before), what happens if they no-show, and what happens after the call depending on outcome (closed, follow-up needed, not a fit). Write it in plain language so I can hand this to a VA to build.
 ```
 
-**Prompt 22 — Pipeline Follow-Up SMS**
+**Prompt 22 — Pipeline Follow-Up SMS** *(works with any tool — CRM, spreadsheet, or email list)*
 ```
 Write 5 follow-up SMS messages for leads at different pipeline stages. Stage 1: Just booked a call (confirmation). Stage 2: No-show (re-engage within 2 hours). Stage 3: Call happened, didn't close — needs follow-up. Stage 4: Said "I need to think about it" — follow up 48 hours later. Stage 5: Cold lead, 2+ weeks no reply — last attempt to re-engage. Each message should be under 160 characters and feel like a real person sent it.
 ```
@@ -145,14 +145,16 @@ Write an SOP for how I want Claude to handle my Monday morning review. Every Mon
 Draft a referral request message for happy clients. I want to send this to [X] clients who've gotten good results. My offer is [offer]. The message should: acknowledge their result specifically (I'll personalize), explain what kind of person would benefit from what I do, make it easy to refer (give them language), and offer $200 USD cash if they refer someone who converts. Keep it warm and direct — not salesy.
 ```
 
-**Prompt 25 — CRM Re-Activation Campaign**
+**Prompt 25 — CRM Re-Activation Campaign** *(works with any tool — CRM, spreadsheet, or email list)*
 ```
 Write a re-activation campaign (3 messages) for dead leads in my CRM who haven't responded in 60+ days. My offer is [offer]. Message 1: Pattern interrupt — something unexpected that restarts the conversation. Message 2 (3 days later if no reply): A new angle or relevant piece of value. Message 3 (5 days later if no reply): Final message — low-pressure close or opt-out. Each message should be under 100 words and feel human.
 ```
 
 ---
 
-## Insurance Recruitment (Bonus Section)
+## Bonus: Recruitment & Hiring Prompts
+
+*(For anyone who recruits or hires — insurance directors, hiring managers, team builders. Not you? Skip it.)*
 
 **Prompt 26 — Agent Recruiting DM**
 ```

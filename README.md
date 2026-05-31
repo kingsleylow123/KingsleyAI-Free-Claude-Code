@@ -1,103 +1,59 @@
-```
- _   ___                 _            _   _    ___ 
-| | / (_)_ _  __ _ ___| |___ _  _  /_\ |_|  / __|___  __| |___
-| |/ /| | ' \/ _` (_-<| / -_) || ||/ _ \| |  |(__/ _ \/ _` / -_)
-|___/ |_|_||_\__, /__/|_\___|\_, ||_/ \_\_|   \___\___/\__,_\___|
-              |___/           |__/                                  
-```
+# 🆓 Kingsley Low AI — Free Claude Code Course
 
-# KingsleyAI Free Claude Code Course
+Build your first AI system in 6 lessons. No coding experience needed.
 
-A free interactive Claude Code course for coaches, consultants, and agency owners — runs inside your terminal.
+⚡ Install in 30 seconds. Learn in under an hour. Keep forever.
 
-No videos to watch. No slides to sit through. You build the actual systems while you learn.
+> **Your AI finally knows who you are.**
+> Not generic prompts you'll forget tomorrow — a system built around your work, your voice, your world.
 
 ---
 
-## What You'll Build
+## What you'll build
 
-- **Your CLAUDE.md** — the brain file that turns Claude into a tool that actually knows your business
-- **Your first slash command** — a custom skill you can trigger in one line
-- **An automated follow-up system** — WhatsApp or email sequences that run without you
-- **An ad copy generator** — produce 3 hook variations in under 30 seconds
-- **A client reporting workflow** — pull data, format it, send it, without touching a spreadsheet
-- **A lead qualification filter** — auto-screen prospects before they waste your time
+| Lesson | What you'll create |
+|--------|-------------------|
+| **1** | Your **AI Brain** (CLAUDE.md) — a personal brief that makes every Claude session know you |
+| **2** | A custom **skill** — one command that does a repeatable task forever |
+| **3** | **MCP** — understand how Claude connects to your real tools |
+| **4** | **Parallel agents** — multiple Claudes working at once |
+| **5** | A **real build** — a working web page for your actual work |
+| **6** | The **full system** — everything wired together |
+
+Works for anyone — business owners, teachers, freelancers, students, whoever you are.
 
 ---
 
-## Quick Start
+## Install
 
-### macOS / Linux
+**Mac / Linux** — paste this in Terminal:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/kingsleylow/KingsleyAI-Free-Claude-Code/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/kingsleylow123/KingsleyAI-Free-Claude-Code/main/install.sh | bash
 ```
 
-Then:
-1. Open your terminal
-2. Type `claude`
-3. Type `/kingsleyai:start`
-
-### Windows (PowerShell)
+**Windows** — paste this in PowerShell:
 
 ```powershell
-irm https://raw.githubusercontent.com/kingsleylow/KingsleyAI-Free-Claude-Code/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/kingsleylow123/KingsleyAI-Free-Claude-Code/main/install.ps1 | iex
 ```
 
-Then:
-1. Open PowerShell
-2. Type `claude`
-3. Type `/kingsleyai:start`
+Then open Claude Code and type:
 
-> **Prerequisite:** [Node.js](https://nodejs.org) and [git](https://git-scm.com) must be installed.
-> Install Claude Code with: `npm install -g @anthropic-ai/claude-code`
+```
+/kingsleyai:start
+```
 
----
-
-## What's Included
-
-### 6 Lessons
-| # | Lesson | What You Build |
-|---|--------|---------------|
-| 1 | What is Claude Code? | Understand how it works, why it's different |
-| 2 | Your CLAUDE.md | Write your business brain file |
-| 3 | Slash Commands | Build your first custom skill |
-| 4 | Automating Follow-Up | WhatsApp / email sequences with GHL |
-| 5 | Ad Copy on Demand | Hook generator tuned to your niche |
-| 6 | Systems That Scale | Reporting, onboarding, and client workflows |
-
-### Bonus Skills
-- `/kingsleyai:write-ad` — generate Meta ad copy from an offer + avatar
-- `/kingsleyai:qualify-lead` — build a qualification mini-form for any niche
-- `/kingsleyai:write-dm` — cold DM and follow-up scripts for Instagram or WhatsApp
-
-### Starter Templates
-- CLAUDE.md for coaches and consultants
-- CLAUDE.md for marketing agency owners
-- CLAUDE.md for insurance directors and recruiters
+That's it. The course runs right inside Claude Code.
 
 ---
 
-## About
+## Bonus skills (installed with the course)
 
-**Kingsley Low** helps coaches, consultants, and agency owners build AI-powered sales and operations systems — without hiring a dev team.
-
-He runs a productized consulting practice, has built MCP servers and automation stacks used by his own clients, and teaches the systems he actually uses.
-
-Website: [kingsleylow.ai](https://kingsleylow.ai)
+- `/kingsleyai:summarize` — summarize any content
+- `/kingsleyai:repurpose` — turn one piece of content into many
+- `/kingsleyai:mcp-builder` — connect Claude to any tool
 
 ---
 
-## Community
-
-Join the free community for course walkthrough videos, Q&A, and live builds:
-
-**[JOIN HERE → PLACEHOLDER LINK]**
-
-Post your CLAUDE.md. Ask what's stuck. See how others are building.
-
----
-
-## License
-
-MIT — free to use, fork, and share. If you build something cool with it, tag [@kingsleylow](https://instagram.com/kingsleylow).
+Built by Kingsley Low · [kingsleylow.ai](https://kingsleylow.ai)

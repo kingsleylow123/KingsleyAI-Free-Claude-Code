@@ -38,38 +38,38 @@ Format everything clearly so I can hand it to a VA or start using it today.
 
 ---
 
-## Mega-Prompt 2: Full Sales Process
+## Mega-Prompt 2: Full Client Journey
 
 ```
-Design my full sales process from first touch to closed deal.
+Design my full client journey from first touch to outcome.
 
 My offer: [offer]
 My price point: [price]
-My sales call format: [e.g. "30-minute Zoom discovery call"]
-My biggest objections: [list 2–3 common objections you hear]
+My discovery call format: [e.g. "30-minute Zoom discovery call"]
+My biggest hesitations I hear: [list 2–3 common hesitations]
 
 Deliver all of the following:
 
-1. Pipeline Stages — name each stage and define exactly what it means for a lead to be at that stage (not vague — specific criteria).
+1. Journey Stages — name each stage and define exactly what it means for someone to be at that stage (not vague — specific criteria).
 
 2. What Happens at Each Stage — for each stage, describe: what action needs to happen, who does it (me or automated), and what the goal is before moving to the next stage.
 
 3. Messages to Send — write the actual messages (text, WhatsApp, or email) for:
-   - Lead just booked a call
+   - Contact just booked a call
    - Reminder 24 hours before the call
    - Reminder 1 hour before the call
    - No-show recovery (within 2 hours)
-   - Post-call follow-up (didn't close — needs follow-up)
-   - Closed! Welcome and next steps
+   - Post-call follow-up (didn't convert — needs follow-up)
+   - Confirmed! Welcome and next steps
 
-4. Sales Call Script — write a complete outline for my sales call:
+4. Discovery Call Script — write a complete outline for my call:
    - Opener and rapport (2 minutes)
    - Discovery questions (5–7 questions to uncover pain and urgency)
    - Pitch structure (outcome, proof, what's included, price)
-   - Objection handling for my specific objections
+   - Handling hesitations for my specific hesitations
    - Close script (exact words to ask for the yes)
 
-Format as a step-by-step playbook I can follow and hand to any closer.
+Format as a step-by-step playbook I can follow and hand to anyone.
 ```
 
 ---
@@ -172,32 +172,32 @@ Format as a complete referral playbook I can start using this week.
 
 ---
 
-## Mega-Prompt 6: Lead Magnet System
+## Mega-Prompt 6: Freebie / Resource Builder
 
 ```
-Design my lead magnet from scratch.
+Design my freebie or resource from scratch.
 
 My offer: [offer — what do people buy from me?]
 My avatar: [avatar — who am I trying to attract?]
-My biggest competitor's lead magnet: [describe if you know, or say "unknown"]
+My biggest competitor's freebie: [describe if you know, or say "unknown"]
 My biggest credibility point: [your best result or proof]
 
 Deliver all of the following:
 
-1. Lead Magnet Concept — recommend the best format (checklist, guide, video, calculator, template, etc.) with a brief rationale based on my avatar.
+1. Freebie Concept — recommend the best format (checklist, guide, video, calculator, template, etc.) with a brief rationale based on my avatar.
 
-2. Title — write 3 headline options for the lead magnet. Each should promise a specific outcome and speak directly to the avatar's pain or desire.
+2. Title — write 3 headline options for the freebie. Each should promise a specific outcome and speak directly to the avatar's pain or desire.
 
-3. 5 Key Sections — what are the 5 sections or chapters of the lead magnet? For each: section title + 2 sentences on what it covers.
+3. 5 Key Sections — what are the 5 sections or chapters? For each: section title + 2 sentences on what it covers.
 
-4. 3-Email Follow-Up Sequence — after they download, send 3 emails that build trust and sell the next step:
+4. 3-Email Follow-Up Sequence — after they download, send 3 emails that build trust and move toward the next step:
    - Email 1 (immediate): deliver the resource, introduce yourself, set up what's coming
    - Email 2 (day 2): one genuinely useful tip or insight, build authority
    - Email 3 (day 4): soft pitch for the next step (the offer), with a clear CTA
 
 For each email: subject line, preview text, body, CTA.
 
-Format as a complete lead magnet brief + email sequence I can hand to a copywriter or use directly.
+Format as a complete freebie brief + email sequence I can hand to a copywriter or use directly.
 ```
 
 ---

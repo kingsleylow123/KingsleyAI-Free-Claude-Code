@@ -29,10 +29,10 @@ Look at what you actually built. Not watched. Not followed along with. **Built.*
 ║      Automator (CLAUDE.md)                  ║
 ║                                             ║
 ║   ✅ Lesson 2 — Custom Skill                ║
-║      (/my-qualifier)                        ║
+║      (your own /my-skill)                   ║
 ║                                             ║
 ║   ✅ Lesson 3 — App Connections             ║
-║      (MCP)                                  ║
+║      (MCP — your tools, connected)          ║
 ║                                             ║
 ║   ✅ Lesson 4 — AI Team of Agents           ║
 ║                                             ║
@@ -49,11 +49,11 @@ Look at what you actually built. Not watched. Not followed along with. **Built.*
 ╚══════════════════════════════════════════════╝
 ```
 
-Most people are copying and pasting into ChatGPT getting the same generic response as everyone else. The same hooks. The same emails. The same ads as every other coach and agency owner in their niche.
+Most people are copying and pasting into ChatGPT getting the same generic response as everyone else. The same hooks. The same emails. The same content as everyone else in their field.
 
 You just built something completely different.
 
-A brain that knows your business. Commands that run your playbooks. Connections to your actual tools. A team that works in parallel. A real asset you can use today.
+A brain that knows your world. Commands that run your playbooks. Connections to your actual tools. A team that works in parallel. A real asset you can use today.
 
 That's not a tutorial. That's a system.
 
@@ -93,7 +93,7 @@ Here's what most people miss. These aren't 5 separate things.
 
 **MCP is the arms.** Claude doesn't just talk — it acts. It posts. It messages. It pulls data from your CRM. It moves things. The gap between thinking and doing closes to seconds.
 
-**Agents are the team.** You're not a solopreneur anymore. You have a content team, a sales team, and a delivery team — running simultaneously. Every time you need to ship something, you ship five things.
+**Agents are the team.** You're not doing this alone anymore. You have help running simultaneously — research, writing, communication, follow-up. Every time you need to ship something, you ship five things at once.
 
 **The build is the proof.** You didn't just learn the theory. You have something on your screen right now. A dashboard. A landing page. An app. That's real. That's yours. That works.
 
@@ -121,49 +121,43 @@ One last gift:
 
 ---
 
-## 🎯 TWO PATHS FORWARD
+## 📥 SUBMIT YOUR BUILD
 
-Read their CLAUDE.md one more time to personalize the pitch slightly. Then output this:
+Before you go — one last thing, and it's the most important.
 
----
+I personally review every single build and send feedback.
 
-**PATH 1 — You want us to BUILD this for you**
+To get yours, drop your work here 👇
 
-If you're running a B2B business doing **over $250K/year** and you'd rather have someone implement all of this FOR you than DIY it — I do a $47 strategy call.
+**Go to: claudemalaysia.com/workshop**
 
-One hour. I audit your current setup, map out your full AI sales system, and give you a 90-day implementation roadmap. If it's a fit, we talk about working together directly.
+Read their CLAUDE.md and their Lesson 5 build, then give them a clean copy-paste block:
 
-**Book the call here:** https://kingsleylow.ai
-
-Spots are limited — I only take calls with B2B owners serious about implementation.
-
----
-
-**PATH 2 — You want to keep building (and get my full system)**
-
-Join the free Skool community if you haven't already. Inside you'll find:
-
-✅ The full course walkthrough videos  
-✅ Advanced Claude Code systems I use daily  
-✅ Community of business owners building with AI  
-🔒 Locked premium content (for paid members)
-
-**Join here:** https://www.skool.com/kingsley-low-free-claude-ai-9271
-
----
-
-**REFERRAL PROGRAM**
-
-Know another B2B owner who needs this?
-
-Send them to the $47 call. If they end up working with us, **you get $200 USD cash** — no hoops, just a bank transfer.
-
----
-
-Then run:
-```bash
-open "https://kingsleylow.ai"
 ```
+NAME: [their name from Lesson 1]
+WHATSAPP: [their WhatsApp from Lesson 1]
+WHAT I DO: [from their CLAUDE.md]
+
+--- MY AI BRAIN ---
+[their full CLAUDE.md]
+
+--- WHAT I BUILT ---
+[one-line summary of their Lesson 5 build]
+```
+
+Then tell them:
+
+For the form's **"full code"** box — open your `build/index.html`, copy the entire contents, and paste it in.
+
+That's how I save your actual build so you never lose it.
+
+Takes 60 seconds.
+
+Once it's in, I'll review it and message you on WhatsApp with what to build next.
+
+**This is how you get my eyes on your work — for free.**
+
+Don't skip it.
 
 Then output the final gift unlock box:
 

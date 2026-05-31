@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What You Built Today — Kingsley Low AI</title>
+<style>
+  :root{
+    --orange:#D97757;        /* Claude orange */
+    --orange-soft:#FBEDE7;
+    --ink:#1A1A1A;
+    --grey:#6B6B6B;
+    --line:#ECECEC;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{background:#fff;color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;
+    -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+
+  /* A4 page */
+  .page{
+    width:210mm;min-height:297mm;margin:0 auto;
+    padding:16mm 16mm 14mm;display:flex;flex-direction:column;
+  }
+
+  /* Header */
+  .top{display:flex;justify-content:space-between;align-items:flex-start;
+    border-bottom:3px solid var(--orange);padding-bottom:10px;margin-bottom:18px;}
+  .brand{font-size:13px;font-weight:700;letter-spacing:.5px;color:var(--orange);}
+  .brand span{color:var(--ink);}
+  .url{font-size:11px;color:var(--grey);margin-top:2px;}
+  .badge{font-size:10px;font-weight:700;color:#fff;background:var(--orange);
+    padding:5px 11px;border-radius:20px;letter-spacing:.4px;}
+
+  h1{font-size:30px;line-height:1.15;font-weight:800;letter-spacing:-.5px;margin-bottom:4px;}
+  h1 .hl{color:var(--orange);}
+  .sub{font-size:13px;color:var(--grey);margin-bottom:20px;}
+
+  /* Lesson grid */
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;flex:1;}
+  .card{border:1.5px solid var(--line);border-radius:12px;padding:14px 15px;
+    display:flex;gap:12px;align-items:flex-start;}
+  .num{flex-shrink:0;width:34px;height:34px;border-radius:9px;background:var(--orange-soft);
+    color:var(--orange);font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center;}
+  .c-body{flex:1;}
+  .c-title{font-size:15px;font-weight:800;margin-bottom:3px;display:flex;align-items:center;gap:6px;}
+  .c-emoji{font-size:16px;}
+  .c-desc{font-size:11.5px;line-height:1.45;color:var(--grey);margin-bottom:6px;}
+  .c-win{font-size:10.5px;font-weight:700;color:var(--orange);}
+  .c-cmd{font-size:10px;font-family:ui-monospace,Menlo,Consolas,monospace;color:#fff;
+    background:var(--ink);padding:2px 7px;border-radius:5px;display:inline-block;margin-top:5px;}
+
+  /* The system strip */
+  .system{margin-top:16px;background:var(--orange-soft);border-radius:12px;padding:14px 16px;}
+  .system-title{font-size:12px;font-weight:800;color:var(--orange);margin-bottom:8px;letter-spacing:.3px;}
+  .system-row{display:flex;flex-wrap:wrap;gap:6px;font-size:11px;}
+  .chip{background:#fff;border:1px solid var(--orange);color:var(--ink);
+    padding:4px 10px;border-radius:20px;font-weight:600;}
+  .chip b{color:var(--orange);}
+
+  /* Footer / next step */
+  .foot{margin-top:16px;display:flex;justify-content:space-between;align-items:center;
+    border-top:1px solid var(--line);padding-top:12px;}
+  .next{font-size:12px;}
+  .next b{color:var(--orange);}
+  .next .mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;
+    background:var(--ink);color:#fff;padding:2px 8px;border-radius:5px;}
+  .sign{font-size:12px;font-weight:700;text-align:right;}
+  .sign span{display:block;font-size:10px;font-weight:500;color:var(--grey);}
+
+  @media print{
+    @page{size:A4;margin:0;}
+    .page{margin:0;}
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="top">
+      <div>
+        <div class="brand">KINGSLEY LOW <span>AI</span></div>
+        <div class="url">kingsleylow.ai</div>
+      </div>
+      <div class="badge">FREE CLAUDE CODE COURSE</div>
+    </div>
+
+    <h1>6 Things You <span class="hl">Built</span> Today 🔥</h1>
+    <p class="sub">Not watched. Not followed along with. <b>Built.</b> Keep this — every one runs in Claude Code.</p>
+
+    <div class="grid">
+
+      <div class="card">
+        <div class="num">1</div>
+        <div class="c-body">
+          <div class="c-title"><span class="c-emoji">🧠</span>Your AI Brain</div>
+          <div class="c-desc">Claude learned who you are, what you do, and how you talk — so every answer is yours, not generic.</div>
+          <div class="c-win">WIN → AI that actually knows you</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="num">2</div>
+        <div class="c-body">
+          <div class="c-title"><span class="c-emoji">⚡</span>Your First Skill</div>
+          <div class="c-desc">A custom command, built from scratch in plain English. One trigger, full playbook — every time.</div>
+          <div class="c-win">WIN → A reusable tool made for your work</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="num">3</div>
+        <div class="c-body">
+          <div class="c-title"><span class="c-emoji">🔌</span>Connect Your Tools (MCP)</div>
+          <div class="c-desc">How Claude reaches into your real apps — so it doesn't just talk, it acts on your data.</div>
+          <div class="c-win">WIN → Know how to plug Claude into your stack</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="num">4</div>
+        <div class="c-body">
+          <div class="c-title"><span class="c-emoji">🤖</span>Parallel AI Agents</div>
+          <div class="c-desc">A team of Claudes working at once — one writes, one researches, one follows up. All together.</div>
+          <div class="c-win">WIN → Your own AI team, running in parallel</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="num">5</div>
+        <div class="c-body">
+          <div class="c-title"><span class="c-emoji">🏗️</span>Build Something Real</div>
+          <div class="c-desc">A working page or tool, built for your actual world — opened live in your browser.</div>
+          <div class="c-win">WIN → A real asset, made in minutes</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="num">6</div>
+        <div class="c-body">
+          <div class="c-title"><span class="c-emoji">🏆</span>The Full System</div>
+          <div class="c-desc">All five pieces connect into one system that works for you — long after today.</div>
+          <div class="c-win">WIN → You know exactly what to do next</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="system">
+      <div class="system-title">IT'S NOT 5 SEPARATE THINGS — IT'S ONE SYSTEM</div>
+      <div class="system-row">
+        <span class="chip"><b>Brain</b> · Project Memory</span>
+        <span class="chip"><b>Commands</b> · Skills</span>
+        <span class="chip"><b>Arms</b> · MCP</span>
+        <span class="chip"><b>Team</b> · Agents</span>
+        <span class="chip"><b>Proof</b> · The Build</span>
+      </div>
+    </div>
+
+    <div class="foot">
+      <div class="next">
+        Run it again anytime → <span class="mono">/kingsleyai:start</span>
+      </div>
+      <div class="sign">
+        Kingsley Low
+        <span>kingsleylow.ai</span>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

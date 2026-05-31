@@ -14,7 +14,7 @@ Ask:
 
 Wait for their answer. If it's vague, ask one clarifying question. Examples of good clarification questions:
 - "Is this something you do once per client, or once per day?"
-- "Who's the audience for the output — you, a client, a lead?"
+- "Who's the audience for the output — you, a client, a lead, a student?"
 - "Do you want it to ask questions first, or just produce output immediately?"
 
 ## Step 2 — Inputs

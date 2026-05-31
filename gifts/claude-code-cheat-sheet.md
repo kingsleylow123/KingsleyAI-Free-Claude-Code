@@ -51,7 +51,7 @@ Build this and open it in my browser: [describe what you want]
 
 **MCP-powered automation:**
 ```
-Connect to my [app] and [action — e.g. "find all leads who booked in the last 7 days"]
+Connect to my [app] and [action — e.g. "find all leads, students, or records from the last 7 days"]
 ```
 
 **Match your voice:**
@@ -115,7 +115,7 @@ MCPs are what let Claude Code connect to your tools. Once connected, you can ask
 | ManyChat | Build from their API (use `/kingsleyai:mcp-builder`) |
 
 Once connected, example prompts:
-- "Pull all leads from GHL who booked in the last 7 days and write a follow-up for each"
+- "Pull all leads, students, or records from GHL who booked in the last 7 days and write a follow-up for each"
 - "Check my Meta Ads account and tell me which ad sets have a CPL over $50"
 - "Find this contact in ManyChat and trigger the nurture sequence"
 
