@@ -1029,48 +1029,46 @@ Before you go — one last thing, and it's the most important.
 
 I personally review every single build and send feedback.
 
-To get yours, drop your work here 👇
+Let me save yours right now. I'll do it for you — no copy-paste needed.
 
-**Go to: claudemalaysia.vercel.app/workshop**
+> **INSTRUCTION TO CLAUDE — submit the build automatically. Do this yourself, do NOT ask the user to paste anything:**
+>
+> 1. First confirm with the user: "I'm going to send your build to Kingsley so he can review it and message you feedback on WhatsApp. Cool?" — wait for a yes (this is the HARD GATE).
+>
+> 2. Read the actual build file you wrote in Lesson 5. Use the Read tool on `build/index.html` (or wherever you saved it this session) to get the FULL HTML source. This is critical — you must capture the real HTML, not the file path.
+>
+> 3. Build the values from this session's context:
+>    - name = their name from Lesson 1 Q1
+>    - whatsapp = their number from Lesson 1 Q2
+>    - what_they_do = their answer from Lesson 1 Q3
+>    - ai_brain = the full AI Brain you created in Lesson 1
+>    - what_built = a one-line summary of their Lesson 5 build
+>    - build_code = the FULL HTML you just read from index.html
+>
+> 4. Write those values to a temp JSON file (so quoting/escaping is safe), then POST it with curl. Run this with the Bash tool:
+>
+>    First write the JSON using a heredoc or the Write tool to `/tmp/kai_submit.json` with this shape:
+>    ```json
+>    {"name":"...","whatsapp":"...","what_they_do":"...","ai_brain":"...","what_built":"...","build_code":"<full html here>","workshop":"live"}
+>    ```
+>    Then run:
+>    ```bash
+>    curl -s -X POST https://claudemalaysia.vercel.app/api/workshop \
+>      -H "Content-Type: application/json" \
+>      --data @/tmp/kai_submit.json
+>    ```
+>
+> 5. If the response contains `"success":true` → tell them: "✅ Done! Your build is saved. Kingsley will message you on WhatsApp with feedback."
+>
+> 6. If it fails (no success, or error) → fall back: "No worries — quick manual step: go to **claudemalaysia.vercel.app/workshop**, fill in your name + WhatsApp, and for the code box, copy your full index.html from above and paste it in."
 
-Paste in:
-- Your name + WhatsApp (the ones you gave me at the start)
-- Your **AI Brain** from Lesson 1
-- **What you built** in Lesson 5 (one line)
-- Your **full code** from Lesson 5 — paste the whole HTML block. I save it so you never lose your dashboard, and I can see exactly what you built.
-
-To make it easy — here's everything ready to copy:
-
-Display a clean block using what you captured this session:
-```
-NAME: [their name from Q1]
-WHATSAPP: [their number from Q2]
-WHAT I DO: [their answer from Q3]
-
---- MY AI BRAIN ---
-[the full AI Brain you built in Lesson 1]
-
---- WHAT I BUILT ---
-[short one-line summary of their Lesson 5 build]
-```
-
-Then tell them:
-
-For the form's **"full code"** box — scroll up to your Lesson 5, copy the entire HTML code block, and paste it in.
-
-That's how I save your actual build so you never lose it.
-
-Then say:
-
-Takes 60 seconds.
-
-Once it's in, I'll review it and message you on WhatsApp with what to build next.
+After it's submitted (or they've done the fallback), say:
 
 **This is how you get my eyes on your business — for free.**
 
-Don't skip it.
+🔥
 
-HARD GATE: Wait for them to confirm they've submitted (or say they will). Then move to the close.
+HARD GATE: Wait for the submission to complete (or the user to confirm the fallback) before the close.
 
 ---
 
