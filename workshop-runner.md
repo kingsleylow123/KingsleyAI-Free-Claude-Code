@@ -885,12 +885,13 @@ After delivering the code, say:
 
 No copy-pasting.
 
-Write the full HTML to `build/index.html` using your Write tool — right now.
+> **INSTRUCTION TO CLAUDE — save to a FIXED, KNOWN path so it can be auto-submitted in Lesson 6:**
+> Write the full HTML to the path `~/kai-build/index.html` (create the `~/kai-build` folder if needed). ALWAYS use this exact path — do not save to a random or per-session folder. You will read from this exact path again in Lesson 6 to submit it. Use your Write tool now.
 
 Then open it automatically:
-- macOS: run `open build/index.html`
-- Windows: run `start build/index.html`
-- Linux: run `xdg-open build/index.html`
+- macOS: run `open ~/kai-build/index.html`
+- Windows: run `start %USERPROFILE%\kai-build\index.html`
+- Linux: run `xdg-open ~/kai-build/index.html`
 
 If the open command fails, give them the full absolute file path and say: "Double-click that file — it'll open in your browser."
 
@@ -1035,7 +1036,7 @@ Let me save yours right now. I'll do it for you — no copy-paste needed.
 >
 > 1. First confirm with the user: "I'm going to send your build to Kingsley so he can review it and message you feedback on WhatsApp. Cool?" — wait for a yes (this is the HARD GATE).
 >
-> 2. Read the actual build file you wrote in Lesson 5. Use the Read tool on `build/index.html` (or wherever you saved it this session) to get the FULL HTML source. This is critical — you must capture the real HTML, not the file path.
+> 2. Read the build file you wrote in Lesson 5. Use the Read tool on the EXACT path `~/kai-build/index.html` to get the FULL HTML source. (That's the fixed path you saved to in Lesson 5.) If it's not there, check `build/index.html` in the current folder as a backup. You MUST capture the real HTML text — never the file path.
 >
 > 3. Build the values from this session's context:
 >    - name = their name from Lesson 1 Q1
@@ -1043,24 +1044,21 @@ Let me save yours right now. I'll do it for you — no copy-paste needed.
 >    - what_they_do = their answer from Lesson 1 Q3
 >    - ai_brain = the full AI Brain you created in Lesson 1
 >    - what_built = a one-line summary of their Lesson 5 build
->    - build_code = the FULL HTML you just read from index.html
+>    - build_code = the FULL HTML you just read from the file (the actual `<!DOCTYPE html>...` text, not a path or a summary)
 >
-> 4. Write those values to a temp JSON file (so quoting/escaping is safe), then POST it with curl. Run this with the Bash tool:
->
->    First write the JSON using a heredoc or the Write tool to `/tmp/kai_submit.json` with this shape:
->    ```json
->    {"name":"...","whatsapp":"...","what_they_do":"...","ai_brain":"...","what_built":"...","build_code":"<full html here>","workshop":"live"}
->    ```
->    Then run:
+> 4. Use the Bash tool to write the JSON safely and POST it. This one-liner reads the HTML file directly so escaping is never an issue — fill in the four text fields, leave the build_code line exactly as written:
 >    ```bash
->    curl -s -X POST https://claudemalaysia.vercel.app/api/workshop \
->      -H "Content-Type: application/json" \
->      --data @/tmp/kai_submit.json
+>    python3 -c '
+>    import json
+>    code = open(__import__("os").path.expanduser("~/kai-build/index.html")).read()
+>    json.dump({"name":"NAME_HERE","whatsapp":"PHONE_HERE","what_they_do":"WHAT_THEY_DO_HERE","ai_brain":"AI_BRAIN_HERE","what_built":"WHAT_BUILT_HERE","build_code":code,"workshop":"live"}, open("/tmp/kai_submit.json","w"))
+>    ' && curl -s -X POST https://claudemalaysia.vercel.app/api/workshop -H "Content-Type: application/json" --data @/tmp/kai_submit.json
 >    ```
+>    (Replace NAME_HERE / PHONE_HERE / WHAT_THEY_DO_HERE / AI_BRAIN_HERE / WHAT_BUILT_HERE with the real values. The python reads the HTML file itself, so the build code is always captured correctly and fully — even for large builds.)
 >
 > 5. If the response contains `"success":true` → tell them: "✅ Done! Your build is saved. Kingsley will message you on WhatsApp with feedback."
 >
-> 6. If it fails (no success, or error) → fall back: "No worries — quick manual step: go to **claudemalaysia.vercel.app/workshop**, fill in your name + WhatsApp, and for the code box, copy your full index.html from above and paste it in."
+> 6. If it fails (no success, or error) → fall back: open the build file in their browser, then say: "Quick manual step — go to **claudemalaysia.vercel.app/workshop**, fill in your name + WhatsApp, then in Claude Code type *'show me the full code of my index.html'*, copy what I print, and paste it in the code box." (Do NOT just point at a file path — actually print the full HTML so they have something to copy.)
 
 After it's submitted (or they've done the fallback), say:
 
