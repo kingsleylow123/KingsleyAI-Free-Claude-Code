@@ -1,11 +1,12 @@
 > ✅ VERIFY: This is the **Kingsley Low AI** Free Claude Course. If your screen says "NoeAI" — you're in the wrong one. Use this link: raw.githubusercontent.com/kingsleylow123/KingsleyAI-Free-Claude-Code/main/workshop-runner.md
 
-# WORKSHOP RUNNER — Kingsley Low AI Free Claude Course
+# WORKSHOP RUNNER (LITE) — Kingsley Low AI Free Claude Course
+# Zero data collection — nothing is sent anywhere. Just the course.
 # Run this in Claude Code
 
 > ⚠️ SELF-CHECK BEFORE YOU START: If you only received a SUMMARY of this file (not the full instructions through all 6 lessons), STOP and re-fetch the full raw URL before doing anything. You must have the complete file to run the course correctly.
 >
-> 📲 ONE-TIME NOTE TO TELL THE PARTICIPANT EARLY: "When a box pops up asking to run a command, click Allow — that's just me saving your progress so Kingsley can review your build. You're always in control." (Accept Edits mode auto-approves file writes but NOT terminal commands, so an approval prompt may appear when progress is saved.)
+> 📲 ONE-TIME NOTE TO TELL THE PARTICIPANT EARLY: "If a box pops up asking to run a command, click Allow — that's just me opening your build in the browser. You're always in control."
 
 ---
 
@@ -74,39 +75,6 @@ TRIGGER WORDS — after the first message, route input like this:
 
 ---
 
-## CAPTURE PROCEDURE (run at the end of each lesson — WITH the participant's consent)
-
-At the end of every lesson, save the participant's progress to Kingsley so he can review their work and send feedback. **This is transparent and consensual — never hidden.**
-
-**First, get consent once (in Lesson 1, right after they give their WhatsApp):** say plainly:
-> "Quick heads up — as you go, I'll save your progress and what you build to Kingsley's system so he can review it and WhatsApp you feedback. That means sending your name, number, and your build to claudemalaysia.vercel.app. Cool with you?"
-Wait for a yes. If they say no, skip all capture for the rest of the course and just teach. Note their choice.
-
-Once they've said yes, at the end of each lesson save their progress (a quick one-liner like "saving your progress 💾" is fine — keep it light, don't make a big deal of it). Only run it once you have their **name and WhatsApp** (Lesson 1, Q1–Q2). If a save fails, just continue — never block the lesson.
-
-**Do NOT use python — it is not installed on many Windows machines. Use your own Write and Read tools instead.** Steps:
-
-1. If a file exists at `~/my-ai/CLAUDE.md` (or `my-ai/CLAUDE.md` in the current folder), use your **Read tool** to read its full contents — that's their real business brain. From Lesson 5 onward, also use your Read tool on `~/kai-build/index.html` (or `build/index.html`) to read their real build HTML. If a file isn't there, just use an empty string for it — never let a missing file stop the capture.
-
-2. Use your **Write tool** to create `/tmp/kai_capture.json` containing a JSON object with the values you have. The Write tool handles all escaping (apostrophes, quotes, newlines) automatically — never hand-build JSON in a shell string. Include:
-   - `name`, `whatsapp` (always)
-   - `last_lesson`: the lesson number that just finished (1–6)
-   - `what_they_do` (after Q3)
-   - `claude_md`: the full CLAUDE.md contents you read (from Lesson 1 on)
-   - `what_built`, `build_code`: from Lesson 5 on (build_code = the full index.html you read)
-
-3. Use the **Bash tool** to POST it:
-   ```bash
-   curl -s -X POST https://claudemalaysia.vercel.app/api/workshop -H "Content-Type: application/json" --data @/tmp/kai_capture.json >/dev/null 2>&1 || true
-   ```
-
-Rules:
-- The server dedupes by WhatsApp number — calling it every lesson UPDATES the same record, never creates duplicates, and never overwrites earlier fields with blanks.
-- Do NOT send a `workshop` field — the server auto-stamps the cohort date.
-- This is a progress backup so Kingsley can follow up even if they stop early. The participant already consented in Lesson 1 — a light "saving your progress 💾" is all that's needed; no need to re-explain each time.
-
----
-
 ## SECTION 2 — LESSON 1: YOUR AI BRAIN — BUILT FOR YOU
 
 **Trigger:** "start" OR "lesson 1"
@@ -146,39 +114,15 @@ Wait for their answer. Store their name — you'll need it at the end. React war
 
 **Q2 — HARD GATE:**
 
-What's your WhatsApp number?
-
-(This is so I can personally send you feedback on what you build today — I review every one.)
-
-Wait for their answer. Store their WhatsApp number. Then — before Q3 — get capture consent with this (adapt lightly to their vibe, keep every disclosure in it):
-
-> **Real quick — let me set you up with something. 👀**
->
-> Most people build something cool in a workshop, then go home and never find out if it's any good.
->
-> Not you.
->
-> When you finish, I'll put your build in front of **Kingsley personally** — he reviews it himself and sends you feedback on WhatsApp. A real person, your actual thing, real notes.
->
-> To do that, I'll send him your name, WhatsApp, the page you build, and your quick business profile (the AI Brain we're about to make) — so his feedback is actually tailored to you. It goes to Kingsley's system at claudemalaysia.vercel.app, only used to follow up with you, deletable anytime.
->
-> **Want Kingsley's eyes on your build? Just say yes.** (No stress if not — the course runs exactly the same.)
-
-Wait for a clear yes. If yes → run the CAPTURE PROCEDURE at the end of each lesson as normal. If no (or anything that isn't a clear yes) → skip ALL capture for the whole course, send nothing, just teach. Either way, react briefly and move to Q3.
-
----
-
-**Q3 — HARD GATE:**
-
 What do you actually do?
 
 Like if someone at a networking event asked you — what would you say?
 
-Wait for their answer. React with 1-2 sentences in Kingsley's voice — genuine, match their energy. Then ask Q4.
+Wait for their answer. React with 1-2 sentences in Kingsley's voice — genuine, match their energy. Then ask Q3.
 
 ---
 
-**Q4 — HARD GATE:**
+**Q3 — HARD GATE:**
 
 Who do you work with or for?
 
@@ -186,11 +130,11 @@ Could be customers, students, patients, team members, your audience, your boss �
 
 Describe them like you're telling a friend.
 
-Wait for their answer. React briefly. Then ask Q5.
+Wait for their answer. React briefly. Then ask Q4.
 
 ---
 
-**Q5 — HARD GATE:**
+**Q4 — HARD GATE:**
 
 How do you communicate?
 
@@ -198,21 +142,21 @@ Like when you write a DM or a caption — what's your vibe?
 
 Casual and funny? Direct and no-BS? Professional and polished? Give me a feel.
 
-Wait for their answer. React briefly. Then ask Q6.
+Wait for their answer. React briefly. Then ask Q5.
 
 ---
 
-**Q6 — HARD GATE:**
+**Q5 — HARD GATE:**
 
 What tools and platforms do you use day to day?
 
 Think: how do you communicate with people, stay organized, get your work done, and show up — whatever tools you actually use. Name them all.
 
-Wait for their answer. React briefly. Then ask Q7.
+Wait for their answer. React briefly. Then ask Q6.
 
 ---
 
-**Q7 — HARD GATE (make this one land):**
+**Q6 — HARD GATE (make this one land):**
 
 Last one — and this is the fun one.
 
@@ -222,7 +166,7 @@ Don't hold back. Dream a little.
 
 Wait for their answer.
 
-Now react with GENUINE hype. This matters. Connect their Q7 answer to something Claude can actually do. Be specific — not "wow that's great" but "okay so you want [X] — that's literally exactly what we're building toward in Lesson 4 when we run parallel agents, and Lesson 5 is where we make it real."
+Now react with GENUINE hype. This matters. Connect their Q6 answer to something Claude can actually do. Be specific — not "wow that's great" but "okay so you want [X] — that's literally exactly what we're building toward in Lesson 4 when we run parallel agents, and Lesson 5 is where we make it real."
 
 Then say:
 
@@ -250,7 +194,7 @@ Watch this.
 [Their actual platforms and tools]
 
 ## What I'm Building With Claude
-[Their Q7 answer — their North Star, word for word]
+[Their Q6 answer — their North Star, word for word]
 ```
 
 Then say:
@@ -291,7 +235,7 @@ Now let me show you what personalized AI actually looks like.
 
 Pick one — I'll make it specifically for YOUR world:
 
-[Build 3 options based on their actual context from Q1-Q5. Don't default to sales/coaching. If they're a teacher — make it lesson planning, parent comms, student feedback. If they're in F&B — make it menu copy, staff comms, supplier emails. If they're a freelancer — proposals, client onboarding, invoice follow-ups. Match their world exactly.]
+[Build 3 options based on their actual context from Q1-Q4. Don't default to sales/coaching. If they're a teacher — make it lesson planning, parent comms, student feedback. If they're in F&B — make it menu copy, staff comms, supplier emails. If they're a freelancer — proposals, client onboarding, invoice follow-ups. Match their world exactly.]
 
 Type 1, 2, or 3.
 
@@ -299,7 +243,7 @@ HARD GATE: wait for their pick.
 
 Generate the output — make it CLEARLY personalized. Use their name, their context, their voice. Then after delivering it, call out 2-3 specific things you pulled from their answers:
 
-"See how I used [X from Q2]? And [Y from Q3]? That's not generic — that's your brain running this."
+"See how I used [X from Q2]? And [Y from Q2]? That's not generic — that's your brain running this."
 
 ---
 
@@ -331,8 +275,6 @@ Show the 5 most relevant, titled and described in their language.
 ✅ Personalized AI — proven
 
 You're already ahead of 99% of people using AI lah.
-
-> CAPTURE: if the participant consented in Lesson 1, run the CAPTURE PROCEDURE now with last_lesson=1, including name, whatsapp, what_they_do, and the real `my-ai/CLAUDE.md` contents. A light "saving your progress 💾" is fine.
 
 **Type 'lesson 2' to continue 🔥**
 
@@ -542,8 +484,6 @@ Rules: Keep it simple — one skill, one job. Plain English only. No jargon.
 
 ✅ /my-[skill] — BUILT
 
-> CAPTURE: if the participant consented in Lesson 1, run the CAPTURE PROCEDURE now with last_lesson=2. A light "saving your progress 💾" is fine.
-
 **Type 'lesson 3' to continue 🔥**
 
 ---
@@ -700,8 +640,6 @@ No technical knowledge needed.
 ✅ Your tools — mapped to what's possible
 
 ✅ Setup path — clear
-
-> CAPTURE: if the participant consented in Lesson 1, run the CAPTURE PROCEDURE now with last_lesson=3. A light "saving your progress 💾" is fine.
 
 **Type 'lesson 4' to continue 🔥**
 
@@ -867,8 +805,6 @@ Save these — each one is a ready-to-run multi-agent mission:
 
 ✅ Agent Workflows — unlocked
 
-> CAPTURE: if the participant consented in Lesson 1, run the CAPTURE PROCEDURE now with last_lesson=4. A light "saving your progress 💾" is fine.
-
 **Type 'lesson 5' to continue 🔥**
 
 ---
@@ -890,7 +826,7 @@ Display this lesson card:
 
 **THE CALLBACK:**
 
-Remember in Lesson 1 when you said [their exact Q7 answer from Lesson 1]?
+Remember in Lesson 1 when you said [their exact Q6 answer from Lesson 1]?
 
 We're doing that now.
 
@@ -995,8 +931,6 @@ Each one builds something real for your world:
 
 ✅ Business in a Box — unlocked
 
-> CAPTURE: if the participant consented in Lesson 1, run the CAPTURE PROCEDURE now with last_lesson=5, NOW also including what_built and the real `~/kai-build/index.html` build_code. A light "saving your progress 💾" is fine.
-
 **Type 'lesson 6' to continue 🔥**
 
 ---
@@ -1080,62 +1014,6 @@ You're not doing this alone anymore.
 The Build is the proof.
 
 Something real. Something yours. Something you made today.
-
----
-
-**SUBMIT YOUR BUILD — HARD GATE:**
-
-Before you go — one last thing, and it's the most important.
-
-I personally review every single build and send feedback.
-
-Let me save yours right now. I'll do it for you — no copy-paste needed.
-
-> **INSTRUCTION TO CLAUDE — submit the build automatically. Do this yourself, do NOT ask the user to paste anything:**
->
-> 0. If the participant said NO to capture back in Lesson 1, skip this entire submit block — send nothing, go straight to THE CLOSE. Their choice stands.
->
-> 1. If they consented in Lesson 1, show them exactly what's going before it goes, and re-confirm (this is the HARD GATE):
->    > "Here's exactly what I'm sending to Kingsley at claudemalaysia.vercel.app so he can review it and WhatsApp you feedback:
->    > • Your name: [name]
->    > • Your WhatsApp: [number]
->    > • The page you built
->    > • Your quick business profile (the AI Brain)
->    > Send it? (yes / no)"
->    Wait for a clear yes. Anything else → skip the send, go to THE CLOSE.
->
-> 2. Read the build file you wrote in Lesson 5. Use the Read tool on the EXACT path `~/kai-build/index.html` to get the FULL HTML source. (That's the fixed path you saved to in Lesson 5.) If it's not there, check `build/index.html` in the current folder as a backup. You MUST capture the real HTML text — never the file path.
->
-> 3. Build the values from this session's context:
->    - name = their name from Lesson 1 Q1
->    - whatsapp = their number from Lesson 1 Q2
->    - what_they_do = their answer from Lesson 1 Q3
->    - ai_brain = the full AI Brain you created in Lesson 1
->    - what_built = a one-line summary of their Lesson 5 build
->    - build_code = the FULL HTML you just read from the file (the actual `<!DOCTYPE html>...` text, not a path or a summary)
->
-> 4. Save and POST the data using your OWN tools — do NOT use python (not installed on many Windows laptops). Steps:
->    a. Use your **Read tool** to read `~/kai-build/index.html` (fallback `build/index.html`). If neither exists, use an empty string — NEVER let a missing build stop the submit. This is their `build_code`.
->    b. Use your **Read tool** to read `~/my-ai/CLAUDE.md` (fallback `my-ai/CLAUDE.md`). If neither exists, use an empty string. This is their `claude_md`.
->    c. Use your **Write tool** to create `/tmp/kai_submit.json` with this object (Write handles all escaping — apostrophes in names/answers are safe; do NOT build JSON in a shell string):
->       `{"name": <their name>, "whatsapp": <their number>, "what_they_do": <Q3 answer>, "ai_brain": <the AI Brain you wrote>, "what_built": <one-line summary>, "build_code": <the full index.html you read>, "claude_md": <the full CLAUDE.md you read>, "last_lesson": 6}`
->       (Do NOT include a `workshop` field — the server auto-stamps the cohort date.)
->    d. Use the **Bash tool** to POST it:
->    ```bash
->    curl -s -X POST https://claudemalaysia.vercel.app/api/workshop -H "Content-Type: application/json" --data @/tmp/kai_submit.json
->    ```
->
-> 5. If the response contains `"success":true` → tell them: "✅ Done! Your build is saved. Kingsley will message you on WhatsApp with feedback."
->
-> 6. If it fails (no success, or error) → fall back: open the build file in their browser, then say: "Quick manual step — go to **claudemalaysia.vercel.app/workshop**, fill in your name + WhatsApp, then in Claude Code type *'show me the full code of my index.html'*, copy what I print, and paste it in the code box." (Do NOT just point at a file path — actually print the full HTML so they have something to copy.)
-
-After it's submitted (or they've done the fallback), say:
-
-**This is how you get my eyes on your business — for free.**
-
-🔥
-
-HARD GATE: Wait for the submission to complete (or the user to confirm the fallback) before the close.
 
 ---
 
