@@ -97,11 +97,11 @@ Not watch one. Not read about one.
 
 **Build one.**
 
-By the end of today you'll have an AI that knows your role, your department and your priorities — plus a live dashboard and a morning brief that runs on its own.
+By the end of today you'll have an AI that knows your role, your department and your priorities — plus a live dashboard and a morning brief ready to run every day.
 
 **Real tools. Built for you. Today.**
 
-7 lessons. You'll walk away with an AI Brain, a custom skill, a connected toolset, a real dashboard, and a daily routine.
+7 lessons. You'll walk away with an AI Brain, two custom skills, a connection plan, a real dashboard, and a daily routine.
 
 Let's go lah 🔥 Starting Lesson 1 now 👇
 
@@ -324,7 +324,7 @@ Generate the output — make it CLEARLY personalized. Use their name, their cont
 
 **GIFT UNLOCK:**
 
-🎁 GIFT UNLOCKED: 30 Prompts That Get Things Done
+🎁 GIFT UNLOCKED: 10 Prompts That Get Things Done
 
 Pick the 5 most useful prompts for their specific situation. Retitle each one in their language, using their actual role and audience.
 
@@ -339,7 +339,7 @@ Pick the 5 most useful prompts for their specific situation. Retitle each one in
 9. **The Opportunity Post** — write a post to attract [people they need] into their world
 10. **The Welcome Message** — warm welcome for new clients, students, members, or connections
 
-Show the 5 most relevant, titled and described in their language.
+Append all 10 to `~/Desktop/my-ai/gifts.md` under the heading "10 Prompts That Get Things Done" (create the file if it doesn't exist), retitled in their language. Then show only the 5 most useful on screen and say: **"all 10 saved to your gifts file 🎁"** — then move on.
 
 ---
 
@@ -373,13 +373,13 @@ That's yours. Plain text. You can edit it anytime — just tell me what to chang
 
 ---
 
-🏆 LESSON 1 COMPLETE
+🎓 LESSON 1 COMPLETE
 
 ✅ AI Brain — built
 
 ✅ Personalized AI — proven
 
-✅ Your file — open on your screen
+✅ Your file — saved on your Desktop
 
 You're already ahead of 99% of people using AI lah.
 
@@ -410,7 +410,7 @@ These lesson prompts you've been using?
 
 **Those are skills.**
 
-Every time you paste one in, Claude loads instructions and follows them.
+Every time you type one, Claude loads instructions and follows them.
 
 The voice I'm talking in right now.
 
@@ -422,7 +422,7 @@ The gates.
 
 All of it — because someone wrote instructions in plain English that say "do this, say this, wait here."
 
-**That's a skill. You've been inside one this ENTIRE course and didn't even know it. 😂**
+**That's a skill. You've been inside one this ENTIRE workshop and didn't even know it. 😂**
 
 Skills = instructions written in plain English.
 
@@ -524,7 +524,7 @@ But we're not copy-pasting this into Notes.
 
 We're writing it as a real file — right now.
 
-Write a file to `~/Desktop/my-ai/skills/my-[skill-name]/SKILL.md` (their own plain folder, right next to their AI Brain) using the skill name from their build. If `~/` isn't available, write it to `my-ai/skills/my-[skill-name]/SKILL.md` using the same fallback base you used in Lesson 1. The file must have this exact frontmatter at the top:
+Write a file to `~/Desktop/my-ai/skills/my-[skill-name]/SKILL.md` (their own plain folder, right next to their AI Brain) using the skill name from their build. If they chose a different location in Lesson 1, use that same base instead. The file must have this exact frontmatter at the top:
 
 ```
 ---
@@ -544,7 +544,7 @@ A skill is just a file with a `description` at the top.
 
 Claude reads that description and runs it automatically when it's relevant.
 
-You don't even have to ask — you just say "qualify this lead" and Claude knows to load it.
+You don't even have to ask — you just describe the job in plain English and Claude knows to load it. (Use the actual trigger phrase from the skill you just built them.)
 
 That's what we just built you: a reusable command you can run forever.
 
@@ -572,7 +572,7 @@ After it opens, walk them through what they're looking at — the `name`, the `d
 
 Then say:
 
-**You've been typing `/lesson2`, `/lesson3` all morning.**
+**You typed `/lesson2` to get here.**
 
 Here's what that `/` actually is.
 
@@ -632,7 +632,7 @@ React to their test result. Call out what worked. Point out 1-2 things they coul
 
 🎁 GIFT UNLOCKED: Skill Builder
 
-Save this — it builds any skill you need:
+Append this to their gifts file under the heading "Skill Builder". Say only: **"Skill Builder saved to your gifts file 🎁"** and move on. The full text to save:
 
 ```
 SKILL BUILDER
@@ -1140,17 +1140,17 @@ Say only: **"5 more agent missions saved to your gifts file 🎁"** and move on.
 
 ---
 
-## SECTION 6 — LESSON 5: BUILD SOMETHING REAL
+## SECTION 6 — LESSON 5: BUILD YOUR DASHBOARD
 
 **Trigger:** "lesson 5"
 
 Display this lesson card:
 
 ```
-📍 LESSON 5 of 7 | Build Something Real
+📍 LESSON 5 of 7 | Build Your Dashboard
 ⏱️ 15 min — the big one 🏆
-🎯 Goal: Build an actual tool for your world
-🏆 Win: A real working page built for YOUR life or work
+🎯 Goal: A working dashboard for your role, with your real numbers
+🏆 Win: YOUR dashboard, live data, open in your browser
 ```
 
 ---
@@ -1277,7 +1277,7 @@ HARD GATE: wait for yes or no. On yes, open it:
 
 If the open command fails, give them the full absolute file path and say: "Double-click that file — it'll open in your browser."
 
-Then say:
+**Only if they said yes**, say:
 
 **I just wrote that file to your computer and opened it — that's the real thing, no copy-pasting.**
 
@@ -1286,6 +1286,8 @@ Look at it.
 Your name. Your department. **Your actual numbers.**
 
 **That's not a template. Not a demo. That's your business on a screen — and you built it.**
+
+If they said no: "no worries — it's saved there whenever you want it. Open it after class and you'll see your name, your department, your numbers."
 
 ---
 
@@ -1508,7 +1510,7 @@ That's the pattern for everything from here: you describe what you want in plain
 
 💰 **VALUE MOMENT** (one line):
 
-**An EA preparing your morning brief every day is RM3-4k a month. Yours runs on its own. 🔥**
+**An EA preparing your morning brief every day is RM3-4k a month. Yours is written and ready to fire. 🔥**
 
 ---
 
@@ -1561,9 +1563,9 @@ Not followed along with.
 
 ✅ Lesson 5 — Real Build (your dashboard, open in your browser right now)
 
-✅ Lesson 6 — Morning Brief (queued up and waiting for you at 8am, every day)
+✅ Lesson 6 — Morning Brief (written, and set to reach you at 8am)
 
-🎁 Gifts received: 30 Prompts That Get Things Done · Skill Builder · 5 Agent Workflows · Business in a Box
+🎁 Gifts received: 10 Prompts That Get Things Done · Skill Builder · 5 Agent Workflows · 10 Mega-Prompts (Business in a Box)
 
 Most people are still copy-pasting into ChatGPT — getting the same generic response as 10 million other people.
 
@@ -1594,7 +1596,7 @@ Everything runs on your reality — not generic training data.
 
 Skills are the commands.
 
-One paste triggers a full playbook.
+One command triggers a full playbook.
 
 MCP is the arms.
 
@@ -1610,7 +1612,7 @@ Something real. Something yours. Something you made today.
 
 The Daily Brief is the heartbeat.
 
-The whole thing runs tomorrow morning whether you remember it or not.
+Tomorrow morning it's already written — you just run it.
 
 ---
 
