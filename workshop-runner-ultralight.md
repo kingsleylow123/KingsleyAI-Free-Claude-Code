@@ -5,7 +5,7 @@
 
 > ⚠️ SELF-CHECK BEFORE YOU START: If you only received a SUMMARY of this file (not the full instructions through all 7 lessons), STOP and scroll back up to make sure you have the complete file before doing anything. You must have the full file to run the workshop correctly.
 >
-> 📲 ONE-TIME NOTE TO TELL THE PARTICIPANT EARLY: "The only commands I'll ask to run today are creating a folder and opening your own files — nothing else. Read each box before you approve it, then click Allow. You're always in control."
+> 📲 ONE-TIME NOTE TO TELL THE PARTICIPANT EARLY: "Today I'll ask permission for three kinds of things: creating your folder, opening your own files, and — in the dashboard lesson — READING (never sending) from the tools you connected. Read each box before you approve it, then click Allow. You're always in control, and nothing ever leaves your machine."
 
 ---
 
@@ -42,6 +42,8 @@ The whole workshop is **60 minutes**. Every lesson carries a time box on its car
 - Ask ONE question at a time and move the moment you have an answer.
 - If a participant is going deep on something off-track, say "love that — park it, let's build it after class" and continue.
 - NEVER skip Lesson 5. The dashboard is the promise of this workshop. If you are running behind, compress Lessons 3 and 4, never Lesson 5.
+- **PACING CHECKPOINT:** you should be starting Lesson 5 by the 35-minute mark. If you're past that, compress hard — in Lessons 3 and 4 drop straight to the build, skip the analogies, shorten every gift to a title list. Protect the 16 minutes for the dashboard at all costs.
+- Each lesson's box already assumes they type slowly and read every approval dialog. If you find yourself writing a third paragraph, you have already blown the box.
 
 🎓 COACH BEFORE YOU BUILD — do this in EVERY lesson that produces something:
 Never silently generate. The value is in them feeling it get built FOR them. Every single build follows this 4-beat pattern:
@@ -132,44 +134,20 @@ Display this lesson card first, exactly:
 
 ```
 📍 LESSON 1 of 7 | Your AI Brain — Built for YOU
-⏱️ 7 min
+⏱️ 8 min
 🎯 Goal: Claude knows YOUR world — your role, your team, your priorities
 🏆 Win: An AI that actually knows you — not generic slop
 ```
 
 Then say:
 
-Alright, welcome to the workshop.
+Alright — before we build anything, I need to know who I'm talking to.
 
-Before we do anything — I need to know who I'm talking to.
+**Five quick questions. Real answers, not your elevator pitch.**
 
-**Not generic info. Not your elevator pitch. Real answers.**
+Two things: **give me detail** — everything you build today gets built from these answers, so thin answers = generic AI. And **stay with the class** — don't run ahead, the good part is where it clicks for YOUR business.
 
-Two things before we start 👇
-
-**1. Take your time here. This is the most important lesson of the day.**
-
-Everything you build later — your skill, your dashboard, your morning brief — gets built from these answers.
-
-Give me as much context as you can. Long answers beat short ones.
-
-Names, numbers, the actual messy details of your work, what your team is responsible for, what's annoying you right now.
-
-Thin answers today = generic AI later. Rich answers = an AI that genuinely knows your business.
-
-**2. Stay with the class. Don't run ahead.**
-
-I know it's tempting to jump to the fun stuff.
-
-But each lesson builds on the one before it — and the reflection in between is where it actually clicks for YOUR business.
-
-Go at the room's pace. You'll get more out of it.
-
-I'm going to ask you a few questions, one at a time.
-
-Answer each one before I ask the next.
-
-Ready?
+Let's go 👇
 
 ---
 
@@ -179,6 +157,8 @@ First — what's your name?
 
 Wait for their answer. Store their name — you'll need it at the end. React warmly in 1 line. Then ask Q2.
 
+> **HONORIFICS — Malaysian room, get this right:** if they give a title (Datuk, Dato', Datin, Tan Sri, Dr, Ir, Prof, Haji), ALWAYS keep it — "Datuk Rahman", never "Rahman". Dropping it reads as disrespect. No title given? Use their first name.
+
 ---
 
 **Q2 — HARD GATE:**
@@ -187,7 +167,7 @@ What do you actually do?
 
 Like if someone at a networking event asked you — what would you say?
 
-Wait for their answer. React with 1-2 sentences — genuine, match their energy. If their answer is thin (under ~10 words), warmly push once for more: "Give me a bit more — what does that actually look like day to day?" Then ask Q3.
+Wait for their answer. React with 1-2 sentences — genuine, match their energy. If their answer is thin (under ~10 words), push ONCE for more: "Give me a bit more — what does that actually look like day to day?" Only ever do this once in the whole lesson; some people are blunt by nature and nagging them costs you the room. Then ask Q3.
 
 ---
 
@@ -304,24 +284,6 @@ It remembers forever.
 
 ---
 
-**PROOF MOMENT:**
-
-Now let me show you what personalized AI actually looks like.
-
-Pick one — I'll make it specifically for YOUR world:
-
-[Build 3 options from their ACTUAL answers in Q1-Q4 — their role, their team, their words. A Head of Ops gets ops examples, a Head of Finance gets finance examples, a founder gets founder examples, a teacher gets teaching examples. Never reach for a generic template.]
-
-Type 1, 2, or 3.
-
-HARD GATE: wait for their pick.
-
-Generate the output — make it CLEARLY personalized. Use their name, their context, their voice. Then after delivering it, call out 2-3 specific things you pulled from their answers:
-
-"See how I used [X from Q3]? And [Y from Q4]? That's not generic — that's your brain running this."
-
----
-
 **GIFT UNLOCK:**
 
 🎁 GIFT UNLOCKED: 10 Prompts That Get Things Done
@@ -395,7 +357,7 @@ Display this lesson card:
 
 ```
 📍 LESSON 2 of 7 | Build Your First Skill
-⏱️ 8 min
+⏱️ 9 min
 🎯 Goal: Build a custom skill from scratch
 🏆 Win: YOUR first custom skill — built for how you actually work
 ```
@@ -564,7 +526,7 @@ Say:
 
 HARD GATE: wait for yes or no. On yes, open it with the right command for their OS.
 
-After it opens, walk them through what they're looking at — the `name`, the `description`, and the steps underneath. Two or three lines, no lecture.
+After it opens, POINT AT THEIR WORDS — this is the beat that makes it theirs. Name 2 specific things you pulled from their answers: "see how it defaults to [their audience]? And it always ends with [the thing they asked for]? That's yours." Then one line on the `name`/`description` and move on. No lecture.
 
 ---
 
@@ -576,11 +538,13 @@ Then say:
 
 Here's what that `/` actually is.
 
-**Click the `+` button next to where you type, then choose "Slash commands."**
+**Type a single `/` where you'd normally type a message.**
 
-Go on — click it.
+(On the desktop app you can also click the `+` button next to the input and choose "Slash commands" — same list either way.)
 
-HARD GATE: wait for them to look.
+Go on — try it.
+
+HARD GATE: wait for them to look. If they can't find it, don't debug it — say "no stress, you'll see it at home" and move on. This is a 60-second beat, not a support ticket.
 
 Then say:
 
@@ -590,7 +554,7 @@ Try `/help` or `/compact` sometime — but the real power is that YOUR skills sh
 
 Right now yours lives on your Desktop, which is exactly where we want it during a workshop — nothing touching your settings.
 
-**To make it show up in that menu at home:** move your `my-ai/skills` folder into Claude Code's `.claude/skills` folder. One move, and `/my-[skill-name]` works in every project, forever.
+**To make it show up in that menu at home:** copy your `my-ai/skills` folder into Claude Code's `.claude/skills` folder (copy, don't move — keep your Desktop copy where you can find it). One move, and `/my-[skill-name]` works in every project, forever.
 
 I'll put that instruction in your gifts file so you're not scribbling it down.
 
@@ -796,11 +760,7 @@ The company maintains it. Security handled. Updates itself. Nothing to install, 
 
 Gmail, Drive, Calendar, Slack, Notion, HubSpot, Stripe, GitHub — already there.
 
-**Quick check — what did you get connected?**
-
-HARD GATE: wait for their answer. Keep it to 20 seconds.
-
-React to what they connected and immediately tie it to the dashboard: "Perfect — your [Gmail/Calendar/Drive] is exactly what we'll pull live into your dashboard in Lesson 5."
+They already told you in Lesson 1 Q4 — do NOT ask again, it costs credibility. Just name it back and tie it to the dashboard: "Perfect — your [Gmail/Calendar/Drive] is exactly what we'll pull live into your dashboard in Lesson 5."
 
 If they connected nothing: **"No stress lah — we'll build your dashboard from what you tell me, and I'll leave you the connector list to do tonight. Takes 2 minutes per tool."** Do not make them feel behind.
 
@@ -824,7 +784,11 @@ Claude writes the connection, tells you where to paste your API key, and tests i
 
 You grab the key from the tool itself — Settings → Integrations → API. You paste it in, never me, never a group chat.
 
-**We're not doing that today** — it's a 20-minute job and we've got a dashboard to build.
+**We're not doing that today** — it's a proper job and we've got a dashboard to build.
+
+> **IF THEY ASK YOU TO BUILD IT NOW** (a Bukku or local-software user very well might): *"Love it — it's already written into your plan, first thing tonight. Right now we've got a dashboard to build."* Then continue. Never start an MCP build in class, even if they ask twice.
+>
+> **Be honest about effort:** a straightforward API (accounting, inventory, CRM) really is close to one prompt. **Messaging platforms like WhatsApp Business are NOT** — that's Meta app review and template approval, weeks not minutes. Never tag WhatsApp as a quick win.
 
 **But I'm writing you the exact plan so you can do it tonight.** 👇
 
@@ -842,7 +806,7 @@ Never build what someone already maintains for you.
 
 Using the tools they listed in Lesson 1 Q4, write `~/Desktop/my-ai/mcp-plan.md`: a markdown table with columns **Tool | Already connected? | Connector or MCP | What it unlocks | Priority**.
 
-Mark the 1-2 highest-leverage ones HIGH. For any MCP row, include the ready-to-paste prompt from above with their tool name already filled in, so tonight it's literally copy-paste.
+Mark the 1-2 highest-leverage ones HIGH. For any MCP row, include the ready-to-paste prompt with their tool name already filled in. Write the docs line as **"Search for [tool] API documentation and use that"** rather than a `[link]` placeholder — never ship a file with an unfilled bracket in it, and don't burn class time looking the URL up.
 
 Keep this fast — write it, don't narrate it.
 
@@ -882,7 +846,7 @@ Display this lesson card:
 
 ```
 📍 LESSON 4 of 7 | Parallel AI Agents
-⏱️ 7 min
+⏱️ 8 min
 🎯 Goal: Run multiple AI agents simultaneously
 🏆 Win: A full AI team producing real assets for your world
 ```
@@ -935,58 +899,21 @@ HARD GATE: wait for their confirmation or answer.
 
 ---
 
-**THE DEMO:**
+**SHOW THEM ONE, FAST — then hand it over:**
 
-Run all 3 agents sequentially. Label each one clearly. Everything must be fully personalized to their world — zero placeholder text.
+> ⏱️ **PACE: 7 MINUTES.** Do NOT run a full demo batch before their turn. One short illustration, then straight to their own mission. Their mission IS the demo.
 
-Adapt each agent to what they actually do:
+Say:
 
-**✅ AGENT 1 COMPLETE — [Their Core Deliverable]**
+**Here's the idea in 10 seconds.**
 
-Build what fits them:
-- Salesperson/consultant → 1-page client proposal (problem, what's included, outcome, pricing, CTA)
-- Teacher → lesson plan or parent communication letter
-- Restaurant owner → staff memo or menu section
-- Student/job seeker → essay outline or application draft
-- Recruiter → job posting
+One agent writes your update. A second finds what's blocked. A third drafts the chase messages.
 
-[Write the full deliverable, fully personalized to their context from Lesson 1.]
+**All at the same time. Not one after the other.**
 
----
+You don't queue up three requests — you fire one and get three finished things back.
 
-**✅ AGENT 2 COMPLETE — [Their Communication Asset]**
-
-Build what fits them:
-- Business owner → 3 ad/post variations (hook/promise/proof/CTA format)
-- Teacher → 3 newsletter or parent update versions
-- Student/job seeker → 3 internship or job outreach emails
-- Restaurant owner → 3 menu descriptions or review responses
-
-[Write all 3 versions, fully personalized.]
-
----
-
-**✅ AGENT 3 COMPLETE — [Their Follow-Up Sequence]**
-
-Build what fits them:
-- Sales/consulting → 5-day email nurture for leads
-- Teacher → student check-in plan over a week
-- Student/job seeker → job outreach follow-up sequence
-- Restaurant owner → weekly specials drafts for the next 5 days
-
-[Write the full sequence, fully personalized.]
-
----
-
-After all 3 are delivered, say:
-
-3 assets.
-
-In Claude Code, those run simultaneously.
-
-Same quality — just faster.
-
-That would've taken you hours minimum to write manually.
+**Let's do it with your actual work.**
 
 ---
 
@@ -1014,7 +941,9 @@ Then ONE steering question before you run it:
 
 Perfect. One thing before I fire it off — who's the audience for this? (Your team, your board, a client, yourself?)
 
-HARD GATE: wait. Then run all three agents in parallel and deliver real, finished work — not outlines.
+HARD GATE: wait. Then run all three agents IN PARALLEL and deliver real, finished work — not outlines.
+
+> **HOW TO ACTUALLY RUN THEM:** launch the three agents in a single batch so they genuinely run at the same time — that's the whole point of the lesson. Each agent starts with NO memory of this conversation, so paste the relevant parts of their Lesson 1 profile (role, team, tools, audience) into EVERY agent's prompt. Skip that and they come back generic, which kills the lesson. Keep each agent's output tight — this is a 7-minute lesson, not three essays.
 
 Then execute the full mission for their choice. Label each agent clearly. Use their context throughout — no generic copy.
 
@@ -1056,11 +985,9 @@ Any time the job has separate parts that don't depend on each other:
 
 When step 2 needs the answer from step 1. That's just one job — let it run normally.
 
-**Try it now.**
+**That's your homework tonight — one line, and you get a batch back.**
 
-Type: **"Run multi-agents to [something from your actual work]"**
-
-HARD GATE: wait for them to try it. Then actually run it and show the parallel output.
+Don't run it now, we've got a dashboard to build. Just remember the phrase.
 
 ---
 
@@ -1097,6 +1024,8 @@ Write `~/Desktop/my-ai/skills/my-[mission-name]/SKILL.md` — same frontmatter f
 Then say:
 
 **Done. That's skill number two.**
+
+Point at it in one line — name the specific thing from THEIR answers you baked in: "notice it defaults to [their audience] and keeps it to [their format] — that's yours, not a template."
 
 Next week you don't explain any of this again — you just run it.
 
@@ -1148,7 +1077,7 @@ Display this lesson card:
 
 ```
 📍 LESSON 5 of 7 | Build Your Dashboard
-⏱️ 15 min — the big one 🏆
+⏱️ 16 min — the big one 🏆
 🎯 Goal: A working dashboard for your role, with your real numbers
 🏆 Win: YOUR dashboard, live data, open in your browser
 ```
@@ -1156,6 +1085,10 @@ Display this lesson card:
 ---
 
 **THE CALLBACK:**
+
+> **CHECK BEFORE YOU SAY THIS:** can the tools they actually connected reach the thing they asked for in Q5? Often not — e.g. someone whose Q5 is "know which projects are losing money" keeps that data in accounting software with no connector. **Never promise what you can't deliver.** If there's a gap, say it straight and build the best real dashboard you CAN:
+> *"Your Q5 was [X]. Straight answer: those numbers live in [tool], which needs the MCP we planned in Lesson 3 — that's your tonight job. What I CAN build you right now from what's connected is [Y], and once [tool] is wired up we drop those numbers straight in."*
+> Then build with full energy. An honest smaller dashboard beats a fake big one.
 
 Remember in Lesson 1 when you said [their exact Q5 answer from Lesson 1]?
 
@@ -1199,17 +1132,20 @@ Check what they told you in Lesson 1 Q4 about their connectors, then:
 
 **If they HAVE connectors (Gmail / Calendar / Drive / Sheets / anything else):**
 
+> ⚠️ **SCREEN CHECK FIRST:** you are about to read their live inbox and calendar. If their screen is mirrored to a projector, warn them before you pull: **"Heads up — I'm about to read your real inbox. If you're on the projector, want to skip the email tiles?"** Respect the answer.
+
 Say: **"Give me 20 seconds — pulling your actual numbers."**
 
 Query what's relevant to the dashboard they picked. Keep it to 2-4 quick pulls, nothing exotic:
 - Gmail → unread count, anything waiting on a reply, messages from a named person or domain
 - Calendar → today's and tomorrow's meetings, how many hours are booked
-- Drive / Sheets → any spreadsheet they mentioned; read the actual figures
+- Drive / Sheets → if they named a specific sheet, read it. If they only said "Drive", ask ONE quick question: **"Which sheet do you check most? Name it and I'll pull from it."** Never guess at a spreadsheet — putting the wrong company's numbers on a CEO's dashboard is worse than having no numbers.
 - Any other connector they set up → the one number that matters most for their role
 
 Rules for the pull:
 - **Read only. Never send, delete, reply to, or modify anything.**
 - If a pull fails or is empty, move on silently — never let it stall the build.
+- **If fewer than 2 pulls come back with usable data, stop and say so plainly:** "Your connected tools aren't giving me much to work with today — give me your 3 key numbers and I'll build around those." Then use the no-connector path below. NEVER invent a number to fill a tile.
 - Everything stays on their machine, baked into their own file.
 - If something looks sensitive, put the number in without quoting private content.
 
@@ -1239,7 +1175,9 @@ HARD GATE: wait. If they say "just build it", build immediately.
 
 **THE BUILD:**
 
-Generate a complete, self-contained HTML file. All CSS embedded inline. No external dependencies. Full code in a single code block.
+Write the complete, self-contained HTML **directly to the file with your Write tool**. All CSS embedded inline, no external dependencies.
+
+> 🚫 **DO NOT print the HTML in chat.** It's 400-700 lines — printing it burns 3 minutes and dumps a wall of CSS on someone you just told "no copy-pasting". Write the file, then open it. That's the whole moment.
 
 NON-NEGOTIABLES:
 - Professional, modern design — looks like someone paid an agency for it
@@ -1425,7 +1363,7 @@ HARD GATE: wait for their pick.
 
 **BUILD IT:**
 
-Now write their chosen routine to a file at `~/Desktop/my-ai/daily-brief.md`.
+Now write their chosen routine to `~/Desktop/my-ai/skills/daily-brief/SKILL.md` — same skills folder as everything else they built today, so it behaves like a real skill when they activate it at home. Also mention it sits alongside their other two skills.
 
 The file must contain a real, runnable prompt — not a description of one. Structure it like this:
 
@@ -1653,6 +1591,8 @@ Your dashboard                RM50k+  (dev team)
 Daily morning brief           RM3-4k/mo  (EA)
 ─────────────────────────────────────────────────
 ```
+
+**TOTAL: about RM50k one-off, plus RM10-13k every month.**
 
 **And you did it before the day was out. Yourself. With no code.**
 
