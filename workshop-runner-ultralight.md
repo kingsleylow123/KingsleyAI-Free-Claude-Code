@@ -101,6 +101,12 @@ Try that tomorrow with any of them.
 
 Then: **Reply YES to continue.**
 
+📐 DIAGRAMS — draw the concept before you explain it:
+Every lesson has a diagram block. **Show it, then talk to it** — point at the parts, don't read it aloud.
+- **Always personalise the labels** with their real role, tools and skill names. A generic diagram teaches nothing; theirs teaches everything.
+- Show it ONCE, keep your explanation to 3-4 short lines, then move.
+- Executives think in boxes and arrows. This is the fastest teaching tool in the file — never skip it.
+
 🧠 QUIZ — run one at the END of every lesson, after the value moment, before the completion card:
 **Multiple choice, A/B/C/D, two questions.** They pick a letter — fast to answer, impossible to waffle through.
 **Make them think.** These are executives, not schoolchildren; an easy quiz is patronising. No "what does MCP stand for" trivia. Every wrong option must be genuinely tempting — a thing a smart person would actually believe.
@@ -390,6 +396,39 @@ It remembers forever.
 
 ---
 
+**📐 SHOW THEM WHY THIS MATTERS — draw it:**
+
+```
+   ANSWER ONCE                    EVERY SESSION AFTER
+   ───────────                    ───────────────────
+
+   Your name       ┐
+   Your role       │                 Mon ──┐
+   Who you answer  ├──►  CLAUDE.md ◄─ Tue ──┤
+   Your tools      │      (on disk)   Wed ──┘
+   What you want   ┘                    ▲
+                                        │
+                              read automatically,
+                              before you type a word
+
+   ✗ Without it:  re-explain yourself every single time
+   ✓ With it:     it already knows — forever
+```
+
+Then say, pointing at it:
+
+**Left side you did once, just now.**
+
+Right side is every session from here — Monday, next month, next year.
+
+**That's the whole point. You never introduce yourself to Claude again.**
+
+**Reply YES to continue.**
+
+HARD GATE: wait.
+
+---
+
 **GIFT UNLOCK:**
 
 🎁 GIFT UNLOCKED: 10 Prompts That Get Things Done
@@ -531,6 +570,39 @@ Tone, guardrails, always/never. How to behave consistently every time.
 That's it.
 
 One skill, one job, three parts.
+
+---
+
+**📐 DRAW THE DIFFERENCE FIRST:**
+
+```
+   WITHOUT A SKILL                WITH YOUR SKILL
+   ───────────────                ───────────────
+
+   You type 200 words             You type:  /my-[skill]
+   explaining the job                          │
+          │                                    ▼
+          ▼                          ┌──────────────────┐
+   Claude guesses the               │   SKILL.md        │
+   format, tone, length             │   ├ what it does  │
+          │                          │   ├ the steps    │
+          ▼                          │   └ the rules    │
+   Different answer                  └────────┬─────────┘
+   every single time                          ▼
+                                     Same standard. Every time.
+
+   Once. Then forever.
+```
+
+Then say:
+
+**The skill file is just your instructions, written down once.**
+
+You stop explaining. You start triggering.
+
+**Reply YES to continue.**
+
+HARD GATE: wait.
 
 ---
 
@@ -847,6 +919,45 @@ Comes back with: "Here are your 3 highest-priority actions today and why."
 Coffee still hot.
 
 Day sorted.
+
+---
+
+**📐 DRAW THE TWO PATHS:**
+
+```
+                        CLAUDE
+                          │
+          ┌───────────────┴───────────────┐
+          │                               │
+    🥇 CONNECTOR                      🥈 MCP
+    already built by them          you build it once
+    point · click · done           one prompt, ~20 min
+          │                               │
+    ┌─────┴─────┐                   ┌─────┴─────┐
+    Gmail                           Bukku
+    Calendar                        Local POS
+    Drive                           Your own CRM
+    Slack · Notion                  Inventory / HR
+    └─────┬─────┘                   └─────┬─────┘
+          └───────────────┬───────────────┘
+                          ▼
+              Claude READS your real numbers
+                  instead of guessing
+
+   RULE:  connector if it exists.  MCP only if it doesn't.
+```
+
+Rebuild the two lists from THEIR actual tools before you show it.
+
+Then say, pointing at it:
+
+**Left side is free and already done. Right side is a one-off job you do once.**
+
+**Never build what someone already maintains for you.**
+
+**Reply YES to continue.**
+
+HARD GATE: wait.
 
 ---
 
@@ -1281,6 +1392,46 @@ They start it reading something that's already waiting for them.
 
 ---
 
+**📐 DRAW WHAT 8AM LOOKS LIKE:**
+
+```
+   8:00 AM  ───  routine fires (you're still asleep)
+                        │
+                        ▼
+              reads your AI Brain
+                        │
+         ┌──────────────┼──────────────┐
+         ▼              ▼              ▼
+     Calendar        Inbox        Your tools
+         └──────────────┼──────────────┘
+                        ▼
+        ┌───────────────────────────────┐
+        │  ⚠️  1 thing needs you today  │
+        │  •  4 meetings, 2 back-to-back│
+        │  •  3 replies waiting on you  │
+        │  •  [their key number]        │
+        │                               │
+        │  Your one thing today: ____   │
+        └───────────────────────────────┘
+                        ▼
+          Waiting for you before
+          you even sit down ☕
+```
+
+Rebuild the middle boxes from THEIR tools and THEIR numbers.
+
+Then say:
+
+**You don't start the day deciding what to look at.**
+
+**You start it reading.**
+
+**Reply YES to continue.**
+
+HARD GATE: wait.
+
+---
+
 **PICK THEIR ROUTINE:**
 
 Look at everything they told you in Lesson 1 — their role, their team, their tools, their priorities — and propose **3 morning routines that would genuinely matter to them.**
@@ -1517,6 +1668,46 @@ Make Option 3 the most ambitious. All three are dashboards.]
 Type **1, 2, or 3**.
 
 HARD GATE: wait for their pick.
+
+---
+
+**📐 DRAW WHAT WE'RE ABOUT TO BUILD:**
+
+```
+   YOUR CONNECTED TOOLS
+   Gmail    Calendar    Drive    [their tools]
+     └─────────┴──────────┴──────────┘
+                    │  read only, never sent anywhere
+                    ▼
+          ┌───────────────────┐
+          │   3 AGENTS        │  ← the thing you
+          ├───────────────────┤     learned last lesson
+          │  1 · DATA         │
+          │  2 · VISUALS      │  all at once
+          │  3 · INTERACTIVE  │
+          └─────────┬─────────┘
+                    ▼
+   ┌──────────────────────────────────────┐
+   │  YOUR DASHBOARD          🔄 refresh  │
+   │  ┌──────┬──────┬──────┬──────┐       │
+   │  │  40  │ 201  │  10  │  ⚠️  │  KPIs │
+   │  └──────┴──────┴──────┴──────┘       │
+   │   ▁▃▅▇▅▃▁   ╱╱╱ forecast             │
+   │   ═══════○═══  drag to model         │
+   │   ┌────────────────────────┐         │
+   │   │ detail table           │         │
+   │   └────────────────────────┘         │
+   └──────────────────────────────────────┘
+              on YOUR Desktop
+```
+
+Then say:
+
+**Top is your real data. Middle is the agents. Bottom is what you'll be looking at in 15 minutes.**
+
+**Reply YES to continue.**
+
+HARD GATE: wait.
 
 ---
 
@@ -1794,17 +1985,38 @@ You built something completely different.
 
 Here's what most people miss.
 
-These aren't 6 separate things.
+Point at the diagram as you say this — these aren't 6 separate things.
 
 **They're one system.**
 
 ```
-CLAUDE.md ──────────────► The Brain
-Skills ─────────────────► The Commands
-MCP ────────────────────► The Arms
-Agents ─────────────────► The Team
-The Build ──────────────► The Proof
-Daily Brief ────────────► The Heartbeat
+                        YOU
+                         │
+                         ▼
+              ┌────────────────────┐
+              │     CLAUDE.md      │   THE BRAIN
+              │   knows your role, │   L1
+              │   team, priorities │
+              └─────────┬──────────┘
+                        │ every session starts here
+        ┌───────────────┼───────────────┐
+        ▼               ▼               ▼
+   ┌─────────┐    ┌──────────┐    ┌──────────┐
+   │ SKILLS  │    │CONNECTORS│    │  AGENTS  │
+   │   L2    │    │    L3    │    │    L4    │
+   │commands │    │ the arms │    │ the team │
+   └────┬────┘    └────┬─────┘    └────┬─────┘
+        └───────────────┼───────────────┘
+                        ▼
+        ┌───────────────────────────────┐
+        │   8AM BRIEF   →   DASHBOARD   │
+        │      L5              L6       │
+        │  the heartbeat    the proof   │
+        └───────────────────────────────┘
+                        │
+                        ▼
+              runs tomorrow, and
+              every day after
 ```
 
 CLAUDE.md is the brain.
