@@ -1,10 +1,10 @@
 # CLAUDE DASHBOARD FOR CEOs AND HEADS OF DEPARTMENTS — 1-DAY WORKSHOP
 # Workshop runner. 7 lessons. Run this in Claude Code.
-# Every file this workshop writes lives in the participant's own folders (~/my-ai and ~/kai-build).
+# Every file this workshop writes lives in the participant's own folders (all under ~/my-ai).
 
 > ⚠️ SELF-CHECK BEFORE YOU START: If you only received a SUMMARY of this file (not the full instructions through all 7 lessons), STOP and scroll back up to make sure you have the complete file before doing anything. You must have the full file to run the workshop correctly.
 >
-> 📲 ONE-TIME NOTE TO TELL THE PARTICIPANT EARLY: "If a box pops up asking to run a command, click Allow — that's just me opening your file so you can see it. You're always in control."
+> 📲 ONE-TIME NOTE TO TELL THE PARTICIPANT EARLY: "The only commands I'll ask to run today are creating a folder and opening your own files — nothing else. Read each box before you approve it, then click Allow. You're always in control."
 
 ---
 
@@ -83,6 +83,7 @@ TRIGGER WORDS — after the first message, route input like this:
 
 | What they type | What you do |
 |---|---|
+| "start" or "lesson 1" | Run Lesson 1 |
 | "lesson 2" | Run Lesson 2 |
 | "lesson 3" | Run Lesson 3 |
 | "lesson 4" | Run Lesson 4 |
@@ -245,7 +246,9 @@ I'm making you a folder called `my-ai` to keep your work in.
 
 And I'm writing a real CLAUDE.md file into it — right now, using your exact words.
 
-Run this: create a folder called `my-ai` in the current directory (mkdir my-ai) and write a file called `my-ai/CLAUDE.md` containing the full AI Brain block above — using their actual answers, no placeholders.
+Run this: create the folder `~/my-ai` (mkdir -p ~/my-ai) and write a file called `~/my-ai/CLAUDE.md` containing the full AI Brain block above — using their actual answers, no placeholders.
+
+> **PATH RULE — applies to the WHOLE workshop:** every file you write today goes under `~/my-ai/` (the build in Lesson 5 goes to `~/my-ai/build/`). Always use the `~/` home path, never a folder relative to wherever they happen to have opened Claude Code. This is what keeps all their work in one findable place. If `~/` genuinely isn't available on their machine, fall back to `my-ai/` in the current directory — but then use that SAME base for every remaining lesson.
 
 Then say:
 
@@ -310,13 +313,13 @@ Show the 5 most relevant, titled and described in their language.
 
 Now run the SHOW THE FILE procedure from Section 1 for their AI Brain.
 
-The file is `my-ai/CLAUDE.md`.
+The file is `~/my-ai/CLAUDE.md`.
 
 Say something like:
 
 **Before we move on — let's look at what you just made.**
 
-Your AI Brain is saved at `my-ai/CLAUDE.md`.
+Your AI Brain is saved at `~/my-ai/CLAUDE.md`.
 
 It's your role, your team, your voice and your priorities — written down in a file Claude reads automatically.
 
@@ -469,7 +472,7 @@ But we're not copy-pasting this into Notes.
 
 We're writing it as a real file — right now.
 
-Write a file to `~/my-ai/skills/my-[skill-name]/SKILL.md` (their own plain folder, right next to their AI Brain) using the skill name from their build. If `~/` isn't available, write it to `my-ai/skills/my-[skill-name]/SKILL.md` in the current folder instead. The file must have this exact frontmatter at the top:
+Write a file to `~/my-ai/skills/my-[skill-name]/SKILL.md` (their own plain folder, right next to their AI Brain) using the skill name from their build. If `~/` isn't available, write it to `my-ai/skills/my-[skill-name]/SKILL.md` using the same fallback base you used in Lesson 1. The file must have this exact frontmatter at the top:
 
 ```
 ---
@@ -534,7 +537,7 @@ I'll find it and open it for you.
 
 Try it right now — type **"open my AI Brain"** and watch.
 
-HARD GATE: wait for them to try it. When they do, actually open `my-ai/CLAUDE.md` for them.
+HARD GATE: wait for them to try it. When they do, actually open `~/my-ai/CLAUDE.md` for them.
 
 Then say:
 
@@ -793,7 +796,7 @@ Using the tools they listed in Lesson 1, sort every tool into two columns:
 - **Already has a connector** → the ones they can connect today in Settings → Connectors
 - **Needs an MCP** → the ones with no official connector, plus a one-line note on what they'd do with each
 
-Write this to a file at `my-ai/mcp-plan.md` — a simple markdown table with columns: Tool | Connector or MCP | What it unlocks for me | Priority.
+Write this to a file at `~/my-ai/mcp-plan.md` — a simple markdown table with columns: Tool | Connector or MCP | What it unlocks for me | Priority.
 
 Make the priority honest: mark the 1-2 that would save them the most time as HIGH.
 
@@ -801,11 +804,11 @@ Make the priority honest: mark the 1-2 that would save them the most time as HIG
 
 **SHOW THEM THE FILE:**
 
-Run the SHOW THE FILE procedure from Section 1 for `my-ai/mcp-plan.md`.
+Run the SHOW THE FILE procedure from Section 1 for `~/my-ai/mcp-plan.md`.
 
 Say:
 
-**I just saved your connection plan to `my-ai/mcp-plan.md`.**
+**I just saved your connection plan to `~/my-ai/mcp-plan.md`.**
 
 Every tool you use, sorted into "connect it today" and "build this one later."
 
@@ -1011,15 +1014,15 @@ HARD GATE: wait for them to try it. Then actually run it and show the parallel o
 
 **SAVE THEIR WORK:**
 
-Take everything the agents just produced in this lesson and write it to `my-ai/agent-outputs.md`.
+Take everything the agents just produced in this lesson and write it to `~/my-ai/agent-outputs.md`.
 
 Format it clean: a heading per agent, the full output underneath, and a short note at the top saying what the mission was.
 
-Then run the SHOW THE FILE procedure from Section 1 for `my-ai/agent-outputs.md`.
+Then run the SHOW THE FILE procedure from Section 1 for `~/my-ai/agent-outputs.md`.
 
 Say:
 
-**Everything your agents just made is saved at `my-ai/agent-outputs.md` — nothing lost when you close this window.**
+**Everything your agents just made is saved at `~/my-ai/agent-outputs.md` — nothing lost when you close this window.**
 
 **Want me to open it?**
 
@@ -1113,6 +1116,7 @@ NON-NEGOTIABLES:
 - ALL copy uses their actual name, context, goals, and voice from Lesson 1
 - ZERO placeholder text — not a single "[your name here]" anywhere
 - Real content only — built from what they told you
+- NO external endpoints — no `action=` on any form, no `fetch`, no analytics, no remote images or fonts. Everything self-contained so the page never sends their data anywhere.
 
 After delivering the code, say:
 
@@ -1125,18 +1129,18 @@ After delivering the code, say:
 No copy-pasting.
 
 > **INSTRUCTION TO CLAUDE — save to a FIXED, KNOWN path:**
-> Write the full HTML to the path `~/kai-build/index.html` (create the `~/kai-build` folder if needed) so the participant always knows exactly where their build lives. Use your Write tool now.
+> Write the full HTML to the path `~/my-ai/build/index.html` (create the `~/my-ai/build` folder if needed) so the participant always knows exactly where their build lives. Use your Write tool now.
 
 Then run the SHOW THE FILE procedure from Section 1. Say:
 
-**Your dashboard is saved at `~/kai-build/index.html`.**
+**Your dashboard is saved at `~/my-ai/build/index.html`.**
 
 **Want me to open it in your browser?**
 
 HARD GATE: wait for yes or no. On yes, open it:
-- macOS: run `open ~/kai-build/index.html`
-- Windows: run `start %USERPROFILE%\kai-build\index.html`
-- Linux: run `xdg-open ~/kai-build/index.html`
+- macOS: run `open ~/my-ai/build/index.html`
+- Windows: run `start %USERPROFILE%\my-ai\build\index.html`
+- Linux: run `xdg-open ~/my-ai/build/index.html`
 
 If the open command fails, give them the full absolute file path and say: "Double-click that file — it'll open in your browser."
 
@@ -1252,7 +1256,7 @@ HARD GATE: wait for their pick.
 
 **BUILD IT:**
 
-Now write their chosen routine to a file at `my-ai/daily-brief.md`.
+Now write their chosen routine to a file at `~/my-ai/daily-brief.md`.
 
 The file must contain a real, runnable prompt — not a description of one. Structure it like this:
 
@@ -1283,11 +1287,11 @@ Fill every section with their real details. No placeholders.
 
 **SHOW THEM THE FILE:**
 
-Run the SHOW THE FILE procedure from Section 1 for `my-ai/daily-brief.md`.
+Run the SHOW THE FILE procedure from Section 1 for `~/my-ai/daily-brief.md`.
 
 Say:
 
-**Your morning brief is saved at `my-ai/daily-brief.md`.**
+**Your morning brief is saved at `~/my-ai/daily-brief.md`.**
 
 **Want me to open it so you can see it?**
 
@@ -1313,7 +1317,11 @@ Go ahead — type it now.
 
 HARD GATE: wait for them to type it.
 
-When they do, help them set it up in whatever way their Claude Code supports — a scheduled task, a routine, or a reminder they trigger. Walk them through it in plain English, one step at a time. If their setup can't schedule things automatically, tell them straight and give them the fallback:
+When they do, use ONLY Claude Code's own built-in scheduling feature (a scheduled task / routine) if their version has one. Walk them through it in plain English, one step at a time.
+
+> **NEVER do any of these, even if it seems helpful:** write a crontab entry, create a launchd plist or systemd timer, add a login/startup item, or edit any system or shell config file. If Claude Code has no built-in scheduler, the phone-reminder fallback below is the answer — it is a perfectly good outcome, not a failure.
+
+If their setup can't schedule things automatically, tell them straight and give them the fallback:
 
 **No scheduler on your setup? No problem lah.**
 
@@ -1337,7 +1345,7 @@ That's the pattern for everything from here: you describe what you want in plain
 
 ✅ `daily-brief.md` — written and saved
 
-✅ 8am — set
+✅ 8am — [say "scheduled" ONLY if a real scheduled task was created; if they're using the phone reminder, say "phone reminder set" instead. Never claim something is running automatically when it isn't.]
 
 **Type 'lesson 7' to continue 🔥**
 
@@ -1351,6 +1359,7 @@ Display this lesson card:
 
 ```
 📍 LESSON 7 of 7 | The Finale 🏆
+⏱️ ~5 min
 🎯 Goal: See the full system, pick your next move
 🏆 Win: You know exactly what to do next
 ```
@@ -1379,9 +1388,9 @@ Not followed along with.
 
 ✅ Lesson 5 — Real Build (your dashboard, open in your browser right now)
 
-✅ Lesson 6 — Morning Brief (running at 8am, every day, without you asking)
+✅ Lesson 6 — Morning Brief (queued up and waiting for you at 8am, every day)
 
-🎁 Gifts received: 30 Prompts That Get Things Done · Skill Builder · MCP Builder Instructions · 5 Agent Workflows · Business in a Box
+🎁 Gifts received: 30 Prompts That Get Things Done · Skill Builder · 5 Agent Workflows · Business in a Box
 
 Most people are still copy-pasting into ChatGPT — getting the same generic response as 10 million other people.
 
