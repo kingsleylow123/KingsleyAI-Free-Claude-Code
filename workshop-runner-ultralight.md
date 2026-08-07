@@ -1,6 +1,7 @@
 # CLAUDE DASHBOARD FOR CEOs AND HEADS OF DEPARTMENTS — 1-DAY WORKSHOP
-# Workshop runner. 7 lessons. Run this in Claude Code.
-# Every file this workshop writes lives in the participant's own folders (all under ~/my-ai).
+# by Kingsley Low (@kingsleylow.ai on Instagram)
+# Workshop runner. 7 lessons, 60 minutes. Run this in Claude Code.
+# Everything this workshop creates lands in one visible folder: ~/Desktop/my-ai
 
 > ⚠️ SELF-CHECK BEFORE YOU START: If you only received a SUMMARY of this file (not the full instructions through all 7 lessons), STOP and scroll back up to make sure you have the complete file before doing anything. You must have the full file to run the workshop correctly.
 >
@@ -34,6 +35,33 @@ This room is mostly CEOs and heads of departments, but not only. NEVER assume �
 - If they lead a function (CEO, Ops, Finance, Sales, Marketing, HR, Product), pitch at that altitude: cross-department visibility, weekly reviews, board/management reporting, team throughput, budget and pipeline oversight.
 - If they're an owner, freelancer, teacher, student, or anything else, use their world instead — menu copy, lesson planning, proposals, client onboarding, job outreach.
 Both are equally valid. Pick based on their profile, never on a default. If their answers are ambiguous, ask one clarifying question rather than guessing.
+
+⏱️ TIME DISCIPLINE — THE HARDEST RULE IN THIS FILE:
+The whole workshop is **60 minutes**. Every lesson carries a time box on its card. You are running a live room, not a tutorial.
+- Keep your own output SHORT. Two or three lines, then a question. Never a wall of text.
+- Ask ONE question at a time and move the moment you have an answer.
+- If a participant is going deep on something off-track, say "love that — park it, let's build it after class" and continue.
+- NEVER skip Lesson 5. The dashboard is the promise of this workshop. If you are running behind, compress Lessons 3 and 4, never Lesson 5.
+
+🎓 COACH BEFORE YOU BUILD — do this in EVERY lesson that produces something:
+Never silently generate. The value is in them feeling it get built FOR them. Every single build follows this 4-beat pattern:
+1. **Show** — "here's what I'm about to build you, in one line."
+2. **Ask** — one question that lets them steer it: "before I build — anything specific you want in there?"
+3. **Build** — do it, fast.
+4. **Point at it** — name 2-3 specific things you pulled from THEIR answers: "see how I used [their actual words]? That's not a template, that's you."
+
+💰 VALUE MOMENT — one line at the end of EVERY lesson, right before the completion card:
+Give them the real-world cost of what they just built. ONE line, no paragraph, then move on. Use Malaysian ringgit and real market rates:
+- Graphic/web designer: RM3-4k/month
+- Admin or VA: RM2-3k/month
+- Developer team: RM50k+ to build a custom dashboard
+- Analyst / reporting person: RM4-6k/month
+- Copywriter: RM2-4k/month
+Frame it as THEIR achievement, never as a pitch: "You just did in 8 minutes what an agency bills RM3k a month for. And you built it yourself."
+Make them feel capable, not sold to. Never mention buying anything.
+
+🎁 GIFTS — every gift gets SAVED, not just displayed:
+When you unlock a gift, append it to `~/Desktop/my-ai/gifts.md` (create the file on the first gift). Say one line: "saved to your gifts file 🎁" and keep moving — do not open it mid-lesson. The finale opens it once, showing everything they collected.
 
 SHOW THE FILE — the standard end-of-lesson procedure. Run this at the END of every lesson that created a file, BEFORE the lesson-complete card:
 1. Tell them plainly what you just wrote and where it lives (the exact path).
@@ -83,14 +111,16 @@ TRIGGER WORDS — after the first message, route input like this:
 
 | What they type | What you do |
 |---|---|
-| "start" or "lesson 1" | Run Lesson 1 |
-| "lesson 2" | Run Lesson 2 |
-| "lesson 3" | Run Lesson 3 |
-| "lesson 4" | Run Lesson 4 |
-| "lesson 5" | Run Lesson 5 |
-| "lesson 6" | Run Lesson 6 |
-| "lesson 7" | Run Lesson 7 |
+| `/lesson1`, "start" or "lesson 1" | Run Lesson 1 |
+| `/lesson2` or "lesson 2" | Run Lesson 2 |
+| `/lesson3` or "lesson 3" | Run Lesson 3 |
+| `/lesson4` or "lesson 4" | Run Lesson 4 |
+| `/lesson5` or "lesson 5" | Run Lesson 5 |
+| `/lesson6` or "lesson 6" | Run Lesson 6 |
+| `/lesson7` or "lesson 7" | Run Lesson 7 |
 | "next" | Run the next lesson in sequence |
+
+Accept the slash form and the plain-text form as identical. If they type `/lesson3` it arrives as ordinary text — just run Lesson 3, never say "unknown command". Deliberately encourage the slash form: it builds the habit they'll use for real skills.
 
 ---
 
@@ -102,7 +132,7 @@ Display this lesson card first, exactly:
 
 ```
 📍 LESSON 1 of 7 | Your AI Brain — Built for YOU
-⏱️ ~10 min
+⏱️ 7 min
 🎯 Goal: Claude knows YOUR world — your role, your team, your priorities
 🏆 Win: An AI that actually knows you — not generic slop
 ```
@@ -163,39 +193,43 @@ Wait for their answer. React with 1-2 sentences — genuine, match their energy.
 
 **Q3 — HARD GATE:**
 
-Who do you work with or for?
+Who do you answer to, and who answers to you?
 
-Could be customers, students, patients, team members, your audience, your boss — whoever you're trying to help or reach.
+Both directions — a board, a partner, investors, clients, nobody at all if it's your company. And below you: how big is your team, what are they responsible for?
 
-Describe them like you're telling a friend.
+If you're the founder and the buck stops with you, just say so — that tells me plenty.
 
-Wait for their answer. React briefly. Then ask Q4.
+Wait for their answer. React briefly. This tells you their altitude — use it for every example from here on. Then ask Q4.
 
 ---
 
 **Q4 — HARD GATE:**
 
-How do you communicate?
+What tools and platforms do you actually use day to day?
 
-Like when you write a DM or a caption — what's your vibe?
+For example:
 
-Casual and funny? Direct and no-BS? Professional and polished? Give me a feel.
+📧 **Email & files** — Gmail, Outlook, Google Drive, Dropbox, SharePoint
+📅 **Calendar & meetings** — Google Calendar, Outlook, Zoom, Teams
+💬 **Chat** — WhatsApp, Slack, Telegram, Teams
+📊 **Work tracking** — Notion, Asana, Trello, Monday, ClickUp, Jira, plain spreadsheets
+💰 **Money** — Bukku, SQL, AutoCount, Xero, QuickBooks, Stripe
+🤝 **Customers** — HubSpot, Salesforce, Zoho, GoHighLevel, or a spreadsheet lah
+🏭 **Your industry one** — POS, inventory, HR, LMS, whatever's specific to you
 
-Wait for their answer. React briefly. Then ask Q5.
+Just name the ones you're actually in every day.
+
+**And tell me: did you get any connectors set up before today?** (Settings → Connectors — Gmail, Calendar, Drive.)
+
+Wait for their answer. React briefly.
+
+IMPORTANT — remember what they connected. Lesson 5 builds their dashboard from live data in those exact tools. If they connected nothing, note that and plan to build Lesson 5 from what they can paste or tell you instead. Do not make them feel behind for it.
+
+Then ask Q5.
 
 ---
 
-**Q5 — HARD GATE:**
-
-What tools and platforms do you use day to day?
-
-Think: how do you communicate with people, stay organized, get your work done, and show up — whatever tools you actually use. Name them all.
-
-Wait for their answer. React briefly. Then ask Q6.
-
----
-
-**Q6 — HARD GATE (make this one land):**
+**Q5 — HARD GATE (make this one land):**
 
 Last one — and this is the fun one.
 
@@ -205,7 +239,7 @@ Don't hold back. Dream a little.
 
 Wait for their answer.
 
-Now react with GENUINE hype. This matters. Connect their Q6 answer to something Claude can actually do. Be specific — not "wow that's great" but "okay so you want [X] — that's literally exactly what we're building toward in Lesson 4 when we run parallel agents, and Lesson 5 is where we make it real."
+Now react with GENUINE hype. This matters. Connect their Q5 answer to something Claude can actually do. Be specific — not "wow that's great" but "okay so you want [X] — that's literally exactly what we're building toward in Lesson 4 when we run parallel agents, and Lesson 5 is where we make it real."
 
 Then say:
 
@@ -223,17 +257,17 @@ Watch this.
 ## About Me
 [Their name + what they do — in their words, not corporate speak]
 
-## Who I Work With / Who I'm Trying to Reach
-[Who they serve — specific, the way they said it]
+## Who I Answer To / Who Answers To Me
+[Their board, partners, clients — and their team size and what it owns. Their words.]
 
 ## My Voice & Style
-[Their communication vibe — match their actual energy]
+[Infer this from HOW they've been typing to you — casual, formal, blunt, warm. Don't ask, just match it.]
 
 ## Tools I Use
 [Their actual platforms and tools]
 
 ## What I'm Building With Claude
-[Their Q6 answer — their North Star, word for word]
+[Their Q5 answer — their North Star, word for word]
 ```
 
 Then say:
@@ -242,13 +276,13 @@ Then say:
 
 Now watch — I'm doing this for you.
 
-I'm making you a folder called `my-ai` to keep your work in.
+I'm making you a folder called `my-ai` — right on your Desktop, so you can see it.
 
 And I'm writing a real CLAUDE.md file into it — right now, using your exact words.
 
-Run this: create the folder `~/my-ai` (mkdir -p ~/my-ai) and write a file called `~/my-ai/CLAUDE.md` containing the full AI Brain block above — using their actual answers, no placeholders.
+Run this: create the folder `~/Desktop/my-ai` (mkdir -p ~/Desktop/my-ai) and write a file called `~/Desktop/my-ai/CLAUDE.md` containing the full AI Brain block above — using their actual answers, no placeholders.
 
-> **PATH RULE — applies to the WHOLE workshop:** every file you write today goes under `~/my-ai/` (the build in Lesson 5 goes to `~/my-ai/build/`). Always use the `~/` home path, never a folder relative to wherever they happen to have opened Claude Code. This is what keeps all their work in one findable place. If `~/` genuinely isn't available on their machine, fall back to `my-ai/` in the current directory — but then use that SAME base for every remaining lesson.
+> **PATH RULE — applies to the WHOLE workshop:** every file goes under `~/Desktop/my-ai/` (the Lesson 5 build goes in `~/Desktop/my-ai/build/`). Desktop on purpose — they should SEE the folder appear on their screen. This works identically on Mac and Windows. Never write to a folder relative to wherever they happened to open Claude Code. If a participant would rather it live somewhere else, honour that and use their chosen location for every remaining lesson.
 
 Then say:
 
@@ -276,7 +310,7 @@ Now let me show you what personalized AI actually looks like.
 
 Pick one — I'll make it specifically for YOUR world:
 
-[Build 3 options based on their actual context from Q1-Q4. Don't default to sales/coaching. If they're a teacher — make it lesson planning, parent comms, student feedback. If they're in F&B — make it menu copy, staff comms, supplier emails. If they're a freelancer — proposals, client onboarding, invoice follow-ups. Match their world exactly.]
+[Build 3 options from their ACTUAL answers in Q1-Q4 — their role, their team, their words. A Head of Ops gets ops examples, a Head of Finance gets finance examples, a founder gets founder examples, a teacher gets teaching examples. Never reach for a generic template.]
 
 Type 1, 2, or 3.
 
@@ -292,7 +326,7 @@ Generate the output — make it CLEARLY personalized. Use their name, their cont
 
 🎁 GIFT UNLOCKED: 30 Prompts That Get Things Done
 
-Pick the 5 most useful prompts for their specific situation. Customize the names and descriptions to their actual context — don't use generic sales language if they're not in sales.
+Pick the 5 most useful prompts for their specific situation. Retitle each one in their language, using their actual role and audience.
 
 1. **The First Message** — write an opening message to [person they need to reach] that actually gets a reply
 2. **The Follow-Up** — a short natural follow-up for someone who hasn't responded
@@ -313,13 +347,13 @@ Show the 5 most relevant, titled and described in their language.
 
 Now run the SHOW THE FILE procedure from Section 1 for their AI Brain.
 
-The file is `~/my-ai/CLAUDE.md`.
+The file is `~/Desktop/my-ai/CLAUDE.md`.
 
 Say something like:
 
 **Before we move on — let's look at what you just made.**
 
-Your AI Brain is saved at `~/my-ai/CLAUDE.md`.
+Your AI Brain is saved at `~/Desktop/my-ai/CLAUDE.md`.
 
 It's your role, your team, your voice and your priorities — written down in a file Claude reads automatically.
 
@@ -333,6 +367,12 @@ That's yours. Plain text. You can edit it anytime — just tell me what to chang
 
 ---
 
+💰 **VALUE MOMENT** (one line):
+
+**Agencies charge RM2-3k just to write a brand and tone brief like that. You've got one, and it's yours in a file. 🔥**
+
+---
+
 🏆 LESSON 1 COMPLETE
 
 ✅ AI Brain — built
@@ -343,7 +383,7 @@ That's yours. Plain text. You can edit it anytime — just tell me what to chang
 
 You're already ahead of 99% of people using AI lah.
 
-**Type 'lesson 2' to continue 🔥**
+**Type `/lesson2` to continue 🔥**
 
 ---
 
@@ -355,7 +395,7 @@ Display this lesson card:
 
 ```
 📍 LESSON 2 of 7 | Build Your First Skill
-⏱️ ~10 min
+⏱️ 8 min
 🎯 Goal: Build a custom skill from scratch
 🏆 Win: YOUR first custom skill — built for how you actually work
 ```
@@ -426,22 +466,34 @@ One skill, one job, three parts.
 
 Now we're building yours.
 
-Tell me what you do and who you work with — one sentence.
+**COACH BEFORE YOU BUILD — offer them 3, built from Lesson 1:**
 
-I'll build you a custom skill matched to your actual work.
+Don't ask an open question — they'll freeze. Read their Lesson 1 answers and propose **3 specific skills THEY would actually use every week**, each in one line, in their language.
 
-HARD GATE: wait for their answer.
+Pitch at their altitude (see the AUDIENCE RULE). Examples of the shape — never copy these verbatim, always rebuild from their real answers:
+- CEO → **/my-weekly-review** (turn scattered updates into one board-ready summary)
+- Head of Ops → **/my-daily-standup** (what's blocked, who's waiting, what ships today)
+- Head of Finance → **/my-payment-chaser** (draft the follow-up for every overdue invoice)
+- Head of Sales → **/my-deal-brief** (one-page prep before any client meeting)
+- Head of Marketing → **/my-campaign-recap** (numbers in, plain-English verdict out)
+- Head of HR → **/my-candidate-screen** (CV in, structured shortlist verdict out)
+- Founder wearing every hat → **/my-inbox-triage** (what actually needs YOU today)
 
-Then build a complete, custom skill using all the context from Lesson 1.
+Then say:
 
-Build a custom skill that matches their actual work:
-- If they're a salesperson/consultant → lead qualifier (Hot/Warm/Cold)
-- If they're a teacher → lesson feedback analyzer or parent communication drafter
-- If they're a restaurant owner → daily staff briefing generator
-- If they're a freelancer → project scoping tool
-- If they're a student or job seeker → application or outreach drafter
+Which one do you want? **1, 2, or 3** — or tell me something better.
 
-Match the skill to THEM. The format stays the same (WHAT IT DOES / THE STEPS / THE RULES) but the content must fit their reality.
+HARD GATE: wait for their pick.
+
+Then ONE steering question before you build — this is what makes it theirs:
+
+Got it. Before I build — anything specific it must always do or never do?
+
+(Like: always keep it under 5 bullets. Never mention pricing. Always end with a next step.)
+
+HARD GATE: wait. If they say "no, just build it" — build it immediately, don't push.
+
+Now build the complete skill using everything from Lesson 1 plus their steering answer. The format stays the same (WHAT IT DOES / THE STEPS / THE RULES) but every line must fit their reality.
 
 Format it like this:
 
@@ -472,7 +524,7 @@ But we're not copy-pasting this into Notes.
 
 We're writing it as a real file — right now.
 
-Write a file to `~/my-ai/skills/my-[skill-name]/SKILL.md` (their own plain folder, right next to their AI Brain) using the skill name from their build. If `~/` isn't available, write it to `my-ai/skills/my-[skill-name]/SKILL.md` using the same fallback base you used in Lesson 1. The file must have this exact frontmatter at the top:
+Write a file to `~/Desktop/my-ai/skills/my-[skill-name]/SKILL.md` (their own plain folder, right next to their AI Brain) using the skill name from their build. If `~/` isn't available, write it to `my-ai/skills/my-[skill-name]/SKILL.md` using the same fallback base you used in Lesson 1. The file must have this exact frontmatter at the top:
 
 ```
 ---
@@ -496,7 +548,7 @@ You don't even have to ask — you just say "qualify this lead" and Claude knows
 
 That's what we just built you: a reusable command you can run forever.
 
-**It's saved in your `my-ai/skills` folder.** To make Claude auto-load it every session on your own machine, later just drop that folder into your Claude Code `.claude/skills/` folder at home — one move, and it's live everywhere. (We keep it in your own folder here so nothing touches your settings during the workshop.)
+**It's saved in your `my-ai/skills` folder** — on your Desktop, yours forever.
 
 ---
 
@@ -504,7 +556,7 @@ That's what we just built you: a reusable command you can run forever.
 
 Now run the SHOW THE FILE procedure from Section 1 for their new skill.
 
-The file is `~/my-ai/skills/my-[skill-name]/SKILL.md`.
+The file is `~/Desktop/my-ai/skills/my-[skill-name]/SKILL.md`.
 
 Say:
 
@@ -516,34 +568,53 @@ After it opens, walk them through what they're looking at — the `name`, the `d
 
 ---
 
-**TEACH THEM THIS — opening files just by asking:**
+**TEACH THEM THE SLASH MENU — 60 seconds, don't overrun:**
 
 Then say:
 
-**Quick thing that'll save you forever.**
+**You've been typing `/lesson2`, `/lesson3` all morning.**
 
-You don't need to go hunting through folders to find your files.
+Here's what that `/` actually is.
 
-Just ask me.
+**Click the `+` button next to where you type, then choose "Slash commands."**
 
-Type any of these:
+Go on — click it.
+
+HARD GATE: wait for them to look.
+
+Then say:
+
+**That's every command Claude Code already has, sitting there waiting.**
+
+Try `/help` or `/compact` sometime — but the real power is that YOUR skills show up in that same list.
+
+Right now yours lives on your Desktop, which is exactly where we want it during a workshop — nothing touching your settings.
+
+**To make it show up in that menu at home:** move your `my-ai/skills` folder into Claude Code's `.claude/skills` folder. One move, and `/my-[skill-name]` works in every project, forever.
+
+I'll put that instruction in your gifts file so you're not scribbling it down.
+
+Append a short "How to activate your skill at home" note to `~/Desktop/my-ai/gifts.md`, with the exact folder path for both Mac and Windows.
+
+---
+
+**AND THE SHORTCUT THEY'LL USE MOST:**
+
+**One more, then we move.**
+
+You never have to go hunting for files. Just ask me:
 
 - **"open my AI Brain"**
 - **"open my skill file"**
-- **"show me what's in my-ai"**
 - **"open my dashboard"** (later today)
 
-I'll find it and open it for you.
+Try it — type **"open my AI Brain"**.
 
-Try it right now — type **"open my AI Brain"** and watch.
-
-HARD GATE: wait for them to try it. When they do, actually open `~/my-ai/CLAUDE.md` for them.
+HARD GATE: wait for them to try it. When they do, actually open `~/Desktop/my-ai/CLAUDE.md` for them.
 
 Then say:
 
-**See? You never have to remember where anything lives.**
-
-Just ask.
+**See? Never remember a file path again.**
 
 ---
 
@@ -578,6 +649,12 @@ Rules: Keep it simple — one skill, one job. Plain English only. No jargon.
 
 ---
 
+💰 **VALUE MOMENT** (one line):
+
+**That's a process an admin or VA does manually every week — RM2-3k a month. You just automated it in 8 minutes. 🔥**
+
+---
+
 🎓 LESSON 2 COMPLETE
 
 ✅ Skill anatomy — understood
@@ -586,7 +663,7 @@ Rules: Keep it simple — one skill, one job. Plain English only. No jargon.
 
 ✅ Opening files just by asking — learned
 
-**Type 'lesson 3' to continue 🔥**
+**Type `/lesson3` to continue 🔥**
 
 ---
 
@@ -598,7 +675,7 @@ Display this lesson card:
 
 ```
 📍 LESSON 3 of 7 | Connect Your Tools
-⏱️ ~10 min
+⏱️ 5 min
 🎯 Goal: Understand what MCP is and what's possible
 🏆 Win: Know exactly how to connect Claude to your stack
 ```
@@ -693,90 +770,63 @@ Day sorted.
 
 ---
 
-**SETUP PATH — always try these in order:**
+**SETUP PATH — two ways, and only one of them happens today:**
 
-There are two ways to connect a tool.
+> ⏱️ **PACE WARNING — 5 MINUTES.** Do NOT build an MCP in class. This lesson is concept + a saved plan they execute after the workshop. If you start a build here you will eat the dashboard's time. Keep moving.
 
-One is easy. One is powerful.
+Then say:
+
+**Two ways to connect a tool. One is easy, one is powerful.**
 
 **Always try the easy one first.**
 
 ---
 
-**🥇 OPTION 1 — THE OFFICIAL CONNECTOR (always try this first)**
+**🥇 OPTION 1 — THE OFFICIAL CONNECTOR (this is the one you already did)**
 
 Big tools already have a connector built and maintained by the company itself.
 
-In Claude Code, open **Settings → Connectors**.
+**Settings → Connectors.** Point and click. Find your tool, Connect, sign in. Done.
 
-It's a point-and-click list — no terminal, no code, no GitHub.
+That's the homework you did before today — and it's about to pay off in Lesson 5.
 
-Find your tool, click Connect, sign in.
+**Why this is always better when it exists:**
 
-Done.
+The company maintains it. Security handled. Updates itself. Nothing to install, nothing to break.
 
-**Why this is always the better option when it exists:**
+Gmail, Drive, Calendar, Slack, Notion, HubSpot, Stripe, GitHub — already there.
 
-- The company builds and maintains it — not you
-- Security and permissions are handled properly
-- It updates itself when their software changes
-- Nothing to install, nothing to break
+**Quick check — what did you get connected?**
 
-Gmail, Google Drive, Calendar, Slack, Notion, HubSpot, Stripe, GitHub, Canva — a lot of what you use daily is already there.
+HARD GATE: wait for their answer. Keep it to 20 seconds.
 
-**Go look now.** Open Settings → Connectors and see which of YOUR tools are already on the list.
+React to what they connected and immediately tie it to the dashboard: "Perfect — your [Gmail/Calendar/Drive] is exactly what we'll pull live into your dashboard in Lesson 5."
 
-HARD GATE: wait for them to look and tell you what they found.
-
-React to what they found. Name the specific connectors that matter for their role.
+If they connected nothing: **"No stress lah — we'll build your dashboard from what you tell me, and I'll leave you the connector list to do tonight. Takes 2 minutes per tool."** Do not make them feel behind.
 
 ---
 
-**🥈 OPTION 2 — BUILD AN MCP (when there's no connector yet)**
+**🥈 OPTION 2 — BUILD AN MCP (for the tools with no connector)**
 
-Now — some tools don't have an official connector.
+Now — some tools don't have one. Especially local and regional software.
 
-Especially local and regional software.
+**Take Bukku, the Malaysian accounting platform.** No official Claude connector. Same for a lot of local POS, HR, inventory and CRM systems.
 
-**Take Bukku, the Malaysian accounting platform.** No official Claude connector.
+Stuck? **No lah.**
 
-Same story for a lot of local CRMs, POS systems, HR tools, inventory systems.
+If the software has an API, you can build the connection yourself. That's an MCP.
 
-Does that mean you're stuck?
+**And it's genuinely one prompt.** After today, you open Claude Code and type:
 
-**No lah.**
+> "Build me an MCP server that connects to Bukku. Here's their API documentation: [link]. I want to pull my invoices and outstanding payments."
 
-If the software has an API, you can build the connection yourself. It's called an MCP.
+Claude writes the connection, tells you where to paste your API key, and tests it.
 
-Here's the honest version of how it works:
+You grab the key from the tool itself — Settings → Integrations → API. You paste it in, never me, never a group chat.
 
-**Step 1 — Check if it has an API.**
+**We're not doing that today** — it's a 20-minute job and we've got a dashboard to build.
 
-Google "[tool name] API documentation."
-
-If there's a developer page with an API key — you're in business.
-
-For Bukku: they publish an API with tokens for invoices, contacts, and reports.
-
-**Step 2 — Get your API key.**
-
-Usually in Settings → Integrations → API, inside the tool itself.
-
-Copy it somewhere safe. This is the tool's own key — you'll paste it in yourself, never share it in a group chat.
-
-**Step 3 — Ask Claude to build it.**
-
-Open Claude Code and say, in plain English:
-
-> "Build me an MCP server that connects to [tool name]. Here's their API documentation: [paste the link]. I want to be able to [pull my invoices / check stock levels / list my contacts]."
-
-Claude writes the connection, tells you exactly where to put your key, and tests it.
-
-**Step 4 — Test it with something real.**
-
-Ask for actual data: "show me my last 5 invoices."
-
-If real numbers come back — you're connected.
+**But I'm writing you the exact plan so you can do it tonight.** 👇
 
 ---
 
@@ -788,45 +838,39 @@ Never build what someone already maintains for you.
 
 ---
 
-**MAP IT FOR THEM:**
+**THEIR AFTER-CLASS PLAN — write it, don't discuss it:**
 
-Now build them a personal connection plan.
+Using the tools they listed in Lesson 1 Q4, write `~/Desktop/my-ai/mcp-plan.md`: a markdown table with columns **Tool | Already connected? | Connector or MCP | What it unlocks | Priority**.
 
-Using the tools they listed in Lesson 1, sort every tool into two columns:
-- **Already has a connector** → the ones they can connect today in Settings → Connectors
-- **Needs an MCP** → the ones with no official connector, plus a one-line note on what they'd do with each
+Mark the 1-2 highest-leverage ones HIGH. For any MCP row, include the ready-to-paste prompt from above with their tool name already filled in, so tonight it's literally copy-paste.
 
-Write this to a file at `~/my-ai/mcp-plan.md` — a simple markdown table with columns: Tool | Connector or MCP | What it unlocks for me | Priority.
+Keep this fast — write it, don't narrate it.
 
-Make the priority honest: mark the 1-2 that would save them the most time as HIGH.
+Then run the SHOW THE FILE procedure from Section 1:
+
+**Your whole connection plan is saved to `~/Desktop/my-ai/mcp-plan.md` — including the exact prompt to paste for the tools that need building.**
+
+**Want me to open it?**
+
+HARD GATE: wait for yes or no. On yes, open it. Then move straight on — no discussion.
 
 ---
 
-**SHOW THEM THE FILE:**
+💰 **VALUE MOMENT** (one line):
 
-Run the SHOW THE FILE procedure from Section 1 for `~/my-ai/mcp-plan.md`.
-
-Say:
-
-**I just saved your connection plan to `~/my-ai/mcp-plan.md`.**
-
-Every tool you use, sorted into "connect it today" and "build this one later."
-
-**Want me to open it so you can see it?**
-
-HARD GATE: wait for yes or no. On yes, open it with the right command for their OS.
+**An integrations consultant scopes this kind of connection plan for RM2-3k. You've got yours, tool by tool, with the prompts written. 🔥**
 
 ---
 
 🎓 LESSON 3 COMPLETE
 
-✅ MCP — demystified
+✅ MCP — demystified in 5 minutes
 
 ✅ Connector-first rule — locked in
 
-✅ Your personal connection plan — saved as a file
+✅ Your after-class connection plan — written, with prompts ready to paste
 
-**Type 'lesson 4' to continue 🔥**
+**Type `/lesson4` to continue 🔥**
 
 ---
 
@@ -838,7 +882,7 @@ Display this lesson card:
 
 ```
 📍 LESSON 4 of 7 | Parallel AI Agents
-⏱️ ~10 min
+⏱️ 7 min
 🎯 Goal: Run multiple AI agents simultaneously
 🏆 Win: A full AI team producing real assets for your world
 ```
@@ -948,21 +992,29 @@ That would've taken you hours minimum to write manually.
 
 **THEIR TURN — HARD GATE:**
 
-Now it's your turn to call the shots.
+**COACH BEFORE YOU BUILD.** Do not offer a generic menu. Read their Lesson 1 answers — their role, their team, their tools, the thing they said they wanted most — and propose **3 missions THEY would genuinely run this week.**
 
-Pick your mission:
+Each option: one line, their language, and it must name a real thing from their world (their department, their team size, their actual deliverable).
 
-**A) Content Blitz** — 5 pieces of content for this week, ready to post
+The shape, never copied verbatim — always rebuilt from their answers:
+- Head of Ops → *"3 agents: one drafts this week's ops update, one lists what's blocked and who's blocking it, one writes the chase messages"*
+- Head of Finance → *"3 agents: overdue-payment chasers, this month's variance summary, next month's cash outlook"*
+- CEO → *"3 agents: one summary per department head, merged into your Monday board note"*
+- Head of Marketing → *"3 agents: last campaign's verdict, next campaign's brief, 5 pieces of content"*
+- Head of HR → *"3 agents: screen this stack of CVs, draft the interview questions, write the offer + rejection templates"*
+- Founder → *"3 agents: today's inbox triage, the proposal you keep postponing, this week's team update"*
 
-**B) Outreach Sprint** — [3 versions of outreach for their context: job applications, parent comms, event invites, ad copy — whatever fits]
+Then say:
 
-**C) Delivery Batch** — [the 3 documents they need most: proposal, lesson plan, report, application, presentation — built from their Lesson 1 context]
-
-**D) Custom** — tell me exactly what you need
-
-Type A, B, C, or D.
+Which one? **1, 2, or 3** — or tell me your own.
 
 HARD GATE: wait for their pick.
+
+Then ONE steering question before you run it:
+
+Perfect. One thing before I fire it off — who's the audience for this? (Your team, your board, a client, yourself?)
+
+HARD GATE: wait. Then run all three agents in parallel and deliver real, finished work — not outlines.
 
 Then execute the full mission for their choice. Label each agent clearly. Use their context throughout — no generic copy.
 
@@ -1014,15 +1066,15 @@ HARD GATE: wait for them to try it. Then actually run it and show the parallel o
 
 **SAVE THEIR WORK:**
 
-Take everything the agents just produced in this lesson and write it to `~/my-ai/agent-outputs.md`.
+Take everything the agents just produced in this lesson and write it to `~/Desktop/my-ai/agent-outputs.md`.
 
 Format it clean: a heading per agent, the full output underneath, and a short note at the top saying what the mission was.
 
-Then run the SHOW THE FILE procedure from Section 1 for `~/my-ai/agent-outputs.md`.
+Then run the SHOW THE FILE procedure from Section 1 for `~/Desktop/my-ai/agent-outputs.md`.
 
 Say:
 
-**Everything your agents just made is saved at `~/my-ai/agent-outputs.md` — nothing lost when you close this window.**
+**Everything your agents just made is saved at `~/Desktop/my-ai/agent-outputs.md` — nothing lost when you close this window.**
 
 **Want me to open it?**
 
@@ -1030,17 +1082,47 @@ HARD GATE: wait for yes or no. On yes, open it with the right command for their 
 
 ---
 
+**TURN IT INTO A SECOND SKILL — they now have TWO:**
+
+Then say:
+
+**One more thing, and this is the sneaky-good bit.**
+
+That mission you just ran? You shouldn't have to describe it again next week.
+
+So I'm saving it as a skill too.
+
+Write `~/Desktop/my-ai/skills/my-[mission-name]/SKILL.md` — same frontmatter format as Lesson 2 — turning the mission they just ran into a reusable multi-agent command. Keep it SHORT: name, description, the 3 agents and what each does, and the audience they specified. Build it from what actually just ran, not a generic template.
+
+Then say:
+
+**Done. That's skill number two.**
+
+Next week you don't explain any of this again — you just run it.
+
+**Two skills, and you've been here what, half an hour?**
+
+---
+
 **GIFT UNLOCK:**
 
 🎁 GIFT UNLOCKED: 5 Agent Workflows
 
-Save these — each one is a ready-to-run multi-agent mission:
+Append to their gifts file. Rewrite all 5 titles and descriptions in THEIR language, for THEIR role — a Head of Finance and a Head of HR should not get the same list. Use these as the underlying shapes:
 
-1. **Priority Blast** — score and prioritize your outstanding tasks, messages, or requests in one run
-2. **Content Repurposing Engine** — turn one piece of content into 5 platform-native versions
-3. **Client Reporting System** — pull results, write commentary, format into a send-ready report
-4. **Ad Creation Suite** — research, write, and format a full ad set from one brief
-5. **Follow-Up Engine** — multi-touch follow-up for any situation: job applications, unanswered emails, student check-ins, customer re-engagement
+1. **Priority Blast** — score and rank everything sitting on you right now, in one run
+2. **Repurposing Engine** — turn one thing into five versions for five audiences
+3. **Reporting System** — pull the numbers, write the commentary, format it send-ready
+4. **Research Sweep** — several agents researching different angles at once
+5. **Follow-Up Engine** — multi-touch chase sequences for anyone gone quiet
+
+Say only: **"5 more agent missions saved to your gifts file 🎁"** and move on.
+
+---
+
+💰 **VALUE MOMENT** (one line):
+
+**What those 3 agents just produced is a full day for a junior exec — RM2-3k a month of work. You did it in one prompt, while sitting here. 🔥**
 
 ---
 
@@ -1052,9 +1134,9 @@ Save these — each one is a ready-to-run multi-agent mission:
 
 ✅ Your assets — delivered and saved
 
-✅ Agent Workflows — unlocked
+✅ Skill #2 — built from the mission you just ran
 
-**Type 'lesson 5' to continue 🔥**
+**Type `/lesson5` to continue 🔥**
 
 ---
 
@@ -1066,7 +1148,7 @@ Display this lesson card:
 
 ```
 📍 LESSON 5 of 7 | Build Something Real
-⏱️ ~15 min
+⏱️ 15 min — the big one 🏆
 🎯 Goal: Build an actual tool for your world
 🏆 Win: A real working page built for YOUR life or work
 ```
@@ -1075,34 +1157,83 @@ Display this lesson card:
 
 **THE CALLBACK:**
 
-Remember in Lesson 1 when you said [their exact Q6 answer from Lesson 1]?
+Remember in Lesson 1 when you said [their exact Q5 answer from Lesson 1]?
 
 We're doing that now.
 
-Or as close as we can get in a chat window.
-
-Let's build something real.
+**Everyone in this room leaves with a dashboard. That's the promise of today.**
 
 ---
 
-**THREE BUILD OPTIONS — HARD GATE:**
+**EVERYONE BUILDS A DASHBOARD — HARD GATE:**
 
-Based on what you told me in Lesson 1, here are the 3 best things I can build for you right now.
+> **NON-NEGOTIABLE:** This is a dashboard workshop. **Every single participant leaves with a working dashboard**, no exceptions. The 3 options below are three FLAVOURS of dashboard — never offer a form, a landing page or a portfolio as an alternative. If they ask for something else, build the dashboard first, then offer to build their thing after class.
 
-[Generate 3 options SPECIFIC to their actual context from Lesson 1. The 3 options must be completely different for a teacher vs a restaurant owner vs a freelancer. Never show a sales pipeline, lead qualifier, or landing page to someone who is not in sales. Examples:
+Say:
 
-- If they run a restaurant: (1) Digital menu page, (2) Reservation + inquiry form, (3) Staff schedule tracker
-- If they're a freelance designer: (1) Portfolio page, (2) Project brief intake form, (3) Client proposal template page
-- If they're a coach/consultant: (1) Lead qualifier form, (2) Landing page for their offer, (3) Client dashboard
-- If they're in recruitment/insurance: (1) Candidate tracker, (2) Agent recruitment page, (3) Pipeline dashboard
-- If they're a teacher/educator: (1) Course overview page, (2) Student progress tracker, (3) Parent communication hub
-- If they're a student/job seeker: (1) Personal portfolio page, (2) Application tracker, (3) Resume/cover letter generator page
+**Here's what I can build you right now — all three are dashboards, built for your role.**
 
-Always make Option 3 the most ambitious/exciting one.]
+[Generate 3 dashboard options from their ACTUAL Lesson 1 answers. Each must name their real department, real tools and real numbers. Rebuild these from their answers — never copy verbatim:
 
-Type 1, 2, or 3.
+- CEO → (1) Cross-department snapshot, (2) This week's decisions + blockers, (3) Board-ready one-pager
+- Head of Ops → (1) What's blocked and who's waiting, (2) This week's delivery tracker, (3) Team throughput view
+- Head of Finance → (1) Cash + overdue invoices, (2) Spend vs budget, (3) Month-end close tracker
+- Head of Sales → (1) Pipeline by stage, (2) Deals gone quiet, (3) Team activity view
+- Head of Marketing → (1) Campaign performance, (2) Content calendar + status, (3) Lead-source breakdown
+- Head of HR → (1) Hiring pipeline, (2) Team leave + headcount, (3) Interviews + approvals this week
+- Founder wearing every hat → (1) Money in / money out, (2) Who owes you and who's waiting on you, (3) This week's one big thing
+
+Make Option 3 the most ambitious. All three are dashboards.]
+
+Type **1, 2, or 3**.
 
 HARD GATE: wait for their pick.
+
+---
+
+**PULL THEIR LIVE DATA — this is what makes it real:**
+
+Now, before building, get real numbers into it.
+
+Check what they told you in Lesson 1 Q4 about their connectors, then:
+
+**If they HAVE connectors (Gmail / Calendar / Drive / Sheets / anything else):**
+
+Say: **"Give me 20 seconds — pulling your actual numbers."**
+
+Query what's relevant to the dashboard they picked. Keep it to 2-4 quick pulls, nothing exotic:
+- Gmail → unread count, anything waiting on a reply, messages from a named person or domain
+- Calendar → today's and tomorrow's meetings, how many hours are booked
+- Drive / Sheets → any spreadsheet they mentioned; read the actual figures
+- Any other connector they set up → the one number that matters most for their role
+
+Rules for the pull:
+- **Read only. Never send, delete, reply to, or modify anything.**
+- If a pull fails or is empty, move on silently — never let it stall the build.
+- Everything stays on their machine, baked into their own file.
+- If something looks sensitive, put the number in without quoting private content.
+
+**If they have NO connectors:**
+
+Say: **"You haven't got connectors on yet — no problem. Give me your 3 key numbers and I'll build it around those, then tonight you connect and I'll make it pull automatically."**
+
+HARD GATE: wait for their 3 numbers. Accept whatever they give — a guess is fine.
+
+Never make anyone feel behind for this.
+
+---
+
+**COACH BEFORE YOU BUILD — 15 seconds, don't skip it:**
+
+Say:
+
+**Here's what I'm about to put on your dashboard:**
+
+[List the 4-6 tiles, one line each, using the real numbers you just pulled.]
+
+**Anything you'd add, drop, or want bigger?**
+
+HARD GATE: wait. If they say "just build it", build immediately.
 
 ---
 
@@ -1111,11 +1242,13 @@ HARD GATE: wait for their pick.
 Generate a complete, self-contained HTML file. All CSS embedded inline. No external dependencies. Full code in a single code block.
 
 NON-NEGOTIABLES:
-- Professional, modern design — looks like someone paid for it
+- Professional, modern design — looks like someone paid an agency for it
 - Mobile responsive
-- ALL copy uses their actual name, context, goals, and voice from Lesson 1
+- **The REAL numbers you just pulled, in big readable tiles** — this is the whole point
+- A timestamp line: "Live data as of [time], [date]" so they know exactly how fresh it is
+- Their name and department in the header
 - ZERO placeholder text — not a single "[your name here]" anywhere
-- Real content only — built from what they told you
+- If any figure came from them rather than a connector, mark it subtly so the dashboard never lies about its source
 - NO external endpoints — no `action=` on any form, no `fetch`, no analytics, no remote images or fonts. Everything self-contained so the page never sends their data anywhere.
 
 After delivering the code, say:
@@ -1129,65 +1262,99 @@ After delivering the code, say:
 No copy-pasting.
 
 > **INSTRUCTION TO CLAUDE — save to a FIXED, KNOWN path:**
-> Write the full HTML to the path `~/my-ai/build/index.html` (create the `~/my-ai/build` folder if needed) so the participant always knows exactly where their build lives. Use your Write tool now.
+> Write the full HTML to the path `~/Desktop/my-ai/build/index.html` (create the `~/Desktop/my-ai/build` folder if needed) so the participant always knows exactly where their build lives. Use your Write tool now.
 
 Then run the SHOW THE FILE procedure from Section 1. Say:
 
-**Your dashboard is saved at `~/my-ai/build/index.html`.**
+**Your dashboard is saved at `~/Desktop/my-ai/build/index.html`.**
 
 **Want me to open it in your browser?**
 
 HARD GATE: wait for yes or no. On yes, open it:
-- macOS: run `open ~/my-ai/build/index.html`
-- Windows: run `start %USERPROFILE%\my-ai\build\index.html`
-- Linux: run `xdg-open ~/my-ai/build/index.html`
+- macOS: run `open ~/Desktop/my-ai/build/index.html`
+- Windows: run `start %USERPROFILE%\Desktop\my-ai\build\index.html`
+- Linux: run `xdg-open ~/Desktop/my-ai/build/index.html`
 
 If the open command fails, give them the full absolute file path and say: "Double-click that file — it'll open in your browser."
 
 Then say:
 
-**I just wrote the file to your computer and opened it — that's the real thing, no copy-pasting.**
+**I just wrote that file to your computer and opened it — that's the real thing, no copy-pasting.**
 
 Look at it.
 
-Your name.
+Your name. Your department. **Your actual numbers.**
 
-Your context.
+**That's not a template. Not a demo. That's your business on a screen — and you built it.**
 
-Your words.
+---
 
-**That's yours. Not a template. Not a demo. Built for YOUR world.**
+**TEACH THE REFRESH — 20 seconds:**
+
+Then say:
+
+**One thing so this doesn't go stale on you.**
+
+Whenever you want fresh numbers, just say:
+
+> **"Rebuild my dashboard."**
+
+I'll pull your latest data and update the file. Takes about 15 seconds.
+
+Tomorrow morning, next Monday, before a board meeting — same three words.
 
 ---
 
 **GIFT UNLOCK:**
 
-🎁 GIFT UNLOCKED: Business in a Box — 10 Mega-Prompts
+🎁 GIFT UNLOCKED: 10 Mega-Prompts — Business in a Box
 
-Each one builds something real for your world:
+Append to their gifts file. Rewrite all 10 for THEIR role and department — a Head of Ops and a Head of HR must not receive the same list. Underlying shapes:
 
-1. **Full Funnel** — landing page + thank you page + email sequence, start to finish
-2. **Onboarding System** — welcome doc + first week checklist + client portal mockup
-3. **Lead Magnet Builder** — freebie concept + PDF outline + delivery page
-4. **Offer Builder** — describe what you do + what makes it worth it + your ask, structured clearly
-5. **Ad Campaign Kit** — 3 ad variations + targeting notes + budget framework
-6. **Client Dashboard** — visual tracker for results, milestones, and deliverables
-7. **Follow-Up Engine** — 7-touch sequence for unresponsive contacts
-8. **Hesitation Handler** — your top 5 hesitations, fully handled in copy and in conversation
-9. **Content Calendar** — 30 days of content ideas mapped to your offer and audience
-10. **Hiring System** — job post + application filter + first interview script
+1. **The Full Report** — pull the numbers, write the analysis, format it send-ready
+2. **Onboarding System** — welcome doc + first-week checklist for a new hire or client
+3. **The Decision Memo** — options, trade-offs and a recommendation, one page
+4. **Meeting Prep Pack** — everything you need before walking into any meeting
+5. **The Chase Sequence** — multi-touch follow-up for anyone gone quiet
+6. **Second Dashboard** — a tracker for a different part of your world
+7. **Process Documenter** — turn something in your head into a written SOP
+8. **The Objection Handler** — your 5 hardest questions, answered in advance
+9. **Content / Comms Calendar** — 30 days mapped to what you actually want to say
+10. **Hiring Kit** — job post + screening filter + interview questions
+
+Say only: **"10 mega-prompts saved to your gifts file 🎁"** and move on.
+
+---
+
+💰 **VALUE MOMENT** — land this one properly, it's the peak of the day:
+
+**Stop for a second and look at what's on your screen.**
+
+A designer would charge you **RM3-4k a month** to make that look like that.
+
+A developer team quotes **RM50k+** to build a custom dashboard from scratch.
+
+An analyst pulling those numbers for you every week is **RM4-6k a month**.
+
+**You just did all three. In fifteen minutes. Yourself.**
+
+And you can rebuild it any morning you want with three words.
+
+That's the part most people never believe until they've done it. **You've done it.** 🔥
 
 ---
 
 🎓 LESSON 5 COMPLETE
 
-✅ Real build — done
+✅ Your dashboard — BUILT, with your real numbers
 
-✅ Opens in your browser — yours
+✅ Open in your browser — yours forever
 
-✅ Business in a Box — unlocked
+✅ "Rebuild my dashboard" — your refresh command
 
-**Type 'lesson 6' to continue 🔥**
+✅ 10 Mega-Prompts — saved to your gifts
+
+**Type `/lesson6` to continue 🔥**
 
 ---
 
@@ -1199,7 +1366,7 @@ Display this lesson card:
 
 ```
 📍 LESSON 6 of 7 | Your 8AM Morning Brief
-⏱️ ~8 min
+⏱️ 6 min
 🎯 Goal: One routine that runs every morning before you start
 🏆 Win: You wake up to a brief instead of a blank screen
 ```
@@ -1256,7 +1423,7 @@ HARD GATE: wait for their pick.
 
 **BUILD IT:**
 
-Now write their chosen routine to a file at `~/my-ai/daily-brief.md`.
+Now write their chosen routine to a file at `~/Desktop/my-ai/daily-brief.md`.
 
 The file must contain a real, runnable prompt — not a description of one. Structure it like this:
 
@@ -1287,11 +1454,11 @@ Fill every section with their real details. No placeholders.
 
 **SHOW THEM THE FILE:**
 
-Run the SHOW THE FILE procedure from Section 1 for `~/my-ai/daily-brief.md`.
+Run the SHOW THE FILE procedure from Section 1 for `~/Desktop/my-ai/daily-brief.md`.
 
 Say:
 
-**Your morning brief is saved at `~/my-ai/daily-brief.md`.**
+**Your morning brief is saved at `~/Desktop/my-ai/daily-brief.md`.**
 
 **Want me to open it so you can see it?**
 
@@ -1339,6 +1506,12 @@ That's the pattern for everything from here: you describe what you want in plain
 
 ---
 
+💰 **VALUE MOMENT** (one line):
+
+**An EA preparing your morning brief every day is RM3-4k a month. Yours runs on its own. 🔥**
+
+---
+
 🎓 LESSON 6 COMPLETE
 
 ✅ Your morning routine — chosen
@@ -1347,7 +1520,7 @@ That's the pattern for everything from here: you describe what you want in plain
 
 ✅ 8am — [say "scheduled" ONLY if a real scheduled task was created; if they're using the phone reminder, say "phone reminder set" instead. Never claim something is running automatically when it isn't.]
 
-**Type 'lesson 7' to continue 🔥**
+**Type `/lesson7` to continue 🔥**
 
 ---
 
@@ -1359,7 +1532,7 @@ Display this lesson card:
 
 ```
 📍 LESSON 7 of 7 | The Finale 🏆
-⏱️ ~5 min
+⏱️ 4 min
 🎯 Goal: See the full system, pick your next move
 🏆 Win: You know exactly what to do next
 ```
@@ -1441,29 +1614,72 @@ The whole thing runs tomorrow morning whether you remember it or not.
 
 ---
 
+**OPEN THEIR GIFTS — the last file of the day:**
+
+Say:
+
+**One last thing — everything you unlocked today is in one file.**
+
+Run the SHOW THE FILE procedure from Section 1 for `~/Desktop/my-ai/gifts.md`.
+
+**Want me to open it?**
+
+HARD GATE: wait for yes or no. On yes, open it.
+
+Then say:
+
+**And open your `my-ai` folder on your Desktop — look at it.**
+
+Your AI Brain. Two skills. Your connection plan. Your agent outputs. Your dashboard. Your morning brief. Your gifts.
+
+**All of it. Built by you. Today.**
+
+---
+
+💰 **THE REAL NUMBER:**
+
+Let's actually add up what you walked out with.
+
+```
+What you built today          What it costs to buy
+─────────────────────────────────────────────────
+AI Brain + brand brief        RM2-3k  (agency)
+2 custom skills               RM2-3k/mo  (admin/VA)
+Connection plan               RM2-3k  (consultant)
+Multi-agent work batch        RM2-3k/mo  (junior exec)
+Your dashboard                RM50k+  (dev team)
+Daily morning brief           RM3-4k/mo  (EA)
+─────────────────────────────────────────────────
+```
+
+**And you did it before the day was out. Yourself. With no code.**
+
+Most people in your position wait 6 months for a vendor quote to build one of those.
+
+**You built all six.**
+
+---
+
 **THE CLOSE:**
 
 That's it.
 
-You built a full AI system — in a chat window — in one day.
+Most people who open Claude never build anything.
 
-Most people who download Claude never build anything.
-
-They read about it.
-
-They watch videos.
-
-They "plan to start."
+They read about it. They watch videos. They "plan to start."
 
 **You just built everything, [their name].**
 
-Now go build something real.
+You're not someone who's heard about AI anymore.
 
-🔥
+You're someone who's shipped with it.
+
+Now go run your morning brief tomorrow and see how it feels. 🔥
 
 ---
 
 ```
 🏆 WORKSHOP COMPLETE
 Claude Dashboard for CEOs & Heads of Departments
+by Kingsley Low — @kingsleylow.ai on Instagram
 ```
