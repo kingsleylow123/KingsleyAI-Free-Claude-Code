@@ -528,7 +528,7 @@ Display this lesson card:
 
 ```
 📍 LESSON 2 of 7 | Build Your First Skill
-⏱️ 12 min
+⏱️ 11 min
 🎯 Goal: Build a custom skill from scratch
 🏆 Win: YOUR first custom skill — built for how you actually work
 ```
@@ -696,12 +696,9 @@ Write a file to `~/Desktop/my-ai/skills/my-[skill-name]/SKILL.md` (their own pla
 ---
 name: my-[skill-name]
 description: [one line — what it does and WHEN Claude should use it]
-disable-model-invocation: true
 ---
 [the full skill instructions and rules]
 ```
-
-> **`disable-model-invocation: true` is REQUIRED today, in every skill you write for them.** It means the skill only runs when they explicitly type `/my-[skill-name]`. Without it, their skill can fire by itself later in the workshop — an inbox-triage skill going off in the middle of the Lesson 6 dashboard pull, for example — and derail a live room. Do not omit it. You'll explain it to them in one line after they run it.
 
 Use the actual skill name and description from what was just built for them.
 
@@ -763,78 +760,31 @@ Try `/help` or `/compact` sometime — but the real power is that YOUR skills sh
 
 Right now yours lives on your Desktop, which is exactly where we want it during a workshop — nothing touching your settings.
 
-**NOW MAKE IT A REAL SLASH COMMAND — check first, then offer:**
-
-> **RUNTIME CHECK — do this silently, do NOT narrate it:**
-> Run `ls ~/.claude/skills` (read-only, harmless).
-> - **Folder EXISTS** → their machine can load a new skill live, with no restart. Go to PATH A.
-> - **Folder MISSING** → creating it now would need a restart, and a restart wipes this whole conversation. Go to PATH B. **Never mention that they missed out on anything.**
-
----
-
-**PATH A — the folder exists. Give them the real moment.**
+**WHY YOUR SKILL ISN'T IN THAT LIST — 30 seconds, be straight about it:**
 
 Say:
 
-**Want your skill as an actual `/` command — right now?**
+**Notice yours isn't in there yet.**
 
-Type this:
+That's on purpose. Yours is saved in your `my-ai` folder, where you can see it and edit it — not buried in Claude's settings.
 
-> **"Install my skill as a slash command"**
+**That's exactly what we want during a workshop.** Nothing touching your setup, nothing to undo later.
 
-HARD GATE: wait for them to type it. **They must ask — don't do it unprompted.**
-
-When they do, copy their SKILL.md to `~/.claude/skills/my-[skill-name]/SKILL.md`, keeping the frontmatter exactly — **including `disable-model-invocation: true`**. Keep the Desktop copy too — that's their portable one.
-
-Then:
-
-**Done. Now type `/` and look.**
-
-HARD GATE: wait for them to look. Their skill is in the list.
-
-**Now run it — type `/my-[skill-name]`**
-
-HARD GATE: wait. It fires.
-
-Then land it:
-
-**That's a command you invented, in your own Claude, ten minutes after learning what a skill is.**
-
-It'll be there tomorrow. And next month. In every project you open.
-
-Then, one line — say it lightly, don't make it a lecture:
-
-**One thing I did on purpose: I set yours to only run when YOU type it.**
-
-Otherwise it'd start firing on its own halfway through our next lesson.
-
-**Tonight, delete one line from the file and it goes fully automatic** — Claude will then run it whenever it's relevant, without you asking. That's in your next-steps.
+So today you run it by name. And at the end I'll show you the 3-minute version that puts it in that list permanently.
 
 ---
 
-**PATH B — folder missing. Do NOT offer the slash command.**
-
-Still copy the skill to `~/.claude/skills/my-[skill-name]/SKILL.md` (frontmatter intact, **including `disable-model-invocation: true`**) so it's ready for them — but be straight about the timing, with zero apology:
-
-**Your skill's saved in two places — your Desktop folder, and Claude's own skills folder.**
-
-**It'll show up as `/my-[skill-name]` the next time you restart Claude Code.** Not now — restarting right now would lose everything we've built in this conversation.
-
-So today we run it by name. Tomorrow you get the slash.
-
----
-
-**THEN — TEACH THE ANATOMY, 30 SECONDS, BOTH PATHS:**
+**TEACH THE ANATOMY — 30 seconds:**
 
 Say:
 
 **Here's the whole thing, and it's simpler than you'd think:**
 
 ```
-   ~/.claude/skills/ my-weekly-review / SKILL.md
-          ▲                 ▲              ▲
-    where Claude       the command      the file
-      looks             name
+   my-ai / skills / my-weekly-review / SKILL.md
+                          ▲               ▲
+                    the command        the file
+                       name
 
    Inside SKILL.md:
    ┌──────────────────────────────────────┐
@@ -847,9 +797,9 @@ Say:
 
 **A folder, and a file with your instructions in it. That's a skill.**
 
-The `description` line is the clever bit — Claude reads it and knows when to use the skill, even if you never type the slash.
+The `description` line is the clever bit — that's how Claude knows when to reach for it.
 
-**You now know how to build these. Any job you repeat, you can turn into a command.**
+**You now know how to build these. Any job you repeat, you can turn into one.**
 
 **Reply YES to continue.**
 
@@ -2289,14 +2239,12 @@ Build it from what ACTUALLY happened in their session — not a generic list. In
 ## Tonight (10 minutes)
 1. Make your AI Brain global — open Claude Code and type:
    "Add my AI Brain to my global Claude memory"
-2. Make your skill fire automatically (30 seconds):
-   Open ~/.claude/skills/[their-skill]/SKILL.md and delete the line
-   "disable-model-invocation: true". Save.
-   Claude will then run it whenever it's relevant — you won't even
-   have to type the slash.
-3. [ONLY if they were PATH B in Lesson 2 — delete this line if their
-   slash command already worked in class]
-   Restart Claude Code once so /[their-skill] appears.
+2. Turn your skill into a real /slash command (3 minutes):
+   Open a NEW Claude Code window and paste:
+   "Create a skill called [their-skill-name] that does the following,
+    and install it so I can run it with a slash command: [paste the
+    contents of their SKILL.md]"
+   Restart Claude Code. Now type / and it's there, in every project.
 4. [If they had a phone-reminder fallback] Set your 8am reminder.
 
 ## This week
@@ -2429,6 +2377,49 @@ You're not someone who's heard about AI anymore.
 You're someone who's shipped with it.
 
 Run your morning brief tomorrow and see how it feels. 🔥
+
+---
+
+**OPTIONAL BONUS — 3 MINUTES, ONLY IF THEY WANT IT:**
+
+> Run this AFTER the completion banner below, never before. The workshop is finished and their dashboard is done — nothing here can break anything. Anyone who wants to leave, leaves.
+
+Say:
+
+**One optional extra — 3 minutes, and it's the thing people ask me about most.**
+
+Remember your skill isn't in the `/` menu yet?
+
+**Let's fix that — in a brand new window, so nothing we built today is at risk.**
+
+**1.** Open a **NEW** Claude Code window. (File → New, or just open the app again.)
+
+Leave this one exactly where it is. Nothing here gets touched.
+
+**2.** In the new window, paste this:
+
+Generate their paste-block with the FULL contents of their SKILL.md already inside it, so it is genuinely one copy-paste:
+
+```
+Create a skill called [their-skill-name] and install it so I can run it
+with a slash command. Here's what it should do:
+
+[paste the entire contents of their SKILL.md here — description and all]
+```
+
+**3.** Let it finish, then **quit and reopen Claude Code.**
+
+**4.** Type `/` — your command is in the list. Run it.
+
+That's it. It's now in every project, on this machine, permanently.
+
+---
+
+Then say:
+
+**Why we did it in a separate window:** installing a skill needs a restart, and restarting in here would have thrown away everything we built today.
+
+**Now you know how to do that for any job you repeat.** Build it, install it, type slash.
 
 ---
 
