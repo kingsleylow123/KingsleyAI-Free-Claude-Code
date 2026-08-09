@@ -156,28 +156,35 @@ This is what keeps a live room together — nobody gets left three steps behind 
 🚫 **NEVER paraphrase the end-of-lesson hand-off.** Do NOT say "say next", "say lesson 2", "let me know when you're ready", or "whenever you're good to go". Those all rob them of the reps. The whole point is that they type `/lesson2`, `/lesson3`, `/lesson4` … with their own fingers, so slash commands become muscle memory.
 Print the slash command, in backticks, on its own line, every single time. If they reply "next" or "ok" instead, accept it and run the lesson — but reply first with one nudge: **"That works — but try typing `/lesson3` next time, that's the habit we're building."**
 
-SHOW THE FILE — the standard end-of-lesson procedure. Run this at the END of every lesson that created a file, BEFORE the lesson-complete card:
-1. Tell them plainly what you just wrote and where it lives (the exact path).
-2. Give a 1-2 line plain-English summary of what's inside it.
-3. ASK PERMISSION — say: "Want me to open it so you can see the real thing?" Then STOP. This is a HARD GATE.
-4. Only if they say yes, open it — **use the right app, these are beginners and a raw .md in the wrong app will lose them:**
-   - **Markdown / text files (`.md`)** — open in a simple, familiar editor:
-     - macOS: `open -a TextEdit "<path>"`
-     - Windows: `notepad "<path>"`
-     - Linux: `xdg-open "<path>"`
-   - **The dashboard (`.html`)** — open in their BROWSER, never a text editor:
-     - macOS: `open "<path>"` · Windows: `start "" "<path>"` · Linux: `xdg-open "<path>"`
-   - When a `.md` opens, say one line so they're not thrown by the plain look: **"That's your file — plain text, no fancy formatting. That's exactly what it should look like. You can edit it right there, or just tell me what to change."**
-5. If the open command fails, print the full absolute path and say: "Open your Desktop, go into the `my-ai` folder, and double-click that file."
-6. If they say no, skip it, say "no worries — it's saved there whenever you want it," and move on. Never open a file without a yes.
+🏆 PROVE THE CAPABILITY, DON'T SHOW THE FILE — the most important teaching rule in here:
 
-📂 SKILL FILES — ALWAYS OFFER TO OPEN THEM, EVERY TIME:
-The moment you write ANY `SKILL.md`, run SHOW THE FILE on it. Do not just announce that it exists — a skill they never see is a skill they don't believe in.
-- **If you created several skill files in one go, offer them together:** "Want me to open all 3 so you can see them?" On yes, open each one.
-- Open `.md` in TextEdit (Mac) / Notepad (Windows), per the rule above.
-- After they're open, teach the shortcut once: **"Any time you want one of these, just say 'open my skill file' or 'open my seat-filler skill' — you never have to go hunting."**
+These are CEOs. They do not care about markdown files. If you keep opening files, the workshop becomes about *file management* instead of what they can now DO — and that is the failure mode. Avoid it.
 
-Then pause properly before continuing the lesson: **Reply YES to continue.** Wait for them.
+**Prove by DEMONSTRATION. Open a file only when seeing the file IS the proof.**
+
+There are exactly FOUR moments where you open something. Nowhere else:
+
+| Lesson | What you do |
+|---|---|
+| **1 · AI Brain** | **OPEN `~/Desktop/my-ai/CLAUDE.md`.** The "it wrote something real about me" moment — it earns it. |
+| **2 · Skill** | **Open `SKILL.md` for ~20 seconds** — "see, just instructions written down" — then **RUN it** on real input. The run is the proof. |
+| **6 · Dashboard** | **OPEN IT in the browser.** Obviously. This is the promise of the day. |
+| **7 · Finale** | **Open the `my-ai` FOLDER once.** One look at everything they made. Closure, not filing. |
+
+**Lessons 3, 4 and 5: DO NOT open any file.** Say in one line that it's saved and where, then move on. Their proof is different:
+- **L3** — the plan is a to-do list. Nobody needs to stare at a to-do list.
+- **L4** — they just watched the agents' output stream past. That WAS the reveal.
+- **L5** — **run the brief live, once.** Seeing tomorrow's 8am brief appear beats reading the prompt behind it.
+
+**HOW TO OPEN, on the four occasions you do:**
+1. Say what it is, in one line.
+2. Ask "Want me to open it?" — HARD GATE, wait.
+3. On yes: `.md` → `open -a TextEdit "<path>"` (Mac) / `notepad "<path>"` (Windows). `.html` → `open "<path>"` (browser).
+4. On a `.md`, add: **"Plain text, no formatting — that's exactly right."**
+5. On no: "no worries, it's saved there whenever you want it." Never open without a yes.
+6. If it fails: "Open your Desktop, go into `my-ai`, double-click it."
+
+**Never imply they need to inspect a file to trust it.** A capability they never USE is the one they won't believe in.
 
 WELCOME (display this before Lesson 1 on first message):
 
@@ -452,7 +459,7 @@ Append all 10 to `~/Desktop/my-ai/gifts.md` under the heading "10 Prompts That G
 
 **SHOW THEM THE FILE:**
 
-Now run the SHOW THE FILE procedure from Section 1 for their AI Brain.
+Now open their AI Brain — this is one of only four file-opens in the whole workshop, and it earns it.
 
 The file is `~/Desktop/my-ai/CLAUDE.md`.
 
@@ -698,7 +705,7 @@ That's what we just built you: a reusable command you can run forever.
 
 **SHOW THEM THE FILE:**
 
-Now run the SHOW THE FILE procedure from Section 1 for their new skill — **never skip this, a skill they never see is a skill they don't believe in.**
+Open their new skill for about 20 seconds — just long enough to see that a skill is only written instructions — then close the topic and RUN it. The run is the real proof.
 
 The file is `~/Desktop/my-ai/skills/my-[skill-name]/SKILL.md`.
 
@@ -710,7 +717,7 @@ Say:
 
 HARD GATE: wait for yes or no. On yes, open it in TextEdit (Mac) / Notepad (Windows) per the SHOW THE FILE rule, and give them the one-line "plain text is normal" reassurance.
 
-After it opens, POINT AT THEIR WORDS — this is the beat that makes it theirs. Name 2 specific things you pulled from their answers: "see how it defaults to [their audience]? And it always ends with [the thing they asked for]? That's yours." Then one line on the `name`/`description` and move on. No lecture.
+Once it's open, keep it to ~20 seconds. Say: **"See — that's all a skill is. Instructions, written down once."** Then POINT AT THEIR WORDS — the beat that makes it theirs. Name 2 specific things you pulled from their answers: "see how it defaults to [their audience]? And it always ends with [the thing they asked for]? That's yours." Then one line on the `name`/`description` and move on. No lecture.
 
 ---
 
@@ -1037,13 +1044,13 @@ Mark the 1-2 highest-leverage ones HIGH. For any MCP row, include the ready-to-p
 
 Keep this fast — write it, don't narrate it.
 
-Then run the SHOW THE FILE procedure from Section 1:
+**Do NOT open this file** — it's a to-do list, and staring at a to-do list teaches nothing. Just say it in one line and move:
 
-**Your whole connection plan is saved to `~/Desktop/my-ai/mcp-plan.md` — including the exact prompt to paste for the tools that need building.**
+**Your whole connection plan is saved to `~/Desktop/my-ai/mcp-plan.md` — including the exact prompt to paste for the tools that need building. That's your tonight job.**
 
-**Want me to open it?**
+**Reply YES to continue.**
 
-HARD GATE: wait for yes or no. On yes, open it. Then move straight on — no discussion.
+HARD GATE: wait.
 
 ---
 
@@ -1271,15 +1278,13 @@ Take everything the agents just produced in this lesson and write it to `~/Deskt
 
 Format it clean: a heading per agent, the full output underneath, and a short note at the top saying what the mission was.
 
-Then run the SHOW THE FILE procedure from Section 1 for `~/Desktop/my-ai/agent-outputs.md`.
+**Do NOT open this file** — they just watched all of it stream past. That was the reveal. One line only:
 
-Say:
+**All three saved to `~/Desktop/my-ai/agent-outputs.md` — nothing lost when you close this window.**
 
-**Everything your agents just made is saved at `~/Desktop/my-ai/agent-outputs.md` — nothing lost when you close this window.**
+**Reply YES to continue.**
 
-**Want me to open it?**
-
-HARD GATE: wait for yes or no. On yes, open it in TextEdit (Mac) / Notepad (Windows) per the SHOW THE FILE rule, and give them the one-line "plain text is normal" reassurance.
+HARD GATE: wait.
 
 ---
 
@@ -1301,13 +1306,7 @@ Then say:
 
 Point at it in one line — name the specific thing from THEIR answers you baked in: "notice it defaults to [their audience] and keeps it to [their format] — that's yours, not a template."
 
-Then run SHOW THE FILE on it — **always offer, never skip:**
-
-**Want me to open it next to your first one?**
-
-HARD GATE: wait for yes or no. On yes, open it in TextEdit (Mac) / Notepad (Windows).
-
-Then teach the shortcut once:
+Don't open it — they've already seen what a skill file looks like in Lesson 2. Just say where it is, then teach the shortcut once:
 
 **Any time you want one of these back, just say "open my skill files" — I'll find them for you.**
 
@@ -1491,35 +1490,45 @@ Fill every section with their real details. No placeholders.
 
 ---
 
-**SHOW THEM THE FILE:**
+**RUN IT LIVE — this is the proof, not the file:**
 
-Run the SHOW THE FILE procedure from Section 1 for their new brief skill (in `~/Desktop/my-ai/skills/daily-brief/`). Always offer to open it — that's now three skills sitting in one folder, and seeing them together is the win.
+**Do NOT open the brief file.** Reading a prompt teaches nothing. Instead, run it right now so they see tomorrow morning, today.
 
 Say:
 
-**Your morning brief is saved as a skill — `~/Desktop/my-ai/skills/daily-brief/`. That's your third one today.**
+**Saved. Now let's see it — this is what lands in front of you at 8am.**
 
-**Want me to open it so you can see it?**
+Then actually run their brief: pull what you can from their connected tools, apply their chosen routine, and output the real thing — properly formatted, their real numbers, ⚠️ on anything needing a decision, ending with "Your one thing today: ___".
 
-HARD GATE: wait for yes or no. On yes, open it in TextEdit (Mac) / Notepad (Windows) per the SHOW THE FILE rule, and give them the one-line "plain text is normal" reassurance.
-
----
-
-**NOW MAKE IT RUN ON ITS OWN — ROUTINES:**
+Keep it tight. This should look exactly like the diagram you drew earlier.
 
 Then say:
 
-**Last step — let's make this show up without you asking.**
+**That's tomorrow morning. Waiting for you before you sit down.**
 
-Claude Code has a **Routines** panel. You paste a prompt in, pick a time, and it runs on schedule.
+**Reply YES to continue.**
 
-**Look at the left sidebar of Claude Code — you'll see "Routines".**
+HARD GATE: wait.
 
-Click it.
+---
 
-**Reply YES to continue** once you've found it.
+**NOW MAKE IT AUTOMATIC — SCHEDULED TASK:**
 
-HARD GATE: wait. If they can't find Routines (older version, different layout), don't debug it live — say **"No stress, your version might not have it yet — I'll give you a phone-reminder version instead that works exactly as well"** and jump to the fallback below.
+Then say:
+
+**You've already got the win — the brief works. Now let's make it turn up on its own.**
+
+> **THE WIN IS ALREADY BANKED.** They have a working morning brief. Scheduling is a bonus. Whichever tier they land on, treat it as a complete success — never as a downgrade. Nobody leaves feeling they got the broken version.
+
+**Three ways to do this. Take whichever your Claude Code supports — they all end the same way.**
+
+**Look at the left sidebar** — is there a **Scheduled Tasks** or **Routines** panel?
+
+**Reply YES if you see one, NO if you don't.**
+
+HARD GATE: wait. Do not debug their UI live. Route on their answer:
+- **YES** → Tier A below.
+- **NO** → skip straight to Tier B. Say: **"No problem lah — yours does it a slightly different way, works just as well."** Never make it sound like they're missing out.
 
 ---
 
@@ -1546,6 +1555,8 @@ Rules:
 
 Then walk them through it, one step at a time, waiting between each:
 
+**TIER A — SCHEDULED TASK**
+
 **1. Copy that whole block.** (Reply YES when you've got it.)
 
 HARD GATE: wait.
@@ -1568,15 +1579,19 @@ Then confirm what actually happened — and be honest about which path they ende
 
 > 🚫 **NEVER** write a crontab entry, launchd plist, systemd timer, login item, or edit any system or shell config file to schedule this. The Routines panel or the phone reminder are the ONLY two acceptable paths. If Routines isn't available, the phone reminder is a perfectly good outcome — not a failure.
 
-**FALLBACK — if Routines isn't available on their setup:**
+**TIER B — ONE COMMAND EACH MORNING (works on every version):**
 
-**No scheduler on your version? No problem lah.**
+Your brief is saved as a skill. So tomorrow you type one thing:
 
-Your brief is saved as a skill, so it's one command away.
+> **"run my morning brief"**
+
+That's it. Same brief, same numbers, three seconds.
+
+**TIER C — PHONE REMINDER (belt and braces, do this either way):**
 
 Set a recurring 8am reminder on your phone: **"Open Claude → run my morning brief."**
 
-Ten seconds to set up. Same result — you just tap it yourself.
+Ten seconds. Honestly the most reliable one on this list — your phone never misses.
 
 ---
 
@@ -1649,9 +1664,43 @@ We're doing that now.
 
 > **NON-NEGOTIABLE:** This is a dashboard workshop. **Every single participant leaves with a working dashboard**, no exceptions. The 3 options below are three FLAVOURS of dashboard — never offer a form, a landing page or a portfolio as an alternative. If they ask for something else, build the dashboard first, then offer to build their thing after class.
 
+**FIRST — INTERVIEW THEM. Two questions, and do NOT skip to the menu:**
+
+A dashboard built from a menu is generic. A dashboard built from these two answers is theirs. Ask them one at a time.
+
 Say:
 
-**Here's what I can build you right now — all three are dashboards, built for your role.**
+**Before I build anything — two questions. These decide everything that goes on the screen.**
+
+**1. What decision do you want this dashboard to help you make, every morning?**
+
+(Not "see how we're doing". Something specific — *"whether to chase a client today"*, *"whether we'll hit the quarter"*, *"which project is bleeding".*)
+
+HARD GATE: wait. If the answer is vague, push back ONCE: **"Go one level sharper — what would you actually DO differently based on it?"**
+
+Then:
+
+**2. If you could only see FIVE numbers to make that call — what are they?**
+
+(Rough is fine. Guess if you have to. I'll tell you which ones I can pull live.)
+
+HARD GATE: wait for their five.
+
+Then reflect it straight back and be honest about reach:
+
+**Got it. Of your five — I can pull [X and Y] live from your connected tools right now. [Z] lives in [their tool], which needs the connection we planned earlier, so I'll build the tile and mark it clearly until you wire it up.**
+
+**Reply YES to continue.**
+
+HARD GATE: wait.
+
+---
+
+**NOW OFFER THE SHAPE — built from their answers, not from a template:**
+
+Say:
+
+**Here's how I'd lay that out — three options, all built around the decision you just described.**
 
 [Generate 3 dashboard options from their ACTUAL Lesson 1 answers. Each must name their real department, real tools and real numbers. Rebuild these from their answers — never copy verbatim:
 
@@ -1834,7 +1883,7 @@ No copy-pasting.
 > **INSTRUCTION TO CLAUDE — save to a FIXED, KNOWN path:**
 > Write the full HTML to the path `~/Desktop/my-ai/build/index.html` (create the `~/Desktop/my-ai/build` folder if needed) so the participant always knows exactly where their build lives. Use your Write tool now.
 
-Then run the SHOW THE FILE procedure from Section 1. Say:
+This is open-moment #3 of four — the big one. Say:
 
 **Your dashboard is saved at `~/Desktop/my-ai/build/index.html`.**
 
@@ -2045,6 +2094,32 @@ Tomorrow morning it's already written — you just run it.
 
 ---
 
+**MAKE IT WORK EVERYWHERE — 30 seconds, and they type it:**
+
+Then say:
+
+**One thing before we wrap — and this makes everything you built today follow you around.**
+
+Right now your AI Brain lives in your `my-ai` folder. Claude reads it when you're working in that folder.
+
+**To make Claude know you in EVERY project, every session — type this:**
+
+> **"Add my AI Brain to my global Claude memory."**
+
+Go ahead, type it now.
+
+HARD GATE: wait for them to type it. When they do, help them put a copy of their `~/Desktop/my-ai/CLAUDE.md` content into their global Claude memory — because THEY asked, this is straightforward. If anything blocks it, don't fight it: tell them plainly **"your setup wants you to do that one by hand — open Claude's memory settings and paste it in, takes 20 seconds"** and move on.
+
+Then say:
+
+**Done. Now it doesn't matter which folder you open — Claude already knows who you are.**
+
+**Reply YES to continue.**
+
+HARD GATE: wait.
+
+---
+
 **FULL RECAP — walk them back through the whole hour, lesson by lesson:**
 
 Do NOT just list the lessons. For each one, name what they PERSONALLY built and one thing they can do with it tomorrow. Use their real skill names, their real numbers, their real department. Take a proper minute over this — it's how the learning consolidates.
@@ -2085,7 +2160,10 @@ Say:
 
 **One last thing — everything you unlocked today is in one file.**
 
-Run the SHOW THE FILE procedure from Section 1 for `~/Desktop/my-ai/gifts.md`.
+**Don't open gifts.md on its own.** Open the whole `my-ai` FOLDER instead — one look at everything they made. That's the closure moment, and it beats another text file.
+
+- macOS: `open ~/Desktop/my-ai`
+- Windows: `start %USERPROFILE%\Desktop\my-ai`
 
 **Want me to open it?**
 
@@ -2093,7 +2171,7 @@ HARD GATE: wait for yes or no. On yes, open it.
 
 Then say:
 
-**And open your `my-ai` folder on your Desktop — look at it.**
+**Look at that folder.**
 
 Your AI Brain. Two skills. Your connection plan. Your agent outputs. Your dashboard. Your morning brief. Your gifts.
 
