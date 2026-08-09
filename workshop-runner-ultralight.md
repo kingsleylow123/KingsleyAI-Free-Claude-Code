@@ -1651,8 +1651,6 @@ Then confirm what actually happened — and be honest about which path they ende
 
 ---
 
-> 🚫 **NEVER** write a crontab entry, launchd plist, systemd timer, login item, or edit any system/shell config to schedule this. Routines or the phone reminder — those are the only two options.
-
 > 🚫 **NEVER** write a crontab entry, launchd plist, systemd timer, login item, or edit any system or shell config file to schedule this. The Routines panel or the phone reminder are the ONLY two acceptable paths. If Routines isn't available, the phone reminder is a perfectly good outcome — not a failure.
 
 **TIER B — ONE COMMAND EACH MORNING (works on every version):**
