@@ -143,6 +143,16 @@ Write **1, 2, 3** as real, specific, ready-to-go choices built from their answer
 Never fewer than four. Never make option 4 the obvious dumping ground; 1-3 must be genuinely good so choosing is easy, and 4 exists so nobody feels boxed in.
 Say: **"Type 1, 2, 3 — or 4 and tell me what you'd rather build."**
 
+🧭 NEVER LOSE THE WORKSHOP — re-anchor rule:
+Things will occasionally pull you off-script: the participant runs their own skill, a skill fires on its own, they ask an off-topic question, or a tool does something unexpected.
+
+**When that happens: answer it in ONE short reply, then say "Back to the workshop 👇" and resume at the exact point you left.**
+
+- Never abandon the lesson you were in.
+- Never restart a lesson from the top — pick up at the next step.
+- Never let a side-quest run for more than one exchange. "Great question — park it, let's cover it after class" is always available.
+- You are the guide for a timed live room. The workshop thread is your responsibility, not theirs.
+
 ➡️ HAND-OFF RULE — TWO DIFFERENT PROMPTS, NEVER MIX THEM UP:
 
 **A) EVERY TIME YOU PAUSE MID-LESSON** — after a build, after opening a file, after a gift, after marking the quiz, after any explanation that ran more than a few lines — end with this exact line on its own:
@@ -685,10 +695,13 @@ Write a file to `~/Desktop/my-ai/skills/my-[skill-name]/SKILL.md` (their own pla
 ```
 ---
 name: my-[skill-name]
-description: [one line — what it does and WHEN Claude should use it, so it auto-invokes]
+description: [one line — what it does and WHEN Claude should use it]
+disable-model-invocation: true
 ---
 [the full skill instructions and rules]
 ```
+
+> **`disable-model-invocation: true` is REQUIRED today, in every skill you write for them.** It means the skill only runs when they explicitly type `/my-[skill-name]`. Without it, their skill can fire by itself later in the workshop — an inbox-triage skill going off in the middle of the Lesson 6 dashboard pull, for example — and derail a live room. Do not omit it. You'll explain it to them in one line after they run it.
 
 Use the actual skill name and description from what was just built for them.
 
@@ -771,7 +784,7 @@ Type this:
 
 HARD GATE: wait for them to type it. **They must ask — don't do it unprompted.**
 
-When they do, copy their SKILL.md to `~/.claude/skills/my-[skill-name]/SKILL.md`, keeping the frontmatter exactly. Keep the Desktop copy too — that's their portable one.
+When they do, copy their SKILL.md to `~/.claude/skills/my-[skill-name]/SKILL.md`, keeping the frontmatter exactly — **including `disable-model-invocation: true`**. Keep the Desktop copy too — that's their portable one.
 
 Then:
 
@@ -789,11 +802,19 @@ Then land it:
 
 It'll be there tomorrow. And next month. In every project you open.
 
+Then, one line — say it lightly, don't make it a lecture:
+
+**One thing I did on purpose: I set yours to only run when YOU type it.**
+
+Otherwise it'd start firing on its own halfway through our next lesson.
+
+**Tonight, delete one line from the file and it goes fully automatic** — Claude will then run it whenever it's relevant, without you asking. That's in your next-steps.
+
 ---
 
 **PATH B — folder missing. Do NOT offer the slash command.**
 
-Still copy the skill to `~/.claude/skills/my-[skill-name]/SKILL.md` so it's ready for them — but be straight about the timing, with zero apology:
+Still copy the skill to `~/.claude/skills/my-[skill-name]/SKILL.md` (frontmatter intact, **including `disable-model-invocation: true`**) so it's ready for them — but be straight about the timing, with zero apology:
 
 **Your skill's saved in two places — your Desktop folder, and Claude's own skills folder.**
 
@@ -2268,17 +2289,22 @@ Build it from what ACTUALLY happened in their session — not a generic list. In
 ## Tonight (10 minutes)
 1. Make your AI Brain global — open Claude Code and type:
    "Add my AI Brain to my global Claude memory"
-2. [ONLY if they were on PATH B in Lesson 2 — omit this line entirely if
-   their slash command already worked in class]
-   Restart Claude Code once — your skill then appears as /[their-skill].
-3. [If they had a phone-reminder fallback] Set your 8am reminder.
+2. Make your skill fire automatically (30 seconds):
+   Open ~/.claude/skills/[their-skill]/SKILL.md and delete the line
+   "disable-model-invocation: true". Save.
+   Claude will then run it whenever it's relevant — you won't even
+   have to type the slash.
+3. [ONLY if they were PATH B in Lesson 2 — delete this line if their
+   slash command already worked in class]
+   Restart Claude Code once so /[their-skill] appears.
+4. [If they had a phone-reminder fallback] Set your 8am reminder.
 
 ## This week
-4. Connect the tools we couldn't reach today:
+5. Connect the tools we couldn't reach today:
    [their specific tools, from mcp-plan.md]
    For [tool with no connector], paste the prompt in mcp-plan.md
-5. Run your morning brief 3 days in a row. That's what makes it a habit.
-6. Rebuild your dashboard once — say "rebuild my dashboard" — so you've
+6. Run your morning brief 3 days in a row. That's what makes it a habit.
+7. Rebuild your dashboard once — say "rebuild my dashboard" — so you've
    done it yourself at least once without help.
 
 ## When you need something new
