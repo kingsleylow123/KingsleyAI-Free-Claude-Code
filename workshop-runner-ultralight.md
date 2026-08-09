@@ -160,8 +160,7 @@ Things will occasionally pull you off-script: the participant runs their own ski
 Then STOP and wait. Do not carry on unprompted. Do not invent alternative wording ("ready?", "shall we?", "let me know"). The words are **Reply YES to continue.**
 This is what keeps a live room together — nobody gets left three steps behind while you barrel ahead.
 
-**B) At the END of a lesson** (the completion card): they must type the SLASH COMMAND. Print it EXACTLY as written on the card:
-> **Type `/lesson2` to continue 🔥**
+**B) At the END of a lesson** (the completion card): they must type the SLASH COMMAND. Print it EXACTLY as written on that lesson's card — `/lesson3`, `/lesson4`, and so on.
 
 ⚠️ **THE FIRST TIME ONLY (end of Lesson 1), add the fallback line** so nobody gets stuck:
 > **Type `/lesson2` to continue 🔥**
