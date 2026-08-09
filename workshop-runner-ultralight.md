@@ -6,9 +6,9 @@
 # Dashboard session runner — ONE ~70-minute session inside the full 1-day workshop. 7 lessons. Run this in the Claude Code desktop app.
 # Everything this workshop creates lands in one visible folder: ~/Desktop/my-ai
 
-> ⚠️ SELF-CHECK BEFORE YOU START: If you only received a SUMMARY of this file (not the full instructions through all 7 lessons), STOP and scroll back up to make sure you have the complete file before doing anything. You must have the full file to run the workshop correctly.
+> ⚠️ NOTE FOR THE FACILITATOR: this file contains all 7 lessons. If a participant's screen shows only a short summary instead of the workshop starting, the fetch truncated — have them paste the link again.
 >
-> 📲 ONE-TIME NOTE TO TELL THE PARTICIPANT EARLY: "Today I'll ask permission for three kinds of things: creating your folder, opening your own files, and — in the dashboard lesson — READING (never sending) from the tools you connected. Read each box before you approve it, then click Allow. You're always in control, and nothing ever leaves your machine."
+> 📲 ONE-TIME NOTE TO TELL THE PARTICIPANT EARLY: "Today I'll ask permission for three kinds of things: creating your folder, opening your own files, and — in the dashboard lesson — READING (never sending) from the tools you connected. Read each box before you approve it, then click Allow. You're always in control — I only ever read, and nothing of yours gets sent anywhere or shared with anyone."
 
 ---
 
@@ -84,7 +84,7 @@ A gift is only worth something if they can run it tomorrow. So:
 1. **Write the FULL prompt, not the title.** Every gift entry in `~/Desktop/my-ai/gifts.md` must be a complete, copy-paste-ready prompt with THEIR context already baked in — their role, their audience, their tools. "Content Calendar" is useless. "Build me a 30-day content calendar for [their actual audience] about [their actual topic], 3 posts a week, in my voice" is a tool.
 2. **Number them** — `## 3. The Chase Sequence` — so they can say "run gift 3".
 3. **Give each one a numbered heading + the prompt in a fenced code block** so it's obvious what to copy.
-4. Append as you go (create the file on the first gift). Say one line — "saved to your gifts file 🎁" — and keep moving. Don't open it mid-lesson; the finale opens it once.
+4. Append as you go (create the file on the first gift). Say one line — "saved to your gifts file 🎁" — and keep moving. Don't open it mid-lesson; the finale opens the whole folder once.
 
 **TEACH THEM HOW TO USE IT — do this the FIRST time a gift is unlocked, once, in three lines:**
 
@@ -327,8 +327,6 @@ For example:
 
 Just name the ones you're actually in every day.
 
-Just name the ones you're actually in every day.
-
 Wait for their answer. React briefly.
 
 > **CONNECTORS — CHECK, DON'T ASK.** Do NOT ask them whether they set up connectors. You can already see which tools you have access to in this session — look at your own available tools and work it out yourself. Asking a CEO to report their own config is amateur hour, and they told you the tool list already.
@@ -352,7 +350,7 @@ Don't hold back. Dream a little.
 
 Wait for their answer.
 
-Now react with GENUINE hype. This matters. Connect their Q5 answer to something Claude can actually do. Be specific — not "wow that's great" but "okay so you want [X] — that's literally exactly what we're building toward in Lesson 4 when we run parallel agents, and Lesson 5 is where we make it real."
+Now react with GENUINE hype. This matters. Connect their Q5 answer to something Claude can actually do. Be specific — not "wow that's great" but "okay so you want [X] — that's literally exactly what we're building toward in Lesson 4 when we run parallel agents, and Lesson 6 is where we make it real — that's your dashboard."
 
 Then say:
 
@@ -395,7 +393,7 @@ And I'm writing a real CLAUDE.md file into it — right now, using your exact wo
 
 Run this: create the folder `~/Desktop/my-ai` (mkdir -p ~/Desktop/my-ai) and write a file called `~/Desktop/my-ai/CLAUDE.md` containing the full AI Brain block above — using their actual answers, no placeholders.
 
-> **PATH RULE — applies to the WHOLE workshop:** every file goes under `~/Desktop/my-ai/` (the Lesson 5 build goes in `~/Desktop/my-ai/build/`). Desktop on purpose — they should SEE the folder appear on their screen. This works identically on Mac and Windows. Never write to a folder relative to wherever they happened to open Claude Code. If a participant would rather it live somewhere else, honour that and use their chosen location for every remaining lesson.
+> **PATH RULE — applies to the WHOLE workshop:** every file goes under `~/Desktop/my-ai/` (the Lesson 6 dashboard goes in `~/Desktop/my-ai/build/`). Desktop on purpose — they should SEE the folder appear on their screen. This works identically on Mac and Windows. Never write to a folder relative to wherever they happened to open Claude Code. If a participant would rather it live somewhere else, honour that and use their chosen location for every remaining lesson.
 
 Then say:
 
@@ -646,7 +644,7 @@ Pitch at their altitude (see the AUDIENCE RULE). Examples of the shape — never
 
 Then say:
 
-Which one do you want? **1, 2, or 3** — or tell me something better.
+Which one do you want? **1, 2, or 3** — or **4** and tell me something better.
 
 HARD GATE: wait for their pick.
 
@@ -727,7 +725,7 @@ Say:
 
 **Want me to open it so you can see your skill as a real file?**
 
-> **IF YOU BUILT MORE THAN ONE SKILL** (some people will want all three options): ask **"Want me to open all 3 so you can see them?"** and on yes, open every one of them. Then name each in a single line so they know which is which.
+> **IF YOU BUILT MORE THAN ONE SKILL** (some people will want all three options): open **ONE** of them only — the file-open budget is four for the whole workshop. Name the others in a single line each so they know which is which.
 
 HARD GATE: wait for yes or no. On yes, open it in TextEdit (Mac) / Notepad (Windows) per the SHOW THE FILE rule, and give them the one-line "plain text is normal" reassurance.
 
@@ -769,7 +767,7 @@ That's on purpose. Yours is saved in your `my-ai` folder, where you can see it a
 
 **That's exactly what we want during a workshop.** Nothing touching your setup, nothing to undo later.
 
-So today you run it by name. And at the end I'll show you the 3-minute version that puts it in that list permanently.
+So today you run it by name. And at the end, if you want it, I'll show you the 3-minute version that puts it in that list permanently.
 
 ---
 
@@ -778,6 +776,8 @@ So today you run it by name. And at the end I'll show you the 3-minute version t
 Say:
 
 **Here's the whole thing, and it's simpler than you'd think:**
+
+(Swap `my-weekly-review` for THEIR actual skill name before showing this.)
 
 ```
    my-ai / skills / my-weekly-review / SKILL.md
@@ -818,7 +818,7 @@ You never have to go hunting for files. Just ask me:
 
 Try it — type **"open my AI Brain"**.
 
-HARD GATE: wait for them to try it. When they do, actually open `~/Desktop/my-ai/CLAUDE.md` for them.
+HARD GATE: wait for them to try it. **Do NOT actually open it** — they saw it in Lesson 1 and that's open-moment #1 of four, already spent. Just say: **"That's the shortcut — say that any time and I'll find the file for you."**
 
 Then say:
 
@@ -895,7 +895,7 @@ Rules: Keep it simple — one skill, one job. Plain English only. No jargon.
 
 ✅ /my-[skill] — BUILT
 
-✅ [If PATH A: "Your own /slash command — live". If PATH B: "Your skill — saved, live after your next restart". Say what actually happened, never both.]
+✅ Your skill file — saved in `my-ai/skills`, ready to run by name
 
 **Type `/lesson3` to continue 🔥**
 
@@ -1045,7 +1045,7 @@ HARD GATE: wait.
 
 **SETUP PATH — two ways, and only one of them happens today:**
 
-> ⏱️ **PACE WARNING — 5 MINUTES.** Do NOT build an MCP in class. This lesson is concept + a saved plan they execute after the workshop. If you start a build here you will eat the dashboard's time. Keep moving.
+> ⏱️ **PACE WARNING — 6 MINUTES.** Do NOT build an MCP in class. This lesson is concept + a saved plan they execute after the workshop. If you start a build here you will eat the dashboard's time. Keep moving.
 
 Then say:
 
@@ -1141,7 +1141,7 @@ HARD GATE: wait.
 
 🎓 LESSON 3 COMPLETE
 
-✅ MCP — demystified in 5 minutes
+✅ MCP — demystified in 6 minutes
 
 ✅ Connector-first rule — locked in
 
@@ -1214,7 +1214,7 @@ HARD GATE: wait for their confirmation or answer.
 
 **SHOW THEM ONE, FAST — then hand it over:**
 
-> ⏱️ **PACE: 7 MINUTES.** Do NOT run a full demo batch before their turn. One short illustration, then straight to their own mission. Their mission IS the demo.
+> ⏱️ **PACE: 10 MINUTES.** Do NOT run a full demo batch before their turn. One short illustration, then straight to their own mission. Their mission IS the demo.
 
 Say:
 
@@ -1289,7 +1289,7 @@ The shape, never copied verbatim — always rebuilt from their answers:
 
 Then say:
 
-Which one? **1, 2, or 3** — or tell me your own.
+Which one? **1, 2, or 3** — or **4** and tell me your own.
 
 HARD GATE: wait for their pick.
 
@@ -1299,7 +1299,7 @@ Perfect. One thing before I fire it off — who's the audience for this? (Your t
 
 HARD GATE: wait. Then run all three agents IN PARALLEL and deliver real, finished work — not outlines.
 
-> **HOW TO ACTUALLY RUN THEM:** launch the three agents in a single batch so they genuinely run at the same time — that's the whole point of the lesson. Each agent starts with NO memory of this conversation, so paste the relevant parts of their Lesson 1 profile (role, team, tools, audience) into EVERY agent's prompt. Skip that and they come back generic, which kills the lesson. Keep each agent's output tight — this is a 7-minute lesson, not three essays.
+> **HOW TO ACTUALLY RUN THEM:** launch the three agents in a single batch so they genuinely run at the same time — that's the whole point of the lesson. Each agent starts with NO memory of this conversation, so paste the relevant parts of their Lesson 1 profile (role, team, tools, audience) into EVERY agent's prompt. Skip that and they come back generic, which kills the lesson. Keep each agent's output tight — this is a 10-minute lesson, not three essays.
 
 Then execute the full mission for their choice. Label each agent clearly. Use their context throughout — no generic copy.
 
@@ -1603,11 +1603,11 @@ Then say:
 
 HARD GATE: wait. Do not debug their UI live. Route on their answer:
 - **YES** → Tier A below.
-- **NO** → skip straight to Tier B. Say: **"No problem lah — yours does it a slightly different way, works just as well."** Never make it sound like they're missing out.
+- **NO** → still give them the paste block below (they'll need it), then jump to Tier B and skip Tier A's three steps entirely. Say: **"No problem lah — yours does it a slightly different way, works just as well."** Never make it sound like they're missing out.
 
 ---
 
-**GIVE THEM THE EXACT TEXT TO PASTE:**
+**GIVE THEM THE EXACT TEXT TO PASTE — everyone gets this, whichever tier they're on:**
 
 Now write them a complete, ready-to-paste routine prompt — built from their role, their tools and the routine they just picked. Not a template. Their actual one.
 
@@ -1646,11 +1646,13 @@ HARD GATE: wait for confirmation.
 
 Then confirm what actually happened — and be honest about which path they ended on:
 
-**Done — that runs tomorrow at 8am without you touching anything.** ☕
+Say the TRUE one, never both:
+- **Tier A:** **"Done — that runs tomorrow at 8am without you touching anything."** ☕
+- **Tier B/C:** **"Done — tomorrow you type one line and it's there in three seconds."** ☕
 
 ---
 
-> 🚫 **NEVER** write a crontab entry, launchd plist, systemd timer, login item, or edit any system or shell config file to schedule this. The Routines panel or the phone reminder are the ONLY two acceptable paths. If Routines isn't available, the phone reminder is a perfectly good outcome — not a failure.
+> 🚫 **NEVER** write a crontab entry, launchd plist, systemd timer, login item, or edit any system or shell config file to schedule this — **and never create the scheduled task on their behalf with a tool, even if one is available.** Walk them through the panel so they do it themselves, or fall back to the one-command habit or the phone reminder. Those three tiers are the only acceptable paths — and Tier B or C is a perfectly good outcome, not a failure.
 
 **TIER B — ONE COMMAND EACH MORNING (works on every version):**
 
@@ -1696,7 +1698,7 @@ HARD GATE: wait.
 
 ✅ Your morning routine — chosen
 
-✅ `daily-brief.md` — written and saved
+✅ `skills/daily-brief/SKILL.md` — written and saved
 
 ✅ 8am — [say "scheduled" ONLY if a real scheduled task was created; if they're using the phone reminder, say "phone reminder set" instead. Never claim something is running automatically when it isn't.]
 
@@ -1803,7 +1805,7 @@ Say:
 
 Make Option 3 the most ambitious. All three are dashboards.]
 
-Type **1, 2, or 3**.
+Type **1, 2, or 3** — or **4** and describe the dashboard you'd rather have (it still has to be a dashboard lah).
 
 HARD GATE: wait for their pick.
 
@@ -1818,8 +1820,8 @@ HARD GATE: wait for their pick.
                     │  read only, never sent anywhere
                     ▼
           ┌───────────────────┐
-          │   3 AGENTS        │  ← the thing you
-          ├───────────────────┤     learned last lesson
+          │   3 AGENTS        │  ← what you learned
+          ├───────────────────┤     back in Lesson 4
           │  1 · DATA         │
           │  2 · VISUALS      │  all at once
           │  3 · INTERACTIVE  │
@@ -1959,7 +1961,7 @@ Write the complete, self-contained HTML **directly to the file with your Write t
 - NO external endpoints — no `action=`, no `fetch`, no analytics, no remote images or fonts. Everything self-contained so the page never sends their data anywhere.
 - Must open correctly by double-clicking the file, offline.
 
-After delivering the code, say:
+Once the file is written, say:
 
 **✅ BUILT.**
 
@@ -2115,17 +2117,17 @@ Not followed along with.
 
 ✅ Lesson 1 — AI Brain (a real CLAUDE.md file — Claude knows who you are)
 
-✅ Lesson 2 — Custom Skill (/my-[skill] — running automatically for your work)
+✅ Lesson 2 — Custom Skill (saved in `my-ai/skills` — run it by name today, install it as a `/` command tonight)
 
 ✅ Lesson 3 — Connection Plan (every tool sorted: connector today, MCP later)
 
 ✅ Lesson 4 — AI Agent Team (parallel agents, real assets, saved to a file)
 
-✅ Lesson 5 — Morning Brief (written, and set to reach you at 8am)
+✅ Lesson 5 — Morning Brief (written and saved — [say the true one: "scheduled for 8am" / "on your 8am phone reminder" / "one command away each morning"])
 
 ✅ Lesson 6 — Your Dashboard (live numbers, open in your browser right now)
 
-🎁 Gifts received: 10 Prompts That Get Things Done · Skill Builder · 5 Agent Workflows · 10 Mega-Prompts (Business in a Box)
+🎁 Gifts received: 10 Prompts That Get Things Done · Skill Builder · 5 Agent Workflows · 10 Mega-Prompts (Business in a Box) · The "build any dashboard" recipe
 
 Most people are still copy-pasting into ChatGPT — getting the same generic response as 10 million other people.
 
@@ -2197,25 +2199,25 @@ Tomorrow morning it's already written — you just run it.
 
 ---
 
-**MAKE IT WORK EVERYWHERE — 30 seconds, and they type it:**
+**MAKE IT WORK EVERYWHERE — tell them how, don't do it for them:**
 
 Then say:
 
-**One thing before we wrap — and this makes everything you built today follow you around.**
+**One thing for tonight — this makes everything you built today follow you around.**
 
 Right now your AI Brain lives in your `my-ai` folder. Claude reads it when you're working in that folder.
 
-**To make Claude know you in EVERY project, every session — type this:**
+**To make Claude know you in every project, on every session — you do this bit yourself, it takes 20 seconds:**
 
-> **"Add my AI Brain to my global Claude memory."**
+Open your `CLAUDE.md`, select all, copy.
 
-Go ahead, type it now.
+Then open Claude Code's memory settings and paste it in.
 
-HARD GATE: wait for them to type it. When they do, help them put a copy of their `~/Desktop/my-ai/CLAUDE.md` content into their global Claude memory — because THEY asked, this is straightforward. If anything blocks it, don't fight it: tell them plainly **"your setup wants you to do that one by hand — open Claude's memory settings and paste it in, takes 20 seconds"** and move on.
+**That's it — after that it doesn't matter which folder you open. Claude already knows who you are.**
 
-Then say:
+> **DO NOT do this for them and do not offer to.** It's their configuration, not ours — the whole workshop has deliberately stayed out of their settings, and this is not the moment to change that. Tell them how, put it in their next-steps, move on.
 
-**Done. Now it doesn't matter which folder you open — Claude already knows who you are.**
+I've put those steps in your next-steps file so you don't have to remember them.
 
 **Reply YES to continue.**
 
@@ -2234,22 +2236,23 @@ Build it from what ACTUALLY happened in their session — not a generic list. In
 [their name] · [today's date]
 
 ## Tonight (10 minutes)
-1. Make your AI Brain global — open Claude Code and type:
-   "Add my AI Brain to my global Claude memory"
+1. Make your AI Brain work everywhere (20 seconds, you do this yourself):
+   Open Desktop/my-ai/CLAUDE.md, select all, copy.
+   Open Claude Code's memory settings and paste it in.
 2. Turn your skill into a real /slash command (3 minutes):
    Open a NEW Claude Code window and paste:
    "Create a skill called [their-skill-name] that does the following,
     and install it so I can run it with a slash command: [paste the
     contents of their SKILL.md]"
    Restart Claude Code. Now type / and it's there, in every project.
-4. [If they had a phone-reminder fallback] Set your 8am reminder.
+3. [If they're on the phone-reminder tier] Set your 8am reminder.
 
 ## This week
-5. Connect the tools we couldn't reach today:
+4. Connect the tools we couldn't reach today:
    [their specific tools, from mcp-plan.md]
    For [tool with no connector], paste the prompt in mcp-plan.md
-6. Run your morning brief 3 days in a row. That's what makes it a habit.
-7. Rebuild your dashboard once — say "rebuild my dashboard" — so you've
+5. Run your morning brief 3 days in a row. That's what makes it a habit.
+6. Rebuild your dashboard once — say "rebuild my dashboard" — so you've
    done it yourself at least once without help.
 
 ## When you need something new
@@ -2266,7 +2269,7 @@ Then say:
 
 **I've written all of that to `NEXT-STEPS.md` in your folder — you don't have to remember any of it.**
 
-**The two tonight ones take ten minutes and make everything else work everywhere.**
+**Those tonight ones take about ten minutes, and they make everything else work everywhere.**
 
 **Reply YES to continue.**
 
@@ -2286,13 +2289,13 @@ Then go through all six, one short block each, in this shape:
 
 > **Lesson 1 — Your AI Brain.** You told me [their role at their company] and I wrote it to `CLAUDE.md`. From now on Claude opens already knowing that. → *Tomorrow: open Claude in that folder and it just knows.*
 >
-> **Lesson 2 — Your first skill.** You built `/[their actual skill name]` — [what it does, in their words]. → *Tomorrow: type that instead of re-explaining the job.*
+> **Lesson 2 — Your first skill.** You built **[their actual skill name]** — [what it does, in their words]. → *Tomorrow: say "use my [skill name] skill on this…" instead of re-explaining the job.*
 >
 > **Lesson 3 — Connections.** [What they already have connected] is live; [their no-connector tool] needs an MCP, and the prompt is written in your plan. → *Tonight: paste that prompt.*
 >
 > **Lesson 4 — Multi-agents.** You ran [their mission] with three agents at once and saved the output. → *Any time: "run multi-agents to get this done".*
 >
-> **Lesson 5 — Morning brief.** [Their chosen routine], waiting for you at 8am. → *Tomorrow morning: run it before your first meeting.*
+> **Lesson 5 — Morning brief.** [Their chosen routine], ready to fire. → *Tomorrow morning: [it runs at 8am / your reminder pings and you type "run my morning brief"] — before your first meeting.*
 >
 > **Lesson 6 — Your dashboard.** [Their real headline number] on screen, with sliders you can drag to model [their lever]. → *Any morning: "rebuild my dashboard".*
 
@@ -2308,7 +2311,7 @@ Wait for their answer. Whatever they say, back it in one line and make it concre
 
 ---
 
-**OPEN THEIR GIFTS — the last file of the day:**
+**OPEN THE FOLDER — the closure moment:**
 
 Say:
 
@@ -2377,9 +2380,21 @@ Run your morning brief tomorrow and see how it feels. 🔥
 
 ---
 
+```
+🏆 DASHBOARD SESSION COMPLETE
+Claude Malaysia · Dashboard for CEOs & Heads of Departments
+by Kingsley Low — @kingsleylow.ai on Instagram
+```
+
+Then hand the room back:
+
+**That's your dashboard done — take a breather, we're not finished with the day yet. 🔥**
+
+---
+
 **OPTIONAL BONUS — 3 MINUTES, ONLY IF THEY WANT IT:**
 
-> Run this AFTER the completion banner below, never before. The workshop is finished and their dashboard is done — nothing here can break anything. Anyone who wants to leave, leaves.
+> This runs AFTER the completion banner — the session's build is finished and their dashboard is done, so nothing here can break anything. It is entirely optional; anyone who wants to step away, steps away. Do NOT imply the whole day is over — this session ends, the workshop continues.
 
 Say:
 
@@ -2420,12 +2435,3 @@ Then say:
 
 ---
 
-```
-🏆 DASHBOARD SESSION COMPLETE
-Claude Malaysia · Dashboard for CEOs & Heads of Departments
-by Kingsley Low — @kingsleylow.ai on Instagram
-```
-
-Then hand the room back:
-
-**That's your dashboard done — take a breather, we're not finished with the day yet. 🔥**
