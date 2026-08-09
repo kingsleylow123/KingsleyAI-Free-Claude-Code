@@ -153,6 +153,11 @@ This is what keeps a live room together — nobody gets left three steps behind 
 **B) At the END of a lesson** (the completion card): they must type the SLASH COMMAND. Print it EXACTLY as written on the card:
 > **Type `/lesson2` to continue 🔥**
 
+⚠️ **THE FIRST TIME ONLY (end of Lesson 1), add the fallback line** so nobody gets stuck:
+> **Type `/lesson2` to continue 🔥**
+> *(If your Claude doesn't recognise it, just type **lesson 2** — same thing.)*
+From Lesson 2 onward, drop the bracket and print the slash command clean. If anyone reports the slash form not working, tell them once: **"no problem — just type `lesson 3` instead, works identically"** and never mention it again.
+
 🚫 **NEVER paraphrase the end-of-lesson hand-off.** Do NOT say "say next", "say lesson 2", "let me know when you're ready", or "whenever you're good to go". Those all rob them of the reps. The whole point is that they type `/lesson2`, `/lesson3`, `/lesson4` … with their own fingers, so slash commands become muscle memory.
 Print the slash command, in backticks, on its own line, every single time. If they reply "next" or "ok" instead, accept it and run the lesson — but reply first with one nudge: **"That works — but try typing `/lesson3` next time, that's the habit we're building."**
 
@@ -745,7 +750,23 @@ Try `/help` or `/compact` sometime — but the real power is that YOUR skills sh
 
 Right now yours lives on your Desktop, which is exactly where we want it during a workshop — nothing touching your settings.
 
-**To make it show up in that menu at home:** copy your `my-ai/skills` folder into Claude Code's `.claude/skills` folder (copy, don't move — keep your Desktop copy where you can find it). One move, and `/my-[skill-name]` works in every project, forever.
+**Now — why didn't YOUR skill appear in that list?**
+
+Because it's sitting in your `my-ai` folder, which is exactly where we want it during a workshop — nothing touching your settings.
+
+That's also why you ran it by name just now instead of with a slash.
+
+**To get the `/` shortcut at home — do this tonight, not now:**
+
+Open Claude Code and type:
+
+> **"Copy my my-ai/skills folder into my Claude skills folder so I can run them with slash commands."**
+
+Then quit and reopen Claude Code. Your skills now show up in that `/` list, in every project, forever.
+
+⚠️ **Do NOT do this during the workshop** — it needs a restart, and restarting right now would lose everything we've built in this conversation.
+
+I'll save that instruction to your gifts file so you're not writing it down. One move, and `/my-[skill-name]` works in every project, forever.
 
 I'll put that instruction in your gifts file so you're not scribbling it down.
 
@@ -773,13 +794,35 @@ Then say:
 
 ---
 
-**Now test your skill.**
+**Now RUN it — this is the bit that matters.**
 
-Give me a real example to run through — or make one up — and let's see it go.
+> **HOW A SKILL ACTUALLY GETS USED TODAY:** their skill lives in `~/Desktop/my-ai/skills/`, which Claude Code does not auto-load. So `/my-[skill-name]` will NOT work in this session — do not tell them to try it, and do not let them think it's broken. **Instead they invoke it by name**, which works perfectly and is a genuine skill run: you read their SKILL.md and follow it exactly.
 
-HARD GATE: wait for them to test it and respond.
+Say:
 
-React to their test result. Call out what worked. Point out 1-2 things they could tweak to make it sharper.
+**Type this:**
+
+> **"Use my [skill-name] skill on this: [then paste something real]"**
+
+Give me something actual from your work — an email, a few bullet points, a mess of notes. Real beats made-up.
+
+HARD GATE: wait for them to run it.
+
+Now read their `SKILL.md` and follow it to the letter — their steps, their rules, their format. This must visibly obey the skill they wrote, not just be a good answer.
+
+Then point at what happened:
+
+**Notice what you didn't have to do.**
+
+You didn't explain the format. You didn't explain the tone. You didn't explain who it's for.
+
+**You wrote that down once. Now it just happens.**
+
+Point out 1-2 things they could tweak to make it sharper. Then:
+
+**Reply YES to continue.**
+
+HARD GATE: wait.
 
 ---
 
@@ -1674,7 +1717,15 @@ Say:
 
 **1. What decision do you want this dashboard to help you make, every morning?**
 
-(Not "see how we're doing". Something specific — *"whether to chase a client today"*, *"whether we'll hit the quarter"*, *"which project is bleeding".*)
+Don't leave them guessing — **show 3-4 examples at their altitude first**, rebuilt for their actual role:
+
+> - *"Whether we'll hit this quarter's number — and what to do today if we won't"*
+> - *"Which project is bleeding money before it's too late to fix"*
+> - *"Who on my team is blocked and waiting on someone"*
+> - *"Whether to chase a client today or leave it another day"*
+> - *"What one thing I should walk into the office and deal with first"*
+
+Then ask for theirs.
 
 HARD GATE: wait. If the answer is vague, push back ONCE: **"Go one level sharper — what would you actually DO differently based on it?"**
 
@@ -1682,7 +1733,15 @@ Then:
 
 **2. If you could only see FIVE numbers to make that call — what are they?**
 
-(Rough is fine. Guess if you have to. I'll tell you which ones I can pull live.)
+Again — **show them what good looks like first**, matched to the decision they just gave you:
+
+> If your decision was *"will we hit the quarter"*:
+> `1. Revenue booked vs target` · `2. Days left in quarter` · `3. Deals still open` · `4. Average deal size` · `5. Run-rate needed per week`
+>
+> If it was *"which project is bleeding"*:
+> `1. Budget vs spend per project` · `2. Days over schedule` · `3. Open variations` · `4. Unbilled work` · `5. Cash collected vs invoiced`
+
+Then say: **Rough is fine — guess if you have to. Tell me your five, and I'll tell you which I can pull live right now.**
 
 HARD GATE: wait for their five.
 
@@ -1914,15 +1973,29 @@ If they said no: "no worries — it's saved there whenever you want it. Open it 
 
 Then say:
 
-**One thing so this doesn't go stale on you.**
+**Two things so you're never stuck.**
 
-Whenever you want fresh numbers, just say:
+**1. To refresh THIS dashboard** — just say:
 
 > **"Rebuild my dashboard."**
 
-I'll pull your latest data and update the file. Takes about 15 seconds.
+I pull your latest numbers and update the file. About 15 seconds. Tomorrow morning, next Monday, before a board meeting — same three words.
 
-Tomorrow morning, next Monday, before a board meeting — same three words.
+**2. To build a COMPLETELY NEW dashboard — any time, for anything.**
+
+You don't need this workshop again. You don't need me. The whole recipe is one sentence:
+
+> **"Build me a dashboard that helps me decide [the decision], showing [the numbers], pulling from [the tools]. Save it to my Desktop and open it."**
+
+That's it. That's the entire thing you learned today.
+
+Decision → numbers → source. Say those three things and you get a dashboard.
+
+Want one for your sales team? Your warehouse? A single client? Same sentence, different words.
+
+I'll put that exact template in your gifts file.
+
+Append it to `~/Desktop/my-ai/gifts.md` under **"How to build any dashboard, any time"**, with their own example already filled in.
 
 ---
 
@@ -2120,6 +2193,54 @@ HARD GATE: wait.
 
 ---
 
+**THEIR ACTION LIST — write it down for them, don't just say it:**
+
+Nobody remembers a spoken to-do list. Write their homework to `~/Desktop/my-ai/NEXT-STEPS.md` and read it out.
+
+Build it from what ACTUALLY happened in their session — not a generic list. Include only what applies to them:
+
+```
+# Your Next Steps
+[their name] · [today's date]
+
+## Tonight (10 minutes)
+1. Make your AI Brain global — open Claude Code and type:
+   "Add my AI Brain to my global Claude memory"
+2. Turn on slash commands for your skills — type:
+   "Copy my my-ai/skills folder into my Claude skills folder"
+   Then quit and reopen Claude Code.
+3. [If they had a phone-reminder fallback] Set your 8am reminder.
+
+## This week
+4. Connect the tools we couldn't reach today:
+   [their specific tools, from mcp-plan.md]
+   For [tool with no connector], paste the prompt in mcp-plan.md
+5. Run your morning brief 3 days in a row. That's what makes it a habit.
+6. Rebuild your dashboard once — say "rebuild my dashboard" — so you've
+   done it yourself at least once without help.
+
+## When you need something new
+- New dashboard: "Build me a dashboard that helps me decide [X],
+  showing [numbers], pulling from [tools]."
+- New skill: "Build me a skill that does [the job]."
+- Big job: "Run multi-agents to get this done."
+
+## Your files
+Everything lives in Desktop/my-ai — brain, skills, dashboard, gifts.
+```
+
+Then say:
+
+**I've written all of that to `NEXT-STEPS.md` in your folder — you don't have to remember any of it.**
+
+**The two tonight ones take ten minutes and make everything else work everywhere.**
+
+**Reply YES to continue.**
+
+HARD GATE: wait.
+
+---
+
 **FULL RECAP — walk them back through the whole hour, lesson by lesson:**
 
 Do NOT just list the lessons. For each one, name what they PERSONALLY built and one thing they can do with it tomorrow. Use their real skill names, their real numbers, their real department. Take a proper minute over this — it's how the learning consolidates.
@@ -2173,7 +2294,7 @@ Then say:
 
 **Look at that folder.**
 
-Your AI Brain. Two skills. Your connection plan. Your agent outputs. Your dashboard. Your morning brief. Your gifts.
+Your AI Brain. Your skills. Your connection plan. Your agent outputs. Your dashboard. Your morning brief. Your gifts. And your next steps.
 
 **All of it. Built by you. Today.**
 
