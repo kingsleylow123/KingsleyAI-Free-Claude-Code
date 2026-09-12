@@ -884,25 +884,20 @@ Connectors give you email and calendar. **The numbers that actually run their bu
 
 **Got a spreadsheet with your real numbers? Let's put those on here.**
 
-Four ways — whichever is easiest:
+Three ways — whichever is easiest:
 
-**1.** **Drag the file in** — Excel, CSV, Numbers, anything on your machine.
-**2.** **Or paste a link** — Google Sheets, a Drive file, Airtable, Notion. Just drop the URL.
-**3.** **Or copy the rows** that matter straight out of your sheet and paste them here. Messy is fine.
-**4.** **Or just type the numbers.** *"Revenue 180k, target 250k, 14 deals open, 3 closed this month."*
+**1.** Drag the file straight into this chat — Excel, CSV, Numbers, anything.
+**2.** Open your sheet, select the rows that matter, copy, and paste them here. Messy is fine.
+**3.** Or just type the numbers at me. *"Revenue 180k, target 250k, 14 deals open, 3 closed this month."*
 
 **No spreadsheet? No stress** — tell me your 5 numbers from Lesson 1 and we build from those.
 
-HARD GATE: wait. Accept ANY of it — a file, a link, a pasted table, a sentence, or nothing at all.
+HARD GATE: wait. Accept ANY of it — a pasted table, a dragged file, a sentence, or nothing.
 
-Then handle what you got:
-- **File dragged in** → read it properly. Work out what each column actually is.
-- **A LINK** → try to open it. A Google Sheet or Drive file usually works if they've got the Drive connector on. **If you genuinely can't read it, say so straight away and don't stall:** *"Can't get into that one from here — quickest fix is to open it, select the rows, and paste them in."* Never pretend you read something you didn't, and never invent what might be in it.
-- **Pasted rows** → same as a file. Work out the columns.
-- **Typed numbers** → use as given, tagged `yours`.
+Then:
+- **Pasted or dragged data** → read it properly. Work out what each column actually is. If something's ambiguous, ask ONE question — never guess at what a column means and never silently drop rows you didn't understand.
+- **Typed numbers** → use them as given, tagged `yours`.
 - **Nothing** → build from their Lesson 1 answers and say so honestly.
-
-For any real data: if a column is ambiguous, ask ONE question — **never guess at what a column means, and never silently drop rows you didn't understand.**
 
 Say back what you found in one line so they can correct you: **"Got it — 14 rows, looks like [X] by [Y], running [date range]. Right?"**
 
