@@ -729,13 +729,25 @@ Then actually run their brief: pull what you can from their connected tools, app
 
 ---
 
-**MAKE IT AUTOMATIC — one copy-paste:**
+**MAKE IT AUTOMATIC — SCHEDULED TASK:**
+
+> **THE WIN IS ALREADY BANKED.** They have a working brief. Scheduling is a bonus. Whichever option they land on, treat it as complete success — never a downgrade.
 
 **You've got the brief. Now let's make it turn up on its own.**
 
-**Here's your text — copy this:**
+**Look at the left sidebar — is there a Scheduled Tasks panel?**
 
-Write them a ready-to-paste prompt from their role, tools and chosen routine. **Plain English only — no file paths, no code, nothing technical.** They're pasting into a box, not writing a script. 6-10 lines, their real details:
+**Type OK if you see one, NO if you don't.**
+
+HARD GATE. Never debug their UI live.
+- **OK** → Option A.
+- **NO** → **"No problem lah — yours does it a slightly different way, works just as well."** Skip to Option B, but still give them the text block below.
+
+---
+
+**THE TEXT TO PASTE — everyone gets this, whichever option:**
+
+Write them a ready-to-paste routine prompt from their role, tools and chosen routine. **Plain English only — no file paths, no code, nothing technical.** They're pasting this into a box, not writing a script. 6-10 lines:
 
 ```
 Every morning, give me my brief.
@@ -750,23 +762,29 @@ Flag anything that needs my decision with a warning sign.
 End with: "Your one thing today: ___"
 ```
 
-Then say:
+**OPTION A — SCHEDULED TASK**
 
-**Now open Scheduled Tasks in the left sidebar, paste that in, set it for 8:00am daily, and save.**
+**1. Copy that block.** (Type OK when you've got it.) HARD GATE.
+**2. In Scheduled Tasks, create a new task and paste it in.** (Type OK when it's in.) HARD GATE.
+**3. Set it to run daily at 8:00am and save.** HARD GATE.
 
-That's it. Tomorrow it runs before you're awake.
+> 🚫 **NEVER** write a crontab entry, launchd plist, systemd timer, login item, or edit any system or shell config to schedule this — **and never create the scheduled task on their behalf with a tool, even if one is available.** Walk them through the panel, or use one of the options below. Those are the only acceptable paths.
 
-HARD GATE: wait until they've done it or told you they can't.
+**OPTION B — ONE COMMAND EACH MORNING** (works on every version)
 
-> **IF THEY CAN'T FIND SCHEDULED TASKS** — don't debug their UI, don't turn it into a decision. One line and move: **"No panel on your version? No problem — just type 'run my morning brief' each morning, takes three seconds. Or set an 8am phone alarm that says the same thing."** Treat that as a complete success, never a downgrade.
->
-> 🚫 **NEVER** write a crontab entry, launchd plist, systemd timer, login item, or edit any system or shell config to schedule this — **and never create the scheduled task on their behalf with a tool, even if one is available.** They paste it themselves, or they use the one-line fallback.
+Tomorrow you type one thing: **"run my morning brief"**. Same brief, three seconds.
+
+**OPTION C — PHONE REMINDER** (do this either way)
+
+Recurring 8am reminder: *"Open Claude → run my morning brief."* Ten seconds to set, and honestly the most reliable — your phone never misses.
+
+---
 
 Then say the TRUE one, never both:
-- **Scheduled:** **"Done — that runs tomorrow at 8am without you touching anything."** ☕
-- **Fallback:** **"Done — tomorrow you type one line and it's there in three seconds."** ☕
+- **Option A:** **"Done — that runs tomorrow at 8am without you touching anything."** ☕
+- **Option B/C:** **"Done — tomorrow you type one line and it's there in three seconds."** ☕
 
-**Notice what happened: *you* set that up.**
+**Notice what happened: *you* set that up. You described what you wanted and put it somewhere it runs.**
 
 **Type OK to continue.** HARD GATE.
 
@@ -874,34 +892,7 @@ Check which connectors you can ACTUALLY reach (look at your own available tools 
 - A pull fails or is empty → move on silently.
 - **If fewer than 2 pulls return usable data, say so plainly** and switch to the path below. **NEVER invent a number to fill a tile.**
 
-**If you can reach NO connectors:** **"Your tools aren't wired to me yet — no problem at all. Connect them tonight and I'll pull them in automatically. For now, give me your numbers directly."**
-
----
-
-**ASK FOR THEIR OWN DATA — everyone, connectors or not. This is what makes it their business and not their inbox.**
-
-Connectors give you email and calendar. **The numbers that actually run their business are almost always in a spreadsheet.** Ask for it:
-
-**Got a spreadsheet with your real numbers? Let's put those on here.**
-
-Three ways — whichever is easiest:
-
-**1.** Drag the file straight into this chat — Excel, CSV, Numbers, anything.
-**2.** Open your sheet, select the rows that matter, copy, and paste them here. Messy is fine.
-**3.** Or just type the numbers at me. *"Revenue 180k, target 250k, 14 deals open, 3 closed this month."*
-
-**No spreadsheet? No stress** — tell me your 5 numbers from Lesson 1 and we build from those.
-
-HARD GATE: wait. Accept ANY of it — a pasted table, a dragged file, a sentence, or nothing.
-
-Then:
-- **Pasted or dragged data** → read it properly. Work out what each column actually is. If something's ambiguous, ask ONE question — never guess at what a column means and never silently drop rows you didn't understand.
-- **Typed numbers** → use them as given, tagged `yours`.
-- **Nothing** → build from their Lesson 1 answers and say so honestly.
-
-Say back what you found in one line so they can correct you: **"Got it — 14 rows, looks like [X] by [Y], running [date range]. Right?"**
-
-**Type OK to continue.** HARD GATE.
+**If you can reach NO connectors:** **"Your tools aren't wired to me yet — no problem at all. Give me your 3 key numbers and I'll build around those. Connect them tonight and I'll pull them in automatically."** HARD GATE.
 
 ---
 
@@ -912,7 +903,7 @@ Say back what you found in one line so they can correct you: **"Got it — 14 ro
 **This is the thing you just learned, doing the thing you came for.** 👀
 
 Launch three in parallel, each with their full Lesson 1 profile pasted in (subagents have no memory of this conversation):
-- **DATA** — every derived metric from **everything you have**: the connector pulls AND their spreadsheet/pasted numbers. Deltas, run-rate, progress to target, what's needed to close the gap, a forecast series. **Their own data is the headline — it outranks inbox and calendar every time.** Tag each `live` (connector), `yours` (they gave it), or `from your sheet`. Never invent.
+- **DATA** — every derived metric from the figures you pulled: deltas, run-rate, progress to target, what's needed to close the gap, a forecast series. Tag each `live` or `yours`. Never invent.
 - **VISUALS** — the charts and layout, hand-rolled inline SVG/CSS.
 - **INTERACTIVE** — the vanilla JS for anything that moves.
 
@@ -930,7 +921,7 @@ Write it **directly to `~/Desktop/my-ai/build/index.html`** with your Write tool
 
 **The only hard rules:**
 - 🚫 **DO NOT print the HTML in chat.** It's hundreds of lines — printing burns 3 minutes and dumps CSS on someone you just told "no copy-pasting". Write the file, then open it.
-- **Every number is real** — pulled from a connector, from their sheet, or given by them. **Never invent one.** If their sheet had a column you couldn't interpret, leave it out rather than guess. If you need history you don't have, label it honestly ("projected from your target").
+- **Every number is real** — pulled, or given by them. **Never invent one.** If you need history you don't have, label it honestly ("projected from your target").
 - Mark each figure's source subtly (`live` vs `yours`) so the dashboard never lies about where it came from.
 - **Self-contained:** all CSS and JS inline, no CDN, no `fetch`, no `action=`, no remote fonts or images. It must open by double-clicking, offline, and never send their data anywhere.
 - A timestamp: "Live data as of [time], [date]", plus their name and department.
