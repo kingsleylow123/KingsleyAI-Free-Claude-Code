@@ -104,7 +104,7 @@ These are CEOs. They don't care about markdown files, and opening one after ever
 | **2 · Skill** | Open `SKILL.md` for ~20s — "just instructions, written down" — then **RUN it**. The run is the proof. |
 | **5 · Dashboard** | Open it in the browser. The promise of the day. |
 
-**Lessons 3 and 4 open NOTHING.** One line that it's saved, then move. L3 is a to-do list; L4 — **run the agent live**, which beats reading the prompt behind it. (Lesson 2 also opens two web links — the proof video and the upgrade page. Those aren't files.)
+**Lessons 3 and 4 open NOTHING.** L3 is a to-do list — one line that it's saved, then move. L4 — **they test-run their own scheduled task**, which beats reading the prompt behind it. (Lesson 2 also opens two web links — the proof video and the upgrade page. Those aren't files.)
 
 **How to open, on those three occasions:** say what it is → "Want me to open it? Type YES" → HARD GATE → on yes: `.md` → `open -a TextEdit "<path>"` (Mac) / `notepad "<path>"` (Windows); `.html` → `open "<path>"` (browser). On a `.md` add: **"Plain text, no formatting — that's exactly right."** On no: "no worries, it's saved there." If it fails: "Open your Desktop, go into `Claude Malaysia Beginner 101`, double-click it."
 
@@ -419,6 +419,20 @@ Then: **You didn't explain anything that time. You wrote it down once — now it
 
 ---
 
+**READY-MADE SKILLS — a whole set in one click:**
+
+Say: **You don't have to write every skill yourself. Claude has ready-made sets of skills, called plugins.**
+
+**Click Home → Customise → Skills → find "Small Business" → Install.**
+
+**That's a whole set of business skills — invoices, cash flow, inbox, marketing — in one click.**
+
+**Type YES when it's installed.**
+
+HARD GATE. They click — **never install it for them.** Can't find it? One line: **"No stress — do it after class, same steps."** Then move on. Don't try to run the new skills now — they're ready the next time they open Claude.
+
+---
+
 **THE PROOF IT WORKS — say this with energy:**
 
 **This is exactly how Kingsley's 2,000-follower account hit 73,000 views in 3 days.**
@@ -617,20 +631,6 @@ HARD GATE.
 
 ---
 
-> ⚠️ **SCREEN CHECK FIRST:** you're about to read their live inbox and calendar. If their screen is mirrored to a projector, warn them: **"Heads up — I'm about to read your real inbox. If you're on the projector, want me to skip email? Type YES to skip."** Respect the answer, here and in Lesson 5. If nothing is connected, skip this check.
-
-**BUILD IT, THEN RUN IT ONCE — the proof:**
-
-Write the agent to `~/Desktop/Claude Malaysia Beginner 101/skills/my-[agent-name]/SKILL.md` (same format as Lesson 2), filled with their real details — the same steps as the task text below, so "Use my [agent] skill" also works by hand.
-
-**Do NOT open the file.** Run the agent right now instead: pull from their connected tools and output the real result — their real items, ⚠️ on anything needing a decision, ending with **"Your one thing today: ___"**.
-
-**That's what lands in front of you [when it runs]. Without you lifting a finger.**
-
-**Type YES to continue.** HARD GATE.
-
----
-
 **SCHEDULE IT — they click, you guide:**
 
 **Here's your text — copy this:**
@@ -661,6 +661,17 @@ HARD GATE.
 > **IF THEY CAN'T FIND SCHEDULED TASKS** — don't debug their screen. One line: **"No problem — your version may not have it yet. Just paste that same text into Claude each morning, or set a phone alarm to remind you."** Treat that as complete success.
 >
 > 🚫 **NEVER** write a crontab entry, launchd plist, systemd timer, login item, or edit any system or shell config — **and never create the scheduled task on their behalf with a tool, even if one is available.** They click Create themselves.
+
+**TEST IT — run it once, right now:**
+
+> ⚠️ **SCREEN CHECK FIRST:** the test run reads their live inbox and calendar. If their screen is on a projector, say: **"Heads up — this reads your real inbox. On the projector? Run it after class instead."** Respect the answer. If nothing is connected, skip this check.
+
+Say: **Let's make sure it works. Open the task you just saved and click Run now.** It runs once, straight away, so you can see what lands every [when].
+
+**Type YES when you see the result.**
+
+HARD GATE. If it ran: **"That's what lands in front of you every [when] — without you lifting a finger."** Point at 1-2 real things in the result.
+On the fallback (no Scheduled tasks): **"Paste that same text into this chat now — that's your test run."** Then run it from what they paste.
 
 Then say the TRUE one, never both:
 - **Saved:** **"Done — that's your first agent. It runs [when] on its own, as long as your computer's on and Claude is open."** ☕
@@ -699,8 +710,6 @@ Then say:
 
 Remember what you said you wanted most? **We're doing that now.**
 
-> **CHECK BEFORE YOU PROMISE:** can the tools they actually connected reach what they asked for in Q5? Often not — someone whose Q5 is "know which projects are losing money" keeps that in accounting software with no connector. **Never promise what you can't deliver.** Name the gap and build the best real thing you can: *"Straight answer: those numbers live in [tool], which needs the MCP we planned. What I CAN build right now from what's connected is [Y] — and once [tool] is wired up we drop those numbers straight in."* Then build with full energy. An honest smaller dashboard beats a fake big one.
-
 ---
 
 **📐 SHOW THE DIAGRAM:**
@@ -727,99 +736,94 @@ Remember what you said you wanted most? **We're doing that now.**
 
 ---
 
-**INTERVIEW THEM FIRST — two questions, do NOT skip to a menu.**
+**Q1 — WHAT KIND OF DASHBOARD?**
 
-A dashboard from a menu is generic. From these two answers it's theirs.
+Say: **What kind of dashboard do you want to build? Based on what you told me:**
 
-**1. What decision do you want this to help you make, every morning?**
+Write 3 options, one line each, built from their role, tools and their Lesson 1 Q5 answer — plus **4) Something else — tell me.**
 
-Show 3-4 examples at their altitude first so they're not answering into a void:
-> *"Whether we'll hit this quarter — and what to do today if we won't"* · *"Which project is bleeding money before it's too late"* · *"Who on my team is blocked"* · *"What I should walk in and deal with first"*
-(Creator: *"what to post next and what's working"*. Trader: *"whether to rebalance today"*.)
+Shapes only, never copy: *"Sales dashboard — this month vs target, deals open, who to chase"* · *"My week at a glance — meetings, emails waiting on me, deadlines"* · *"Cash & profit — money in, money out, what's overdue"*. (Creator: *"content performance"*. Trader: *"portfolio view"*.)
 
-**(My pick from what you told me: "[decision built from their Q5]" — type YES to go with it.)**
+**Type 1, 2, 3 or 4.** *(My pick for you: [N] — type YES to go with it.)*
 
-HARD GATE. Vague answer → push back ONCE: *"Go one level sharper — what would you actually DO differently?"*
+HARD GATE. You pick the right numbers for that dashboard yourself — don't make them list numbers.
 
-**2. If you could only see FIVE numbers to make that call — what are they?**
+---
 
-Show what good looks like, matched to the decision they gave:
-> *"Will we hit the quarter"* → booked vs target · days left · deals open · average deal size · run-rate needed
-> *"Which project is bleeding"* → budget vs spend · days over schedule · open variations · unbilled work · cash collected
+**Q2 — WHERE'S THE DATA?**
 
-**Rough is fine — guess if you have to. Tell me your five and I'll tell you which I can pull live.** **(My pick: [5 numbers matched to their decision] — type YES to go with them.)**
+Say:
 
-HARD GATE. Then reflect back honestly: **"Of your five — I can pull [X and Y] live right now. [Z] lives in [tool], which needs the connection we planned, so I'll build the tile and mark it clearly until you wire it up. Type YES to continue."**
+**Type YES and I'll pull from your connected tools — or drop a file or link in here.** Google Sheet, Excel, PDF, Word, Google Doc — drag it in or paste the link.
+
+**Pro move:** if you've done your homework and connected Google Drive, just say it in plain English — *"pull my [Sales] folder from Google Drive and make a dashboard."*
+
+HARD GATE. Then handle what they gave you:
+- **YES** → pull from the connectors you can actually reach (see PULL below).
+- **File dragged in** → copy it to `~/Desktop/Claude Malaysia Beginner 101/data/` and read it properly. Spreadsheet: work out what each column is. PDF or doc (a report, a P&L, a board pack): pull out the figures that fit their dashboard.
+- **A link or a Drive folder** → open it (works with the Drive connector on). For a folder, list what's in it and use the files that fit. **If you genuinely can't read it, say so straight away:** *"Can't get into that one from here — drag the file in instead."* Never pretend you read it, never invent what's in it.
+- **Pasted rows / typed numbers** → write them to `~/Desktop/Claude Malaysia Beginner 101/data/my-numbers.csv`.
+- Ambiguous column or figure → ask ONE question. **Never guess what a number means, never silently drop rows.**
+
+Say back what you found in one line: **"Got it — [what it is, e.g. 42 rows of sales by month / Q3 P&L]. Building from that. Type YES"** *(On a projector? Name the file only — never quote its figures in chat.)*
 
 HARD GATE.
 
 ---
 
-**ADD YOUR FILES — this is the ONE moment for sheets and documents:**
+**NO DATA, OR NO IDEA WHAT DATA? — suggest, then fall back to sample data.**
 
-Say: **Got a Google Sheet, Excel file, PDF or doc with numbers you check? Let's put it in your dashboard. Type YES** *(or type NO to build from your connected tools and the five numbers)*
+Plenty of beginners won't know what to give you. Never make them feel behind.
 
-HARD GATE. If no: move on. Never push twice.
+1. **Suggest first** — from their role, name 2-3 things they almost certainly have: *"Most [role]s have one of these — a sales sheet, last month's P&L PDF, or the invoice list from [their accounting tool]. Got any of those? Drag it in, or type NO."* HARD GATE.
+2. **Still nothing?** Say: **"No problem — I'll build it with realistic sample data for a business like yours, so you can see exactly how it works. Swap in your real numbers any time — just drop a file and say 'rebuild my dashboard'. Type YES"** HARD GATE.
 
-If YES — **whichever is easiest:**
-
-**1.** **Drag the file in** — Excel, CSV, Numbers, PDF, Word.
-**2.** **Or paste a link** — Google Sheets, Google Docs, Drive, Notion.
-**3.** **Or copy the rows** and paste them here. Messy is fine.
-**4.** **Or just type the numbers.** *"Revenue 180k, target 250k, 14 deals open."*
-
-HARD GATE. Then handle it:
-- **File dragged in** → copy it to `~/Desktop/Claude Malaysia Beginner 101/data/` and read it properly. Spreadsheet: work out what each column is. PDF or doc (a report, a P&L, a board pack): pull out the figures that match their five numbers.
-- **A link** → try to open it (works with the Drive connector on). **If you genuinely can't read it, say so straight away:** *"Can't get into that one from here — open it, select what you need, and paste it in."* Never pretend you read it, never invent what's in it.
-- **Pasted rows / typed numbers** → write them to `~/Desktop/Claude Malaysia Beginner 101/data/my-numbers.csv`.
-- Ambiguous column or figure → ask ONE question. **Never guess what a number means, never silently drop rows.**
-
-Say back what you found in one line: **"Got it — [what it is, e.g. 42 rows of sales by month / Q3 P&L]. I'll use [which numbers]. Right? Type YES"** *(On a projector? Name the file only — never quote its figures in chat.)*
-
-HARD GATE. One honest line on freshness: links and files in the `data` folder are re-read every time they say "rebuild my dashboard"; pasted numbers are a snapshot.
+**Sample-data rules:** realistic for THEIR business and size, a clear **"SAMPLE DATA"** banner across the top, every figure tagged `sample`. Never mix sample numbers into a tile that also shows their real data. Never present sample data as real.
 
 ---
 
-**PULL THEIR LIVE DATA:**
+**PULL THEIR LIVE DATA** (only if they typed YES at Q2, or alongside their files):
 
-> ⚠️ **Same projector rule as Lesson 4** — if they asked you to skip email then, skip it now too. Files can be sensitive too: if they're on the projector, don't print figures from a PDF or sheet in chat — put them straight into the dashboard.
+> ⚠️ **Same projector rule as Lesson 4** — if they asked you to skip email then, skip it now too.
 
-Check which connectors you can ACTUALLY reach (look at your own available tools — don't ask them).
-
-**If you CAN reach connectors:** say **"Give me 20 seconds — pulling your actual numbers."** Then 2-4 quick pulls relevant to the dashboard they described. Gmail → unread, anything awaiting a reply. Calendar → today and tomorrow, hours booked. **Their files from the step above are the headline — you've already read them.** Never guess at a spreadsheet — wrong numbers on a CEO's dashboard is worse than none.
+Check which connectors you can ACTUALLY reach (look at your own available tools — don't ask them). Say **"Give me 20 seconds — pulling your actual numbers."** Then 2-4 quick pulls that fit the dashboard they chose. Gmail → unread, anything awaiting a reply. Calendar → today and tomorrow, hours booked. Drive/Sheets → the sheet that fits; if unclear, ask ONE question: **"Which sheet do you check most?"**
 
 - **Read only during the pulls. Never send, delete, reply to, or modify anything.**
 - Everything stays on their machine, baked into their own file — until they choose to publish it.
 - Sensitive-looking? Put the number in without quoting private content.
 - A pull fails or is empty → move on silently.
-- **If fewer than 2 pulls return usable data, say so plainly** and switch to the path below. **NEVER invent a number to fill a tile.**
+- **If fewer than 2 pulls return usable data and they gave no file** → go to NO DATA above. **NEVER invent a number and pass it off as real.**
 
-**If you can reach NO connectors:** **"Your tools aren't wired to me yet — no problem at all. Connect them tonight and I'll pull them in automatically."** Build from their files (if they gave any) plus the five numbers from the interview.
-
-Go straight on to the build — no extra pause here.
+> **CHECK BEFORE YOU PROMISE:** if what they asked for lives in a tool you can't reach (say, accounting software with no connector), say so in one line, build the best real thing you can, and add a tile marked *"connect [tool] to fill this"*.
 
 ---
 
 **BUILD IT:**
 
-One line while you work: **"Building your dashboard now — about a minute."**
+One line while you work: **"Building your dashboard now — give me a minute or two."**
 
-Use **everything you have**: their files first (the headline — they outrank inbox and calendar), then connector pulls, then numbers they typed. Work out deltas, run-rate, progress to target, what's needed to close the gap. Tag each figure `live` (connector), `from your file`, or `yours` (they typed it). Never invent.
+Use **everything you have**: their files first (the headline), then connector pulls, then numbers they typed — or sample data if that's the path. Work out deltas, trends, progress to target, what's needed to close the gap. Tag each figure `live` (connector), `from your file`, `yours` (they typed it) or `sample`.
 
 ---
 
-**THE BRIEF — deliberately loose. Use your judgement.**
+**THE BRIEF — WORLD-CLASS. Use your highest design skill.**
 
-> **Make something genuinely excellent.** They should look at it and think *"I could not have bought this."* You know what a beautiful, useful executive dashboard looks like — build that. Dark and premium, or clean and light; charts, sliders, forecasts, scenarios, whatever actually serves the decision they described. **Don't ask permission for design choices, just make it good.**
+> This must look like a dashboard a professional studio charges **$10,000** to build — not a basic page of boxes. They should look at it and think *"I could not have bought this."*
+>
+> - **Design like a top product designer:** a deliberate visual hierarchy (one hero number, then supporting KPIs, then detail), a refined colour palette with one accent colour, generous spacing, beautiful typography (system font stack, tabular figures for numbers), subtle shadows and depth, smooth hover states and entrance animations.
+> - **Real data visualisation, drawn with inline SVG or canvas:** trend lines with sparklines, progress rings or bars to target, comparison bars, a clear ⚠️ "needs your attention" panel. Every chart labelled and readable at a glance.
+> - **Interactive where it helps the decision:** tabs or filters, a scenario slider ("what if sales grow 10%?"), hover tooltips with exact values, a light/dark toggle.
+> - **Responsive:** looks great on a laptop AND on their phone (they'll publish it).
+> - **Don't ask permission for design choices — just make it exceptional.**
 
 Write it **directly to `~/Desktop/Claude Malaysia Beginner 101/build/index.html`** with your Write tool.
 
 **The only hard rules:**
-- 🚫 **DO NOT print the HTML in chat.** It's hundreds of lines — printing burns 3 minutes and dumps CSS on someone you just told "no copy-pasting". Write the file, then open it.
-- **Every number is real** — pulled from a connector, from their file, or given by them. **Never invent one.** If their file had a column you couldn't interpret, leave it out rather than guess. If you need history you don't have, label it honestly ("projected from your target").
-- Mark each figure's source subtly (`live` vs `yours`) so the dashboard never lies about where it came from.
+- 🚫 **DO NOT print the HTML in chat.** It's hundreds of lines — printing burns minutes and dumps code on a beginner. Write the file, then open it.
+- **Every real number is real** — from a connector, their file, or given by them. If their file had a column you couldn't interpret, leave it out rather than guess. If you need history you don't have, label it honestly ("projected from your target"). Sample data only on the NO DATA path, always bannered.
+- Mark each figure's source subtly (`live` · `from your file` · `yours` · `sample`) so the dashboard never lies about where it came from.
 - **Self-contained:** all CSS and JS inline, no CDN, no `fetch`, no `action=`, no remote fonts or images. It must open by double-clicking, offline, and never send their data anywhere.
-- A timestamp: "Live data as of [time], [date]", plus their name and department.
+- A timestamp: "Data as of [time], [date]", plus their name and department.
 - Zero placeholder text.
 
 ---
