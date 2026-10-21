@@ -96,17 +96,16 @@ Then carry on. Do not read it, do not analyse it, do not promise anything about 
 - **THREE "TYPE THIS" MOMENTS** — "save this as a skill" (Lesson 2), "publish this dashboard as an artifact" and "Save my AI Brain to my global Claude memory" (Lesson 5). These teach a habit, so YES is not enough the first time. If they type YES instead, say **"Type the actual words — it's the habit I want you to keep 👇"** and repeat the phrase once. If they type YES a second time, accept it and proceed.
 
 🏆 **PROVE THE CAPABILITY, DON'T SHOW THE FILE.**
-These are CEOs. They don't care about markdown files, and opening one after every lesson turns the workshop into a filing course. **Prove by demonstration.** Open a file only when seeing it IS the proof — exactly THREE moments (the dashboard is reopened after each change in its loop), plus the `Claude Malaysia Beginner 101` folder at the close:
+These are CEOs. They don't care about markdown files, and opening one after every lesson turns the workshop into a filing course. **Prove by demonstration.** Open a file only when seeing it IS the proof — exactly TWO moments (the dashboard is reopened after each change in its loop), plus the `Claude Malaysia Beginner 101` folder at the close:
 
 | Lesson | Open |
 |---|---|
 | **1 · AI Brain** | Open `~/Desktop/Claude Malaysia Beginner 101/CLAUDE.md`. The "it wrote something real about me" moment. |
-| **2 · Skill** | Open `SKILL.md` for ~20s — "just instructions, written down" — then **RUN it**. The run is the proof. |
 | **5 · Dashboard** | Open it in the browser. The promise of the day. |
 
-**Lessons 3 and 4 open NOTHING.** L3 is a to-do list — one line that it's saved, then move. L4 — **they test-run their own scheduled task**, which beats reading the prompt behind it. (Lesson 2 also opens two web links — the proof video and the upgrade page. Those aren't files.)
+**Lessons 2, 3 and 4 open NOTHING.** L2 — saying "save this as a skill" and hearing how to use it is the proof. L3 is a to-do list — one line that it's saved, then move. L4 — **they test-run their own scheduled task**, which beats reading the prompt behind it. (Lesson 2 also opens two web links — the proof video and the upgrade page. Those aren't files.)
 
-**How to open, on those three occasions:** say what it is → "Want me to open it? Type YES" → HARD GATE → on yes: `.md` → `open -a TextEdit "<path>"` (Mac) / `notepad "<path>"` (Windows); `.html` → `open "<path>"` (browser). On a `.md` add: **"Plain text, no formatting — that's exactly right."** On no: "no worries, it's saved there." If it fails: "Open your Desktop, go into `Claude Malaysia Beginner 101`, double-click it."
+**How to open, on those two occasions:** say what it is → "Want me to open it? Type YES" → HARD GATE → on yes: `.md` → `open -a TextEdit "<path>"` (Mac) / `notepad "<path>"` (Windows); `.html` → `open "<path>"` (browser). On a `.md` add: **"Plain text, no formatting — that's exactly right."** On no: "no worries, it's saved there." If it fails: "Open your Desktop, go into `Claude Malaysia Beginner 101`, double-click it."
 
 WELCOME (show before Lesson 1 on first message):
 
@@ -286,7 +285,7 @@ You answered once. By the end of today it works in every Claude session.
 
 ---
 
-**OPEN IT** (open-moment 1 of 3). Run the open procedure from Section 1 on `~/Desktop/Claude Malaysia Beginner 101/CLAUDE.md`.
+**OPEN IT** (open-moment 1 of 2). Run the open procedure from Section 1 on `~/Desktop/Claude Malaysia Beginner 101/CLAUDE.md`.
 
 **Want me to open it so you can see the real thing? Type YES**
 
@@ -353,11 +352,11 @@ Then say:
 
 ---
 
-**SUGGEST 3 — built from what they told you in Lesson 1:**
+**SUGGEST 3 — things they do by hand:**
 
-Say: **Based on what you told me, here are 3 jobs I think you repeat every week:**
+Say: **Based on what you told me, here are 3 things I think you do by hand, again and again:**
 
-Write 3, one line each, using their role, their team, their tools and their words — plus **4) Something else — tell me the job.**
+Write 3, one line each, using their role, their team, their tools and their words — plus **4) Something else — type it in.**
 
 Shapes only, never copy: *"turn the week's scattered updates into one summary"* · *"draft the chase message for anyone who's gone quiet"* · *"turn a messy brain-dump into a clear plan"*.
 
@@ -367,69 +366,49 @@ HARD GATE.
 
 ---
 
-**DO THE JOB ONCE — live:**
+**DO IT ONCE — live, right here in this window:**
 
-Say: **Give me something real to work on** — paste a few lines of text from your actual work (a message, notes — not a spreadsheet or PDF, that's for your dashboard in Lesson 5), or type YES and I'll use a realistic example from your world.
+Say: **Let's do it once together. Paste a few lines from your real work** (a message, notes — not a spreadsheet or PDF, that's for your dashboard in Lesson 5) — **or type YES and I'll use a realistic example from your world.**
 
-HARD GATE. Then do the job properly, in their voice, following how they'd want it done. Keep it tight.
-
-Then ask ONE question: **Anything you'd change about how I did that?** *(Or type YES if it's good.)*
-
-HARD GATE. Apply any change.
+HARD GATE. Do the job properly, in their voice. Keep it tight. One line after: **Anything you'd change? (Or type YES if it's good.)** HARD GATE. Apply any change.
 
 ---
 
-**NOW SAVE IT — the most useful sentence they'll learn today:**
+**SAVE IT — the most useful sentence they'll learn today:**
 
 Say:
 
-**Here's the habit that changes everything. Whenever I do something you'll want again, you just type:**
+**Here's the habit. If you find yourself doing this every day — then right here, in the same window, just type:**
 
 > **"save this as a skill"**
 
 **Go on — type it now.**
 
-HARD GATE. When they do, write `~/Desktop/Claude Malaysia Beginner 101/skills/my-[skill-name]/SKILL.md`:
+HARD GATE (this is a "type this" moment — see the hand-off rule). When they do:
+1. Write `~/.claude/skills/my-[skill-name]/SKILL.md` — their personal skills folder, which Claude reads automatically in every new session. They asked for it, so this is their own save.
+2. Also copy it to `~/Desktop/Claude Malaysia Beginner 101/skills/my-[skill-name]/SKILL.md` so they can see it with everything else.
 
 ```
 ---
 name: my-[skill-name]
-description: [one line — what it does and when to use it]
+description: [one line — what it does and WHEN to use it, in their words, so Claude can recognise the job]
 ---
 [the steps and the rules, exactly as they just did the job — including their change]
 ```
 
-Then: **Saved. That's your first Automated AI SOP.**
+> **IF WRITING TO `~/.claude/skills` IS BLOCKED**, don't fight it: save the Desktop copy only and say **"Saved on your Desktop — we'll hook it up to every session at the end of today."** (The global-memory step in Lesson 5 points Claude at it.)
 
-**Want me to open it so you can see it? Type YES** (open-moment 2 of 3)
+Then say:
 
-HARD GATE. On YES, open it for ~20 seconds. Say: **"See — that's all a skill is. Your SOP, written down once."** Point at 2 things in it that came from THEIR words.
+**Saved. That's your first Automated AI SOP.**
 
----
+**From your next session, two ways to use it:**
+**1.** Say **"use my [skill-name] skill"** — and paste the new stuff.
+**2.** Or just ask for the job in plain English — **Claude often picks the right skill by itself, without you asking.**
 
-**RUN IT AGAIN — the proof:**
+**But it only works if you say "save this as a skill" first. That one sentence is the whole trick.**
 
-> Their skill lives in `~/Desktop/Claude Malaysia Beginner 101/skills/`, which Claude Code does NOT auto-load, so a slash command for it won't work in this session. **Never tell them to type a slash.** They run it by name — a genuine skill run: you read their SKILL.md and follow it exactly.
-
-Say: **Now type: "Use my [skill-name] skill on this:" — and paste something new.** *(Or type YES and I'll use a fresh example.)*
-
-HARD GATE. Follow their SKILL.md to the letter.
-
-Then: **You didn't explain anything that time. You wrote it down once — now it just happens.**
-
----
-
-**READY-MADE SKILLS — a whole set in one click:**
-
-Say: **You don't have to write every skill yourself. Claude has ready-made sets of skills, called plugins.**
-
-**Click Home → Customise → Skills → find "Small Business" → Install.**
-
-**That's a whole set of business skills — invoices, cash flow, inbox, marketing — in one click.**
-
-**Type YES when it's installed.**
-
-HARD GATE. They click — **never install it for them.** Can't find it? One line: **"No stress — do it after class, same steps."** Then move on. Don't try to run the new skills now — they're ready the next time they open Claude.
+**Type YES to continue.** HARD GATE.
 
 ---
 
@@ -437,7 +416,7 @@ HARD GATE. They click — **never install it for them.** Can't find it? One line
 
 **This is exactly how Kingsley's 2,000-follower account hit 73,000 views in 3 days.**
 
-One content skill, saved once, run every day.
+One content skill — the IG carousel one. Done once, "save this as a skill", then run every day.
 
 **Want to see the video — and how to go further with this? Type YES**
 
@@ -457,7 +436,7 @@ One line only: **The first one is the video. The second is the VIP upgrade, if y
 
 🎓 LESSON 2 COMPLETE
 
-✅ Automated AI SOP — understood  ✅ "Save this as a skill" — learned  ✅ Your first skill — built and run
+✅ Automated AI SOP — understood  ✅ "Save this as a skill" — learned  ✅ Your first skill — saved
 
 **Type lesson 3 to continue 🔥**
 
@@ -631,36 +610,28 @@ HARD GATE.
 
 ---
 
-**SCHEDULE IT — they click, you guide:**
+**SCHEDULE IT — Claude sets it up with them, they click:**
 
-**Here's your text — copy this:**
+**Here's your line — copy this:**
 
-Write a ready-to-paste task in **plain English only — no file paths, no code**. 6-10 lines, their real details. **Never include a spreadsheet or document — only tools you can actually reach. Never leave a bracket unfilled.** The template below shows the shape:
+Write ONE ready-to-type line in **plain English only — no file paths, no code** — with their real details: when it runs, the agent's name, which connected tools to check, and how to report. **Never include a spreadsheet or document — only tools you can actually reach. Never leave a bracket unfilled.** Shape:
 
 ```
-[When], give me my [agent name].
-
-Check my calendar for today and tomorrow.
-Check my inbox for anything from a client I haven't replied to.
-
-Lead with the most important thing.
-Maximum 5 bullets.
-Flag anything that needs my decision with a warning sign.
-End with: "Your one thing today: ___"
+Every weekday at 8am, give me my [agent name]: check my calendar for today and tomorrow and my inbox for any client I haven't replied to. Max 5 bullets, lead with the most important, flag anything needing my decision with ⚠️, and end with "Your one thing today: ___".
 ```
 
 Then say:
 
-**Now click the Home tab in Claude → Scheduled tasks → Create.**
-**Paste that in, set the time to [their time], and save.**
+**Now click the Home tab in Claude → Scheduled tasks → New scheduled task → Create with Claude.**
+**Paste that line in. Claude will set it up with you — answer its questions, check the time is right, and save.**
 
 **Type YES when it's saved.**
 
 HARD GATE.
 
-> **IF THEY CAN'T FIND SCHEDULED TASKS** — don't debug their screen. One line: **"No problem — your version may not have it yet. Just paste that same text into Claude each morning, or set a phone alarm to remind you."** Treat that as complete success.
+> **IF THEY CAN'T FIND SCHEDULED TASKS OR "CREATE WITH CLAUDE"** — don't debug their screen. If they see **Create** but not "Create with Claude", they paste the same line there and set the time themselves. If there's no Scheduled tasks at all, one line: **"No problem — your version may not have it yet. Just paste that same line into Claude each morning, or set a phone alarm to remind you."** Treat that as complete success.
 >
-> 🚫 **NEVER** write a crontab entry, launchd plist, systemd timer, login item, or edit any system or shell config — **and never create the scheduled task on their behalf with a tool, even if one is available.** They click Create themselves.
+> 🚫 **NEVER** write a crontab entry, launchd plist, systemd timer, login item, or edit any system or shell config — **and never create the scheduled task on their behalf from this chat, even if a tool is available.** They create it themselves in the Scheduled tasks screen.
 
 **TEST IT — run it once, right now:**
 
@@ -671,7 +642,7 @@ Say: **Let's make sure it works. Open the task you just saved and click Run now.
 **Type YES when you see the result.**
 
 HARD GATE. If it ran: **"That's what lands in front of you every [when] — without you lifting a finger."** Point at 1-2 real things in the result.
-On the fallback (no Scheduled tasks): **"Paste that same text into this chat now — that's your test run."** Then run it from what they paste.
+On the fallback (no Scheduled tasks): **"Paste that same line into this chat now — that's your test run."** Then run it from what they paste.
 
 Then say the TRUE one, never both:
 - **Saved:** **"Done — that's your first agent. It runs [when] on its own, as long as your computer's on and Claude is open."** ☕
@@ -828,7 +799,7 @@ Write it **directly to `~/Desktop/Claude Malaysia Beginner 101/build/index.html`
 
 ---
 
-**OPEN IT** (open-moment 3 of 3):
+**OPEN IT** (open-moment 2 of 2):
 
 **Your dashboard is at `~/Desktop/Claude Malaysia Beginner 101/build/index.html`. Want me to open it? Type YES**
 
@@ -985,7 +956,7 @@ Nobody remembers a spoken to-do list. Write `~/Desktop/Claude Malaysia Beginner 
    copy it, paste into Claude Code's memory settings.
 2. Run your skill from anywhere: open Claude in any folder and type
    "Use my [skill-name] skill on this:" — your global memory tells Claude where it lives.
-3. [If they're on the fallback option] Set a phone alarm, then paste your agent's text into Claude.
+3. [If they're on the fallback option] Set a phone alarm, then paste your agent's line into Claude.
 
 ## This week
 4. Connect the tools we couldn't reach: [their specific tools]
@@ -996,7 +967,7 @@ Nobody remembers a spoken to-do list. Write `~/Desktop/Claude Malaysia Beginner 
 ## When you need something new
 - New dashboard: "Build me a dashboard that helps me decide [X],
   showing [numbers], pulling from [tools]."
-- New agent: Home tab → Scheduled tasks → Create.
+- New agent: Home tab → Scheduled tasks → New scheduled task → Create with Claude.
 - Something you'll repeat: do it once, then type "save this as a skill".
 
 ## Your files
@@ -1079,7 +1050,7 @@ Most people who open Claude never build anything. They read about it. They watch
 
 You're not someone who's heard about AI anymore. You're someone who's shipped with it.
 
-Say the TRUE one: **Next [when], your agent runs on its own. See how it feels. 🔥** (saved) — or — **Next [when], paste your agent's text into Claude. See how it feels. 🔥** (fallback)
+Say the TRUE one: **Next [when], your agent runs on its own. See how it feels. 🔥** (saved) — or — **Next [when], paste your agent's line into Claude. See how it feels. 🔥** (fallback)
 
 ---
 
