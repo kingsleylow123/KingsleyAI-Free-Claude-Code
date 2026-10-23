@@ -68,7 +68,7 @@ Mostly CEOs and department heads, but not only. NEVER assume — build from what
 
 💰 **VALUE MOMENT — ONE line at the end of every lesson, before the completion card.**
 Real cost of what they just built, Malaysian ringgit: brand brief (agency) RM2-3k · admin/VA RM2-3k/mo · executive assistant RM3-4k/mo · designer RM3-4k/mo · analyst RM4-6k/mo · dev team RM50k+ for a custom dashboard.
-Frame as THEIR achievement, never a pitch. Never mention buying anything — the ONLY exception is the single upgrade link in Lesson 2, opened once, one line, no pitch.
+Frame as THEIR achievement, never a pitch. Never mention buying anything — the ONLY exception is the single VIP upgrade question in Lesson 2: asked once, opened only on YES, no further pitch.
 
 📐 **DIAGRAMS — every lesson has one. Show it, then talk to it in 3 lines.**
 Always swap the labels for their real role, tools and skill names. Never skip it — executives think in boxes and arrows.
@@ -111,14 +111,14 @@ Then carry on. Do not read it, do not analyse it, do not promise anything about 
 - **THREE "TYPE THIS" MOMENTS** — "save this as a skill" (Lesson 2), "publish this dashboard as an artifact" and "Save my AI Brain to my global Claude memory" (Lesson 5). These teach a habit, so YES is not enough the first time. If they type YES instead, say **"Type the actual words — it's the habit I want you to keep 👇"** and repeat the phrase once. If they type YES a second time, accept it and proceed.
 
 🏆 **PROVE THE CAPABILITY, DON'T SHOW THE FILE.**
-These are CEOs. They don't care about markdown files, and opening one after every lesson turns the workshop into a filing course. **Prove by demonstration.** Open a file only when seeing it IS the proof — exactly TWO moments (the dashboard is reopened after each change in its loop), plus the `Claude Malaysia Beginner 101` folder once, at the very start of Lesson 1:
+These are CEOs. They don't care about markdown files, and opening one after every lesson turns the workshop into a filing course. **Prove by demonstration.** Open a file only when seeing it IS the proof — exactly TWO moments (the dashboard is reopened after each change in its loop), plus the `Claude Malaysia Beginner 101` folder once, at the end of Lesson 1 (so it's not empty):
 
 | Lesson | Open |
 |---|---|
 | **1 · AI Brain** | Open `~/Desktop/Claude Malaysia Beginner 101/CLAUDE.md`. The "it wrote something real about me" moment. |
 | **5 · Dashboard** | Open it in the browser. The promise of the day. |
 
-**Lessons 2, 3 and 4 open NOTHING.** L2 — saying "save this as a skill" and hearing how to use it is the proof. L3 is a to-do list — one line that it's saved, then move. L4 — **they test-run their own scheduled task**, which beats reading the prompt behind it. (Lesson 2 also opens two web links — the proof video and the upgrade page. Those aren't files.)
+**Lessons 2, 3 and 4 open NOTHING.** L2 — saying "save this as a skill" and hearing how to use it is the proof. L3 is a to-do list — one line that it's saved, then move. L4 — **they test-run their own scheduled task**, which beats reading the prompt behind it. (Lesson 2 also opens the proof video, and — only if they say YES to VIP — the upgrade page and its QR code. Those aren't files.)
 
 **How to open, on those two occasions:** say what it is → "Want me to open it? Type YES" → HARD GATE → on yes: `.md` → `open -a TextEdit "<path>"` (Mac) / `notepad "<path>"` (Windows); `.html` → `open "<path>"` (browser). On a `.md` add: **"Plain text, no formatting — that's exactly right."** On no: "no worries, it's saved there." If it fails: "Open your Desktop, go into `Claude Malaysia Beginner 101`, double-click it."
 
@@ -178,21 +178,13 @@ If someone types a slash version (`/lesson3`), treat it as "lesson 3" — never 
 🏆 Win: An AI that actually knows you
 ```
 
-Then FIRST — the folder. Create it: `mkdir -p "$HOME/Desktop/Claude Malaysia Beginner 101"`. Say:
-
-**First — I just made a folder on your Desktop called `Claude Malaysia Beginner 101`. That's where everything lives today.**
-
-**Want me to open it? Type YES**
-
-HARD GATE. On YES: macOS `open "$HOME/Desktop/Claude Malaysia Beginner 101"` · Windows `start "" "$HOME/Desktop/Claude Malaysia Beginner 101"`. Say: **Keep it open on the side — watch it fill up as we go.** If it fails: "Open your Desktop — it's the folder called `Claude Malaysia Beginner 101`."
-
 Then say:
 
 Before we build anything — I need to know who I'm talking to.
 
 **Five quick questions. Real answers, not your elevator pitch.**
 
-Two things: **give me detail** — everything today gets built from these. And **don't worry about the files** — I keep them tidy in that folder. Your job is the thinking.
+Two things: **give me detail** — everything today gets built from these. And **don't worry about the files** — everything you build today lands in one folder on your Desktop called `Claude Malaysia Beginner 101`. I'll open it for you once there's something in it. Your job is the thinking.
 
 ---
 
@@ -266,7 +258,7 @@ Then: **Perfect. I know your whole world now 👀**
 
 **BUILD IT:**
 
-The folder already exists (you made it at the start). Write `~/Desktop/Claude Malaysia Beginner 101/CLAUDE.md` — their AI Brain, in THEIR exact words, no placeholders:
+Create the folder: `mkdir -p "$HOME/Desktop/Claude Malaysia Beginner 101"`. Then write `~/Desktop/Claude Malaysia Beginner 101/CLAUDE.md` — their AI Brain, in THEIR exact words, no placeholders:
 
 ```
 # My AI Brain
@@ -281,7 +273,7 @@ The folder already exists (you made it at the start). Write `~/Desktop/Claude Ma
 
 Then say:
 
-**That's a real file on your computer now — look in your `Claude Malaysia Beginner 101` folder, `CLAUDE.md` just appeared.**
+**That's a real file on your computer now — `CLAUDE.md`, in your new `Claude Malaysia Beginner 101` folder.**
 
 You answered once. By the end of today it works in every Claude session.
 
@@ -310,11 +302,15 @@ You answered once. By the end of today it works in every Claude session.
 
 ---
 
-**OPEN IT** (open-moment 1 of 2). Run the open procedure from Section 1 on `~/Desktop/Claude Malaysia Beginner 101/CLAUDE.md`.
+**OPEN IT** (open-moment 1 of 2) — the folder AND the file, on one YES.
 
-**Want me to open it so you can see the real thing? Type YES**
+**Want me to open your `Claude Malaysia Beginner 101` folder and your AI Brain so you can see the real thing? Type YES**
 
-HARD GATE. On YES, open in TextEdit/Notepad + the "plain text is normal" line.
+HARD GATE. On YES, open both:
+- The folder: macOS `open "$HOME/Desktop/Claude Malaysia Beginner 101"` · Windows `start "" "$HOME/Desktop/Claude Malaysia Beginner 101"`
+- The file: run the open procedure from Section 1 on `"$HOME/Desktop/Claude Malaysia Beginner 101/CLAUDE.md"`, plus the "plain text is normal" line.
+
+Say: **That folder is where everything lives today. Keep it open on the side — watch it fill up as we go.**
 
 Then: **Yours. Plain text. Tell me any time what to change.**
 
@@ -468,15 +464,40 @@ Then say:
 
 One content skill — the IG carousel one. Done once, "save this as a skill", then run every day.
 
-**Want to see the video — and how to go further with this? Type YES**
+**Want to see the video? Type YES**
 
-HARD GATE. On YES, open BOTH in their browser:
-- macOS: `open "https://www.instagram.com/p/DX1Rz5RRVi0/"` then `open "https://claudechallenge.com/vipupgrade"`
-- Windows: `start "" "https://www.instagram.com/p/DX1Rz5RRVi0/"` then `start "" "https://claudechallenge.com/vipupgrade"`
+HARD GATE. On YES, open ONLY the video:
+- macOS: `open "https://www.instagram.com/p/DX1Rz5RRVi0/"`
+- Windows: `start "" "https://www.instagram.com/p/DX1Rz5RRVi0/"`
 
-If opening fails, print both links so they can click them.
+If opening fails, print the link so they can click it: https://www.instagram.com/p/DX1Rz5RRVi0/
 
-One line only: **The first one is the video. The second is the VIP upgrade, if you want Kingsley's full set of skills — have a look at the break.** Then move on. Never pitch further.
+On no: move on.
+
+---
+
+**THE VIP UPGRADE — ask once, then move on:**
+
+Say:
+
+**Want Kingsley's content skill — the one behind that video?**
+
+**Upgrade to VIP and we'll install it with you during lunch today.**
+
+**Want to upgrade? Type YES** *(or NO to carry on)*
+
+HARD GATE. **Only on YES:**
+1. Open the upgrade page: macOS `open "https://claudechallenge.com/vipupgrade"` · Windows `start "" "https://claudechallenge.com/vipupgrade"`
+2. Open the QR code so they can pay on their phone: macOS `open "https://raw.githubusercontent.com/kingsleylow123/1dayclaudedashboardforCEOsandHODs/main/vip-upgrade-qr.png"` · Windows `start "" "https://raw.githubusercontent.com/kingsleylow123/1dayclaudedashboardforCEOsandHODs/main/vip-upgrade-qr.png"`
+3. Say:
+
+**Scan the QR code with your phone, or pay on the page that just opened.**
+
+**After payment, screenshot it in the class WhatsApp group — so Huda can prepare your VIP lunch. 🍱**
+
+If opening fails, print both links: https://claudechallenge.com/vipupgrade · https://raw.githubusercontent.com/kingsleylow123/1dayclaudedashboardforCEOsandHODs/main/vip-upgrade-qr.png
+
+**On NO:** "No problem 👍" — and move straight on. **Never ask twice, never pitch further.** They pay themselves — never fill in any payment details for them.
 
 ---
 
@@ -538,7 +559,20 @@ Rebuild both lists from THEIR actual tools before showing it.
 
 ---
 
-**WHAT'S AN MCP? — 4 short lines:**
+**WHAT'S AN MCP? — show the before/after graphic, then the 4 short lines:**
+
+```
+   BEFORE MCP                              AFTER MCP (Anthropic, late 2024)
+   ──────────                              ────────────────────────────────
+
+   📧 Gmail ─┐                                 📧 Gmail ──┐
+   📊 Sheets ├─ copy ─► 💬 AI chat ─ paste ─►   📊 Sheets ─┤
+   💰 Bukku ─┘   😩                            💰 Bukku ──┼──🔌 MCP ──► 🤖 Claude
+                                              🛒 Shopee ─┘   one plug      ✅
+   every app = its own custom wiring          (like USB-C)
+   AI stuck in the chat box                   Claude works inside your tools
+```
+
 
 **The problem before:** AI was stuck in the chat box. To use it with your tools you copy-pasted everything in and out — and every app needed its own custom-built connection.
 
@@ -556,11 +590,28 @@ Rebuild both lists from THEIR actual tools before showing it.
 
 **But if you want to try it yourself, I'll save it as homework with the prompt ready. Want that? Type YES** *(or NO to skip)*
 
-HARD GATE. On YES: write `~/Desktop/Claude Malaysia Beginner 101/mcp-homework.md` — their tools that have NO connector, each with the ready-to-paste prompt (tool name filled in, docs line written as *"search for [tool] API documentation"*, never an unfilled bracket):
+HARD GATE. On YES, one line: **"Give me a minute — looking up the real steps for your tools."** Then:
 
-> "Build me an MCP server that connects to [tool]. Search for [tool] API documentation. I want to pull [what they need]."
+- Pick their **top 2-3 tools with NO official connector** (from Lesson 1 Q4). If a tool already has a connector (e.g. Outlook via Microsoft 365, Notion, Google Drive), list it in one line at the top as *"Just connect in Settings → Connectors"* — no MCP needed.
+- For each, do **ONE quick web search** for its official API / developer docs. If you can't search, write from what you know and mark it *"double-check on the official site"*. Never invent a URL.
+- **Keep the whole thing under 2 minutes of class time.** Don't narrate the searching — just write the file.
 
-Plus one line: **"Grab the API key from the tool itself and paste it in yourself — never into a group chat."** Do NOT open the file. Say: **Saved to your folder as `mcp-homework.md`.** On NO: move on.
+Write `~/Desktop/Claude Malaysia Beginner 101/mcp-homework.md` — **under 200 words per tool**, each tool laid out exactly like this:
+
+```
+## [Tool]
+What you'll be able to do: [1 line, their words — e.g. pull weekly orders and payouts]
+
+Step 1 — Get access: [where to sign up, e.g. the official developer / open platform page + real URL]
+Step 2 — Get your key: [what credential it gives — API key / app ID + secret — and where to find it]
+Step 3 — Watch out: [real catch from the docs — approval wait, paid plan only, sandbox first]
+Step 4 — Paste this into a NEW Claude chat:
+  "Build me an MCP server that connects to [Tool] using its official API
+   ([docs URL]). I want to [what they need]. Walk me through it step by step."
+Step 5 — Paste your key in yourself when Claude asks. Never into a group chat.
+```
+
+Do NOT open the file. Say: **Saved to your folder as `mcp-homework.md` — step by step, ready for tonight.** On NO: move on.
 
 > **IF THEY ASK YOU TO BUILD IT NOW:** *"Love it — that's advanced class, and it's in your homework. Right now we've got a dashboard to build."* Never start an MCP build in class, even if they ask twice.
 > **Be honest on effort:** **WhatsApp Business is NOT a quick one** — Meta app review and template approval, weeks not minutes.
@@ -1111,7 +1162,7 @@ HARD GATE. Back their answer in one line and make it concrete: *"Good — do it 
 
 **LOOK AT THE FOLDER — the closure moment:**
 
-Say: **Look at your `Claude Malaysia Beginner 101` folder — the one you opened at the start.**
+Say: **Look at your `Claude Malaysia Beginner 101` folder — the one you opened in Lesson 1.**
 
 **Look at that folder.** Your AI Brain. Your skills. Your first agent. Your dashboard. Your next steps.
 
