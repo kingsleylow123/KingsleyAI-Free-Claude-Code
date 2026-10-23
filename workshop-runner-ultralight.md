@@ -487,15 +487,18 @@ Say:
 **Want to upgrade? Type YES** *(or NO to carry on)*
 
 HARD GATE. **Only on YES:**
-1. Open the upgrade page: macOS `open "https://claudechallenge.com/vipupgrade"` · Windows `start "" "https://claudechallenge.com/vipupgrade"`
-2. Open the QR code so they can pay on their phone: macOS `open "https://raw.githubusercontent.com/kingsleylow123/1dayclaudedashboardforCEOsandHODs/main/vip-upgrade-qr.png"` · Windows `start "" "https://raw.githubusercontent.com/kingsleylow123/1dayclaudedashboardforCEOsandHODs/main/vip-upgrade-qr.png"`
-3. Say:
 
-**Scan the QR code with your phone, or pay on the page that just opened.**
+1. Open the upgrade page: macOS `open "https://claudechallenge.com/vipupgrade"` · Windows `start "" "https://claudechallenge.com/vipupgrade"` (if it fails, print the link: https://claudechallenge.com/vipupgrade)
 
-**After payment, screenshot it in the class WhatsApp group — so Huda can prepare your VIP lunch. 🍱**
+2. Then ask:
 
-If opening fails, print both links: https://claudechallenge.com/vipupgrade · https://raw.githubusercontent.com/kingsleylow123/1dayclaudedashboardforCEOsandHODs/main/vip-upgrade-qr.png
+**Prefer to check out on your phone instead? I can show you a QR code. Type YES** *(or NO — the page is fine)*
+
+HARD GATE. **On YES:** open the QR code — macOS `open "https://raw.githubusercontent.com/kingsleylow123/1dayclaudedashboardforCEOsandHODs/main/vip-upgrade-qr.png"` · Windows `start "" "https://raw.githubusercontent.com/kingsleylow123/1dayclaudedashboardforCEOsandHODs/main/vip-upgrade-qr.png"` (if it fails, print the link). Say: **Scan it with your phone camera.** **On NO:** fine, carry on.
+
+3. Then say:
+
+**After you upgrade, post a screenshot in the class WhatsApp group — so Huda can prepare your VIP lunch. 🍱**
 
 **On NO:** "No problem 👍" — and move straight on. **Never ask twice, never pitch further.** They pay themselves — never fill in any payment details for them.
 
@@ -648,15 +651,17 @@ Show this graphic first:
 
 Then say:
 
-**Here's what that looks like with Google Drive connected:**
+**Here's what that looks like with Google Docs connected — just type:**
 
-**📤 Instead of uploading 10 invoices one by one:**
-> *"Upload these 10 invoices to my Invoices folder in Google Drive."* — Claude does it in one go.
+> *"Use my Google Docs connector and make me a 1-page report about claudemalaysia.com."*
 
-**📊 Instead of opening each one and adding it up:**
-> *"Read all 10 invoices in my Google Drive folder, total them, and make me a Google Sheet report."*
+**Claude reads the site, writes the report and puts it straight into a Google Doc for you.**
 
-**That's your hands-on homework to try after class.**
+**That's the lesson: you just tell your Claude agent to go do things in the background.**
+
+**No more copy-pasting. No more 7 tabs open.**
+
+**Try it after class — that's your hands-on homework.**
 
 **Right now the focus is your dashboard** — and later you'll use the same Google Drive connector to build dashboards straight from your files.
 
@@ -666,7 +671,7 @@ If they connected nothing: **"No stress lah — Settings → Connectors tonight,
 
 ---
 
-💰 **VALUE MOMENT:** **An admin uploading and totalling invoices by hand is RM2-3k a month. With a connector it's one sentence. 🔥**
+💰 **VALUE MOMENT:** **An admin researching and writing reports by hand is RM2-3k a month. With a connector it's one sentence. 🔥**
 
 ---
 
@@ -1125,9 +1130,9 @@ Nobody remembers a spoken to-do list. Write `~/Desktop/Claude Malaysia Beginner 
 3. [If they're on the fallback option] Set a phone alarm, then paste your agent's line into Claude.
 
 ## This week
-4. Connect your tools: Settings → Connectors. Start with Google Drive.
-   Try: "Read all the invoices in my [folder] in Google Drive, total them,
-   and make me a Google Sheet report."
+4. Connect your tools: Settings → Connectors. Start with Google Drive / Docs.
+   Try: "Use my Google Docs connector and make me a 1-page report
+   about claudemalaysia.com."
    [ONLY if they saved MCP homework] Then try the prompts in mcp-homework.md.
 5. Let your agent run 3 days in a row. Then add a second scheduled task — that's your second agent.
 6. Rebuild your dashboard once yourself — say "rebuild my dashboard".
@@ -1162,7 +1167,7 @@ You told me [their role] — it's [in your global memory | one paste away, in yo
 
 **3 · Connections**
 Connectors do 80% of the day-to-day. [What's live for them.]
-→ *Tonight: connect Google Drive, try the invoice report.*
+→ *Tonight: connect Google Docs, try the 1-page report.*
 
 **4 · Your first agent**
 [What it does], runs [when].
@@ -1199,7 +1204,7 @@ What you built today          What it costs to buy
 ─────────────────────────────────────────────────
 AI Brain + brand brief        RM2-3k  (agency)
 Automated AI SOP              RM2-3k/mo  (admin/VA)
-Connectors (invoice admin)    RM2-3k/mo  (admin)
+Connectors (reports, admin)   RM2-3k/mo  (admin)
 Your dashboard                RM50k+  (dev team)
 Your first AI agent           RM3-4k/mo  (executive assistant)
 ─────────────────────────────────────────────────
