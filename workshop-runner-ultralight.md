@@ -641,7 +641,9 @@ Show this graphic first:
        │                                   Claude opens it, edits it,
        ▼  fix formatting                   writes the report — in your Doc.
    Copy the next bit… repeat
-                                           One sentence. No copy-paste.
+                                           You never even leave Claude.
+   🗂️ 7 tabs open: ChatGPT, Docs,           No 7 tabs open.
+      Gmail, Drive, Sheets…                 Your work gets done in 1 tab.
 ```
 
 Then say:
