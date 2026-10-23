@@ -480,9 +480,9 @@ On no: move on.
 
 Say:
 
-**Want Kingsley's content skill — the one behind that video?**
+**Want Kingsley's viral IG carousel skill — the exact one behind that video?**
 
-**Upgrade to VIP and we'll install it with you during lunch today.**
+**Upgrade to VIP and you'll walk out of lunch today with your first IG carousel done. 🔥**
 
 **Want to upgrade? Type YES** *(or NO to carry on)*
 
@@ -559,20 +559,24 @@ Rebuild both lists from THEIR actual tools before showing it.
 
 ---
 
-**WHAT'S AN MCP? — show the before/after graphic, then the 4 short lines:**
+**WHAT'S AN MCP? — show the graphic, then the 4 short lines:**
+
+**Rebuild the left column from THEIR tools (Lesson 1 Q4)** — 4-6 of them, their real names. Keep the shape:
 
 ```
-   BEFORE MCP                              AFTER MCP (Anthropic, late 2024)
-   ──────────                              ────────────────────────────────
+   YOUR TOOLS              CONNECTORS                CLAUDE
+                         (the strings — MCP)
 
-   📧 Gmail ─┐                                 📧 Gmail ──┐
-   📊 Sheets ├─ copy ─► 💬 AI chat ─ paste ─►   📊 Sheets ─┤
-   💰 Bukku ─┘   😩                            💰 Bukku ──┼──🔌 MCP ──► 🤖 Claude
-                                              🛒 Shopee ─┘   one plug      ✅
-   every app = its own custom wiring          (like USB-C)
-   AI stuck in the chat box                   Claude works inside your tools
+   📧 Gmail     ─────────────────┐
+   📅 Calendar  ─────────────────┤
+   📁 Drive     ─────────────────┤
+   📝 Notion    ─────────────────┼────── 🔌 ──────►  🤖 Claude
+   💰 Bukku     ─────────────────┤      one plug        works inside
+   🛒 Shopee    ─────────────────┘     (like USB-C)     all of them
+
+   Before 2024: every tool needed its own custom wiring — or you copy-pasted.
+   After MCP:   one standard plug. Anthropic built it; now it's the industry standard.
 ```
-
 
 **The problem before:** AI was stuck in the chat box. To use it with your tools you copy-pasted everything in and out — and every app needed its own custom-built connection.
 
@@ -624,9 +628,25 @@ Settings → Connectors. Point, click, sign in. Done.
 
 They already told you their tools in Lesson 1 — do NOT ask again. Name back what's connected in one line.
 
-Say:
+Show this graphic first:
 
-**Here's what that looks like with Google Drive connected — no more copy-paste:**
+```
+   BEFORE CONNECTORS 😩                    AFTER CONNECTORS ✅
+   ────────────────────                    ───────────────────
+
+   Ask ChatGPT                             "Hey Claude, open my Google Doc,
+       │                                    edit it and make me a report."
+       ▼  copy                                     │
+   Paste into Google Doc                           ▼
+       │                                   Claude opens it, edits it,
+       ▼  fix formatting                   writes the report — in your Doc.
+   Copy the next bit… repeat
+                                           One sentence. No copy-paste.
+```
+
+Then say:
+
+**Here's what that looks like with Google Drive connected:**
 
 **📤 Instead of uploading 10 invoices one by one:**
 > *"Upload these 10 invoices to my Invoices folder in Google Drive."* — Claude does it in one go.
